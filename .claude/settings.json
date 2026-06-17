@@ -1,0 +1,16 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 .understand-anything/tmp/add-docs.py)",
+      "Bash(git submodule *)",
+      "Bash(python3 -c ' *)",
+      "Read(//usr/bin/**)",
+      "Bash(.venv/bin/pip list *)",
+      "Bash(.venv/bin/python -m pip list)",
+      "Bash(uv --version)",
+      "Bash(uv pip *)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(CMAKE_POLICY_VERSION_MINIMUM=3.5 .venv/bin/pip install -e . -v --no-build-isolation)"
+    ]
+  }
+}

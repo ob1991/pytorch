@@ -1,0 +1,23 @@
+{
+  "gitCommitHash": "035e99204be98ef700ca3f2c4c739e3acb59a221",
+  "generatedAt": "2026-06-03T06:01:49Z",
+  "nodeCount": 4910,
+  "edgeCount": 9352,
+  "nodeTypes": {
+    "file": 2537,
+    "function": 1249,
+    "class": 754,
+    "config": 3,
+    "document": 32,
+    "module": 17
+  },
+  "edgeTypes": {
+    "contains": 2003,
+    "imports": 6947,
+    "tested_by": 1
+  },
+  "layerCount": 17,
+  "tourSteps": 12,
+  "docCount": 350,
+  "lastAnalyzedAt": "2026-06-03T12:00:00Z"
+}

@@ -1,0 +1,4878 @@
+{
+  "nodes": [
+    {
+      "id": "file:torch/nn/modules/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/nn/modules/__init__.py",
+      "summary": "神经网络模块包。导出所有层、损失函数和容器模块。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/nn/modules/activation.py",
+      "type": "file",
+      "name": "activation.py",
+      "filePath": "torch/nn/modules/activation.py",
+      "summary": "神经网络层 — activation。 定义类: Threshold, ReLU, RReLU, Hardtanh, ReLU6",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Threshold",
+      "type": "class",
+      "name": "Threshold",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        47,
+        101
+      ],
+      "summary": "Threshold 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:ReLU",
+      "type": "class",
+      "name": "ReLU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        104,
+        150
+      ],
+      "summary": "ReLU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:RReLU",
+      "type": "class",
+      "name": "RReLU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        153,
+        216
+      ],
+      "summary": "RReLU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Hardtanh",
+      "type": "class",
+      "name": "Hardtanh",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        219,
+        301
+      ],
+      "summary": "Hardtanh 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:ReLU6",
+      "type": "class",
+      "name": "ReLU6",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        304,
+        334
+      ],
+      "summary": "ReLU6 类 — torch/nn/modules/activation.py 中定义的，方法: extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Sigmoid",
+      "type": "class",
+      "name": "Sigmoid",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        337,
+        361
+      ],
+      "summary": "Sigmoid 类 — torch/nn/modules/activation.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Hardsigmoid",
+      "type": "class",
+      "name": "Hardsigmoid",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        364,
+        404
+      ],
+      "summary": "Hardsigmoid 类 — torch/nn/modules/activation.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Tanh",
+      "type": "class",
+      "name": "Tanh",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        407,
+        432
+      ],
+      "summary": "Tanh 类 — torch/nn/modules/activation.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:SiLU",
+      "type": "class",
+      "name": "SiLU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        435,
+        482
+      ],
+      "summary": "SiLU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Mish",
+      "type": "class",
+      "name": "Mish",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        485,
+        527
+      ],
+      "summary": "Mish 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Hardswish",
+      "type": "class",
+      "name": "Hardswish",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        530,
+        572
+      ],
+      "summary": "Hardswish 类 — torch/nn/modules/activation.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:ELU",
+      "type": "class",
+      "name": "ELU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        575,
+        626
+      ],
+      "summary": "ELU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:CELU",
+      "type": "class",
+      "name": "CELU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        629,
+        677
+      ],
+      "summary": "CELU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:SELU",
+      "type": "class",
+      "name": "SELU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        680,
+        733
+      ],
+      "summary": "SELU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:GLU",
+      "type": "class",
+      "name": "GLU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        736,
+        774
+      ],
+      "summary": "GLU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:GELU",
+      "type": "class",
+      "name": "GELU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        777,
+        822
+      ],
+      "summary": "GELU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Hardshrink",
+      "type": "class",
+      "name": "Hardshrink",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        825,
+        871
+      ],
+      "summary": "Hardshrink 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:LeakyReLU",
+      "type": "class",
+      "name": "LeakyReLU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        874,
+        929
+      ],
+      "summary": "LeakyReLU 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:LogSigmoid",
+      "type": "class",
+      "name": "LogSigmoid",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        932,
+        955
+      ],
+      "summary": "LogSigmoid 类 — torch/nn/modules/activation.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Softplus",
+      "type": "class",
+      "name": "Softplus",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        958,
+        1006
+      ],
+      "summary": "Softplus 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Softshrink",
+      "type": "class",
+      "name": "Softshrink",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1009,
+        1053
+      ],
+      "summary": "Softshrink 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:MultiheadAttention",
+      "type": "class",
+      "name": "MultiheadAttention",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1089,
+        1572
+      ],
+      "summary": "MultiheadAttention 类 — torch/nn/modules/activation.py 中定义的，方法: forward, merge_masks",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:PReLU",
+      "type": "class",
+      "name": "PReLU",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1575,
+        1654
+      ],
+      "summary": "PReLU 类 — torch/nn/modules/activation.py 中定义的，方法: reset_parameters, forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Softsign",
+      "type": "class",
+      "name": "Softsign",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1657,
+        1680
+      ],
+      "summary": "Softsign 类 — torch/nn/modules/activation.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Tanhshrink",
+      "type": "class",
+      "name": "Tanhshrink",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1683,
+        1706
+      ],
+      "summary": "Tanhshrink 类 — torch/nn/modules/activation.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Softmin",
+      "type": "class",
+      "name": "Softmin",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1709,
+        1762
+      ],
+      "summary": "Softmin 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Softmax",
+      "type": "class",
+      "name": "Softmax",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1765,
+        1827
+      ],
+      "summary": "Softmax 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:Softmax2d",
+      "type": "class",
+      "name": "Softmax2d",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1830,
+        1860
+      ],
+      "summary": "Softmax2d 类 — torch/nn/modules/activation.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/activation.py:LogSoftmax",
+      "type": "class",
+      "name": "LogSoftmax",
+      "filePath": "torch/nn/modules/activation.py",
+      "lineRange": [
+        1863,
+        1912
+      ],
+      "summary": "LogSoftmax 类 — torch/nn/modules/activation.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/adaptive.py",
+      "type": "file",
+      "name": "adaptive.py",
+      "filePath": "torch/nn/modules/adaptive.py",
+      "summary": "神经网络层 — adaptive。 定义类: AdaptiveLogSoftmaxWithLoss",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/adaptive.py:AdaptiveLogSoftmaxWithLoss",
+      "type": "class",
+      "name": "AdaptiveLogSoftmaxWithLoss",
+      "filePath": "torch/nn/modules/adaptive.py",
+      "lineRange": [
+        21,
+        337
+      ],
+      "summary": "AdaptiveLogSoftmaxWithLoss 类 — torch/nn/modules/adaptive.py 中定义的，方法: reset_parameters, forward, log_prob, predict",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/modules/batchnorm.py",
+      "type": "file",
+      "name": "batchnorm.py",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "summary": "神经网络层 — batchnorm。 定义类: _NormBase, _BatchNorm, _LazyNormBase, BatchNorm1d, LazyBatchNorm1d",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:_NormBase",
+      "type": "class",
+      "name": "_NormBase",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        25,
+        149
+      ],
+      "summary": "_NormBase 类 — torch/nn/modules/batchnorm.py 中定义的，方法: reset_running_stats, reset_parameters, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:_BatchNorm",
+      "type": "class",
+      "name": "_BatchNorm",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        152,
+        224
+      ],
+      "summary": "_BatchNorm 类 — torch/nn/modules/batchnorm.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:_LazyNormBase",
+      "type": "class",
+      "name": "_LazyNormBase",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        227,
+        303
+      ],
+      "summary": "_LazyNormBase 类 — torch/nn/modules/batchnorm.py 中定义的，方法: reset_parameters, initialize_parameters",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:BatchNorm1d",
+      "type": "class",
+      "name": "BatchNorm1d",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        306,
+        381
+      ],
+      "summary": "BatchNorm1d 类 — torch/nn/modules/batchnorm.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:LazyBatchNorm1d",
+      "type": "class",
+      "name": "LazyBatchNorm1d",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        384,
+        417
+      ],
+      "summary": "LazyBatchNorm1d 类 — torch/nn/modules/batchnorm.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:BatchNorm2d",
+      "type": "class",
+      "name": "BatchNorm2d",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        420,
+        496
+      ],
+      "summary": "BatchNorm2d 类 — torch/nn/modules/batchnorm.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:LazyBatchNorm2d",
+      "type": "class",
+      "name": "LazyBatchNorm2d",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        499,
+        532
+      ],
+      "summary": "LazyBatchNorm2d 类 — torch/nn/modules/batchnorm.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:BatchNorm3d",
+      "type": "class",
+      "name": "BatchNorm3d",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        535,
+        611
+      ],
+      "summary": "BatchNorm3d 类 — torch/nn/modules/batchnorm.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:LazyBatchNorm3d",
+      "type": "class",
+      "name": "LazyBatchNorm3d",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        614,
+        647
+      ],
+      "summary": "LazyBatchNorm3d 类 — torch/nn/modules/batchnorm.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/batchnorm.py:SyncBatchNorm",
+      "type": "class",
+      "name": "SyncBatchNorm",
+      "filePath": "torch/nn/modules/batchnorm.py",
+      "lineRange": [
+        650,
+        951
+      ],
+      "summary": "SyncBatchNorm 类 — torch/nn/modules/batchnorm.py 中定义的，方法: forward, convert_sync_batchnorm",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/container.py",
+      "type": "file",
+      "name": "container.py",
+      "filePath": "torch/nn/modules/container.py",
+      "summary": "神经网络层 — container。 定义类: Container, Sequential, ModuleList, ModuleDict, ParameterList",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/container.py:Sequential",
+      "type": "class",
+      "name": "Sequential",
+      "filePath": "torch/nn/modules/container.py",
+      "lineRange": [
+        59,
+        332
+      ],
+      "summary": "Sequential 类 — torch/nn/modules/container.py 中定义的，方法: pop, forward, append, insert, extend",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/modules/container.py:ModuleList",
+      "type": "class",
+      "name": "ModuleList",
+      "filePath": "torch/nn/modules/container.py",
+      "lineRange": [
+        335,
+        502
+      ],
+      "summary": "ModuleList 类 — torch/nn/modules/container.py 中定义的，方法: insert, append, pop, extend",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/modules/container.py:ModuleDict",
+      "type": "class",
+      "name": "ModuleDict",
+      "filePath": "torch/nn/modules/container.py",
+      "lineRange": [
+        505,
+        643
+      ],
+      "summary": "ModuleDict 类 — torch/nn/modules/container.py 中定义的，方法: clear, pop, keys, items, values",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/modules/container.py:ParameterList",
+      "type": "class",
+      "name": "ParameterList",
+      "filePath": "torch/nn/modules/container.py",
+      "lineRange": [
+        646,
+        791
+      ],
+      "summary": "ParameterList 类 — torch/nn/modules/container.py 中定义的，方法: append, extend, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/container.py:ParameterDict",
+      "type": "class",
+      "name": "ParameterDict",
+      "filePath": "torch/nn/modules/container.py",
+      "lineRange": [
+        794,
+        1039
+      ],
+      "summary": "ParameterDict 类 — torch/nn/modules/container.py 中定义的，方法: copy, setdefault, clear, pop, popitem",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/nn/modules/conv.py",
+      "type": "file",
+      "name": "conv.py",
+      "filePath": "torch/nn/modules/conv.py",
+      "summary": "神经网络层 — conv。 定义类: _ConvNd, Conv1d, Conv2d, Conv3d, _ConvTransposeNd",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:_ConvNd",
+      "type": "class",
+      "name": "_ConvNd",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        55,
+        222
+      ],
+      "summary": "_ConvNd 类 — torch/nn/modules/conv.py 中定义的，方法: reset_parameters, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:Conv1d",
+      "type": "class",
+      "name": "Conv1d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        225,
+        385
+      ],
+      "summary": "Conv1d 类 — torch/nn/modules/conv.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:Conv2d",
+      "type": "class",
+      "name": "Conv2d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        388,
+        565
+      ],
+      "summary": "Conv2d 类 — torch/nn/modules/conv.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:Conv3d",
+      "type": "class",
+      "name": "Conv3d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        568,
+        735
+      ],
+      "summary": "Conv3d 类 — torch/nn/modules/conv.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:_ConvTransposeNd",
+      "type": "class",
+      "name": "_ConvTransposeNd",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        738,
+        829
+      ],
+      "summary": "_ConvTransposeNd 类 — torch/nn/modules/conv.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:ConvTranspose1d",
+      "type": "class",
+      "name": "ConvTranspose1d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        832,
+        1009
+      ],
+      "summary": "ConvTranspose1d 类 — torch/nn/modules/conv.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:ConvTranspose2d",
+      "type": "class",
+      "name": "ConvTranspose2d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1012,
+        1207
+      ],
+      "summary": "ConvTranspose2d 类 — torch/nn/modules/conv.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:ConvTranspose3d",
+      "type": "class",
+      "name": "ConvTranspose3d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1210,
+        1391
+      ],
+      "summary": "ConvTranspose3d 类 — torch/nn/modules/conv.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:_LazyConvXdMixin",
+      "type": "class",
+      "name": "_LazyConvXdMixin",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1424,
+        1488
+      ],
+      "summary": "_LazyConvXdMixin 类 — torch/nn/modules/conv.py 中定义的，方法: reset_parameters, initialize_parameters",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:LazyConv1d",
+      "type": "class",
+      "name": "LazyConv1d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1492,
+        1560
+      ],
+      "summary": "LazyConv1d 类 — torch/nn/modules/conv.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:LazyConv2d",
+      "type": "class",
+      "name": "LazyConv2d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1564,
+        1632
+      ],
+      "summary": "LazyConv2d 类 — torch/nn/modules/conv.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:LazyConv3d",
+      "type": "class",
+      "name": "LazyConv3d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1636,
+        1705
+      ],
+      "summary": "LazyConv3d 类 — torch/nn/modules/conv.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:LazyConvTranspose1d",
+      "type": "class",
+      "name": "LazyConvTranspose1d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1709,
+        1777
+      ],
+      "summary": "LazyConvTranspose1d 类 — torch/nn/modules/conv.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:LazyConvTranspose2d",
+      "type": "class",
+      "name": "LazyConvTranspose2d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1781,
+        1849
+      ],
+      "summary": "LazyConvTranspose2d 类 — torch/nn/modules/conv.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/conv.py:LazyConvTranspose3d",
+      "type": "class",
+      "name": "LazyConvTranspose3d",
+      "filePath": "torch/nn/modules/conv.py",
+      "lineRange": [
+        1853,
+        1921
+      ],
+      "summary": "LazyConvTranspose3d 类 — torch/nn/modules/conv.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/dropout.py",
+      "type": "file",
+      "name": "dropout.py",
+      "filePath": "torch/nn/modules/dropout.py",
+      "summary": "神经网络层 — dropout。 定义类: _DropoutNd, Dropout, Dropout1d, Dropout2d, Dropout3d",
+      "tags": [
+        "python",
+        "neural-network",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/dropout.py:Dropout",
+      "type": "class",
+      "name": "Dropout",
+      "filePath": "torch/nn/modules/dropout.py",
+      "lineRange": [
+        35,
+        73
+      ],
+      "summary": "Dropout 类 — torch/nn/modules/dropout.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/dropout.py:Dropout1d",
+      "type": "class",
+      "name": "Dropout1d",
+      "filePath": "torch/nn/modules/dropout.py",
+      "lineRange": [
+        76,
+        121
+      ],
+      "summary": "Dropout1d 类 — torch/nn/modules/dropout.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/dropout.py:Dropout2d",
+      "type": "class",
+      "name": "Dropout2d",
+      "filePath": "torch/nn/modules/dropout.py",
+      "lineRange": [
+        124,
+        176
+      ],
+      "summary": "Dropout2d 类 — torch/nn/modules/dropout.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/dropout.py:Dropout3d",
+      "type": "class",
+      "name": "Dropout3d",
+      "filePath": "torch/nn/modules/dropout.py",
+      "lineRange": [
+        179,
+        224
+      ],
+      "summary": "Dropout3d 类 — torch/nn/modules/dropout.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/dropout.py:AlphaDropout",
+      "type": "class",
+      "name": "AlphaDropout",
+      "filePath": "torch/nn/modules/dropout.py",
+      "lineRange": [
+        227,
+        269
+      ],
+      "summary": "AlphaDropout 类 — torch/nn/modules/dropout.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/dropout.py:FeatureAlphaDropout",
+      "type": "class",
+      "name": "FeatureAlphaDropout",
+      "filePath": "torch/nn/modules/dropout.py",
+      "lineRange": [
+        272,
+        323
+      ],
+      "summary": "FeatureAlphaDropout 类 — torch/nn/modules/dropout.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/flatten.py",
+      "type": "file",
+      "name": "flatten.py",
+      "filePath": "torch/nn/modules/flatten.py",
+      "summary": "神经网络层 — flatten。 定义类: Flatten, Unflatten",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/modules/flatten.py:Flatten",
+      "type": "class",
+      "name": "Flatten",
+      "filePath": "torch/nn/modules/flatten.py",
+      "lineRange": [
+        12,
+        61
+      ],
+      "summary": "Flatten 类 — torch/nn/modules/flatten.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/flatten.py:Unflatten",
+      "type": "class",
+      "name": "Unflatten",
+      "filePath": "torch/nn/modules/flatten.py",
+      "lineRange": [
+        64,
+        167
+      ],
+      "summary": "Unflatten 类 — torch/nn/modules/flatten.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/fold.py",
+      "type": "file",
+      "name": "fold.py",
+      "filePath": "torch/nn/modules/fold.py",
+      "summary": "神经网络层 — fold。 定义类: Fold, Unfold",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/fold.py:Fold",
+      "type": "class",
+      "name": "Fold",
+      "filePath": "torch/nn/modules/fold.py",
+      "lineRange": [
+        11,
+        171
+      ],
+      "summary": "Fold 类 — torch/nn/modules/fold.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/fold.py:Unfold",
+      "type": "class",
+      "name": "Unfold",
+      "filePath": "torch/nn/modules/fold.py",
+      "lineRange": [
+        174,
+        335
+      ],
+      "summary": "Unfold 类 — torch/nn/modules/fold.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/linear.py",
+      "type": "file",
+      "name": "linear.py",
+      "filePath": "torch/nn/modules/linear.py",
+      "summary": "神经网络层 — linear。 定义类: Identity, Linear, NonDynamicallyQuantizableLinear, Bilinear, LazyLinear",
+      "tags": [
+        "python",
+        "neural-network",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/linear.py:Identity",
+      "type": "class",
+      "name": "Identity",
+      "filePath": "torch/nn/modules/linear.py",
+      "lineRange": [
+        22,
+        50
+      ],
+      "summary": "Identity 类 — torch/nn/modules/linear.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/linear.py:Linear",
+      "type": "class",
+      "name": "Linear",
+      "filePath": "torch/nn/modules/linear.py",
+      "lineRange": [
+        53,
+        140
+      ],
+      "summary": "Linear 类 — torch/nn/modules/linear.py 中定义的，方法: reset_parameters, forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/linear.py:Bilinear",
+      "type": "class",
+      "name": "Bilinear",
+      "filePath": "torch/nn/modules/linear.py",
+      "lineRange": [
+        162,
+        256
+      ],
+      "summary": "Bilinear 类 — torch/nn/modules/linear.py 中定义的，方法: reset_parameters, forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/linear.py:LazyLinear",
+      "type": "class",
+      "name": "LazyLinear",
+      "filePath": "torch/nn/modules/linear.py",
+      "lineRange": [
+        259,
+        335
+      ],
+      "summary": "LazyLinear 类 — torch/nn/modules/linear.py 中定义的，方法: reset_parameters, initialize_parameters",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/loss.py",
+      "type": "file",
+      "name": "loss.py",
+      "filePath": "torch/nn/modules/loss.py",
+      "summary": "神经网络层 — loss。 定义类: _Loss, _WeightedLoss, L1Loss, NLLLoss, NLLLoss2d",
+      "tags": [
+        "python",
+        "neural-network",
+        "large-file",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:L1Loss",
+      "type": "class",
+      "name": "L1Loss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        66,
+        133
+      ],
+      "summary": "L1Loss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:NLLLoss",
+      "type": "class",
+      "name": "NLLLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        136,
+        266
+      ],
+      "summary": "NLLLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:PoissonNLLLoss",
+      "type": "class",
+      "name": "PoissonNLLLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        287,
+        374
+      ],
+      "summary": "PoissonNLLLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:GaussianNLLLoss",
+      "type": "class",
+      "name": "GaussianNLLLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        377,
+        461
+      ],
+      "summary": "GaussianNLLLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:KLDivLoss",
+      "type": "class",
+      "name": "KLDivLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        464,
+        564
+      ],
+      "summary": "KLDivLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:MSELoss",
+      "type": "class",
+      "name": "MSELoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        567,
+        630
+      ],
+      "summary": "MSELoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:BCELoss",
+      "type": "class",
+      "name": "BCELoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        633,
+        716
+      ],
+      "summary": "BCELoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:BCEWithLogitsLoss",
+      "type": "class",
+      "name": "BCEWithLogitsLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        719,
+        844
+      ],
+      "summary": "BCEWithLogitsLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:HingeEmbeddingLoss",
+      "type": "class",
+      "name": "HingeEmbeddingLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        847,
+        922
+      ],
+      "summary": "HingeEmbeddingLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:MultiLabelMarginLoss",
+      "type": "class",
+      "name": "MultiLabelMarginLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        925,
+        985
+      ],
+      "summary": "MultiLabelMarginLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:SmoothL1Loss",
+      "type": "class",
+      "name": "SmoothL1Loss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        988,
+        1078
+      ],
+      "summary": "SmoothL1Loss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:HuberLoss",
+      "type": "class",
+      "name": "HuberLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1081,
+        1148
+      ],
+      "summary": "HuberLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:SoftMarginLoss",
+      "type": "class",
+      "name": "SoftMarginLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1151,
+        1195
+      ],
+      "summary": "SoftMarginLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:CrossEntropyLoss",
+      "type": "class",
+      "name": "CrossEntropyLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1198,
+        1405
+      ],
+      "summary": "CrossEntropyLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:LinearCrossEntropyLoss",
+      "type": "class",
+      "name": "LinearCrossEntropyLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1408,
+        1591
+      ],
+      "summary": "LinearCrossEntropyLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:MultiLabelSoftMarginLoss",
+      "type": "class",
+      "name": "MultiLabelSoftMarginLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1594,
+        1647
+      ],
+      "summary": "MultiLabelSoftMarginLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:CosineEmbeddingLoss",
+      "type": "class",
+      "name": "CosineEmbeddingLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1650,
+        1719
+      ],
+      "summary": "CosineEmbeddingLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:MarginRankingLoss",
+      "type": "class",
+      "name": "MarginRankingLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1722,
+        1786
+      ],
+      "summary": "MarginRankingLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:MultiMarginLoss",
+      "type": "class",
+      "name": "MultiMarginLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1789,
+        1882
+      ],
+      "summary": "MultiMarginLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:TripletMarginLoss",
+      "type": "class",
+      "name": "TripletMarginLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1885,
+        1992
+      ],
+      "summary": "TripletMarginLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:TripletMarginWithDistanceLoss",
+      "type": "class",
+      "name": "TripletMarginWithDistanceLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        1995,
+        2127
+      ],
+      "summary": "TripletMarginWithDistanceLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/loss.py:CTCLoss",
+      "type": "class",
+      "name": "CTCLoss",
+      "filePath": "torch/nn/modules/loss.py",
+      "lineRange": [
+        2130,
+        2308
+      ],
+      "summary": "CTCLoss 类 — torch/nn/modules/loss.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/normalization.py",
+      "type": "file",
+      "name": "normalization.py",
+      "filePath": "torch/nn/modules/normalization.py",
+      "summary": "神经网络层 — normalization。 定义类: LocalResponseNorm, CrossMapLRN2d, LayerNorm, GroupNorm, RMSNorm",
+      "tags": [
+        "python",
+        "neural-network",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/normalization.py:LocalResponseNorm",
+      "type": "class",
+      "name": "LocalResponseNorm",
+      "filePath": "torch/nn/modules/normalization.py",
+      "lineRange": [
+        16,
+        71
+      ],
+      "summary": "LocalResponseNorm 类 — torch/nn/modules/normalization.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/normalization.py:CrossMapLRN2d",
+      "type": "class",
+      "name": "CrossMapLRN2d",
+      "filePath": "torch/nn/modules/normalization.py",
+      "lineRange": [
+        74,
+        99
+      ],
+      "summary": "CrossMapLRN2d 类 — torch/nn/modules/normalization.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/normalization.py:LayerNorm",
+      "type": "class",
+      "name": "LayerNorm",
+      "filePath": "torch/nn/modules/normalization.py",
+      "lineRange": [
+        105,
+        236
+      ],
+      "summary": "LayerNorm 类 — torch/nn/modules/normalization.py 中定义的，方法: reset_parameters, forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/normalization.py:GroupNorm",
+      "type": "class",
+      "name": "GroupNorm",
+      "filePath": "torch/nn/modules/normalization.py",
+      "lineRange": [
+        239,
+        340
+      ],
+      "summary": "GroupNorm 类 — torch/nn/modules/normalization.py 中定义的，方法: reset_parameters, forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/normalization.py:RMSNorm",
+      "type": "class",
+      "name": "RMSNorm",
+      "filePath": "torch/nn/modules/normalization.py",
+      "lineRange": [
+        343,
+        436
+      ],
+      "summary": "RMSNorm 类 — torch/nn/modules/normalization.py 中定义的，方法: reset_parameters, forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/padding.py",
+      "type": "file",
+      "name": "padding.py",
+      "filePath": "torch/nn/modules/padding.py",
+      "summary": "神经网络层 — padding。 定义类: _CircularPadNd, CircularPad1d, CircularPad2d, CircularPad3d, _ConstantPadNd",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:_CircularPadNd",
+      "type": "class",
+      "name": "_CircularPadNd",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        33,
+        45
+      ],
+      "summary": "_CircularPadNd 类 — torch/nn/modules/padding.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:CircularPad1d",
+      "type": "class",
+      "name": "CircularPad1d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        48,
+        96
+      ],
+      "summary": "CircularPad1d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:CircularPad2d",
+      "type": "class",
+      "name": "CircularPad2d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        99,
+        157
+      ],
+      "summary": "CircularPad2d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:CircularPad3d",
+      "type": "class",
+      "name": "CircularPad3d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        160,
+        208
+      ],
+      "summary": "CircularPad3d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:_ConstantPadNd",
+      "type": "class",
+      "name": "_ConstantPadNd",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        211,
+        224
+      ],
+      "summary": "_ConstantPadNd 类 — torch/nn/modules/padding.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ConstantPad1d",
+      "type": "class",
+      "name": "ConstantPad1d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        227,
+        276
+      ],
+      "summary": "ConstantPad1d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ConstantPad2d",
+      "type": "class",
+      "name": "ConstantPad2d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        279,
+        328
+      ],
+      "summary": "ConstantPad2d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ConstantPad3d",
+      "type": "class",
+      "name": "ConstantPad3d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        331,
+        369
+      ],
+      "summary": "ConstantPad3d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:_ReflectionPadNd",
+      "type": "class",
+      "name": "_ReflectionPadNd",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        372,
+        380
+      ],
+      "summary": "_ReflectionPadNd 类 — torch/nn/modules/padding.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ReflectionPad1d",
+      "type": "class",
+      "name": "ReflectionPad1d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        383,
+        423
+      ],
+      "summary": "ReflectionPad1d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ReflectionPad2d",
+      "type": "class",
+      "name": "ReflectionPad2d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        426,
+        477
+      ],
+      "summary": "ReflectionPad2d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ReflectionPad3d",
+      "type": "class",
+      "name": "ReflectionPad3d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        480,
+        533
+      ],
+      "summary": "ReflectionPad3d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:_ReplicationPadNd",
+      "type": "class",
+      "name": "_ReplicationPadNd",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        536,
+        544
+      ],
+      "summary": "_ReplicationPadNd 类 — torch/nn/modules/padding.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ReplicationPad1d",
+      "type": "class",
+      "name": "ReplicationPad1d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        547,
+        587
+      ],
+      "summary": "ReplicationPad1d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ReplicationPad2d",
+      "type": "class",
+      "name": "ReplicationPad2d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        590,
+        641
+      ],
+      "summary": "ReplicationPad2d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ReplicationPad3d",
+      "type": "class",
+      "name": "ReplicationPad3d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        644,
+        684
+      ],
+      "summary": "ReplicationPad3d 类 — torch/nn/modules/padding.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ZeroPad1d",
+      "type": "class",
+      "name": "ZeroPad1d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        687,
+        740
+      ],
+      "summary": "ZeroPad1d 类 — torch/nn/modules/padding.py 中定义的，方法: extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ZeroPad2d",
+      "type": "class",
+      "name": "ZeroPad2d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        743,
+        797
+      ],
+      "summary": "ZeroPad2d 类 — torch/nn/modules/padding.py 中定义的，方法: extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/padding.py:ZeroPad3d",
+      "type": "class",
+      "name": "ZeroPad3d",
+      "filePath": "torch/nn/modules/padding.py",
+      "lineRange": [
+        800,
+        842
+      ],
+      "summary": "ZeroPad3d 类 — torch/nn/modules/padding.py 中定义的，方法: extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/pooling.py",
+      "type": "file",
+      "name": "pooling.py",
+      "filePath": "torch/nn/modules/pooling.py",
+      "summary": "神经网络层 — pooling。 定义类: _MaxPoolNd, MaxPool1d, MaxPool2d, MaxPool3d, _MaxUnpoolNd",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:_MaxPoolNd",
+      "type": "class",
+      "name": "_MaxPoolNd",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        43,
+        76
+      ],
+      "summary": "_MaxPoolNd 类 — torch/nn/modules/pooling.py 中定义的，方法: extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:MaxPool1d",
+      "type": "class",
+      "name": "MaxPool1d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        79,
+        152
+      ],
+      "summary": "MaxPool1d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:MaxPool2d",
+      "type": "class",
+      "name": "MaxPool2d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        155,
+        232
+      ],
+      "summary": "MaxPool2d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:MaxPool3d",
+      "type": "class",
+      "name": "MaxPool3d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        235,
+        316
+      ],
+      "summary": "MaxPool3d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:MaxUnpool1d",
+      "type": "class",
+      "name": "MaxUnpool1d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        324,
+        404
+      ],
+      "summary": "MaxUnpool1d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:MaxUnpool2d",
+      "type": "class",
+      "name": "MaxUnpool2d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        407,
+        500
+      ],
+      "summary": "MaxUnpool2d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:MaxUnpool3d",
+      "type": "class",
+      "name": "MaxUnpool3d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        503,
+        579
+      ],
+      "summary": "MaxUnpool3d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AvgPool1d",
+      "type": "class",
+      "name": "AvgPool1d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        595,
+        677
+      ],
+      "summary": "AvgPool1d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AvgPool2d",
+      "type": "class",
+      "name": "AvgPool2d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        680,
+        787
+      ],
+      "summary": "AvgPool2d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AvgPool3d",
+      "type": "class",
+      "name": "AvgPool3d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        790,
+        910
+      ],
+      "summary": "AvgPool3d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:FractionalMaxPool2d",
+      "type": "class",
+      "name": "FractionalMaxPool2d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        913,
+        999
+      ],
+      "summary": "FractionalMaxPool2d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:FractionalMaxPool3d",
+      "type": "class",
+      "name": "FractionalMaxPool3d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1002,
+        1096
+      ],
+      "summary": "FractionalMaxPool3d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:_LPPoolNd",
+      "type": "class",
+      "name": "_LPPoolNd",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1099,
+        1122
+      ],
+      "summary": "_LPPoolNd 类 — torch/nn/modules/pooling.py 中定义的，方法: extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:LPPool1d",
+      "type": "class",
+      "name": "LPPool1d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1125,
+        1169
+      ],
+      "summary": "LPPool1d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:LPPool2d",
+      "type": "class",
+      "name": "LPPool2d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1172,
+        1229
+      ],
+      "summary": "LPPool2d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:LPPool3d",
+      "type": "class",
+      "name": "LPPool3d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1232,
+        1293
+      ],
+      "summary": "LPPool3d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AdaptiveMaxPool1d",
+      "type": "class",
+      "name": "AdaptiveMaxPool1d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1315,
+        1343
+      ],
+      "summary": "AdaptiveMaxPool1d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AdaptiveMaxPool2d",
+      "type": "class",
+      "name": "AdaptiveMaxPool2d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1346,
+        1386
+      ],
+      "summary": "AdaptiveMaxPool2d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AdaptiveMaxPool3d",
+      "type": "class",
+      "name": "AdaptiveMaxPool3d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1389,
+        1430
+      ],
+      "summary": "AdaptiveMaxPool3d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AdaptiveAvgPool1d",
+      "type": "class",
+      "name": "AdaptiveAvgPool1d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1444,
+        1472
+      ],
+      "summary": "AdaptiveAvgPool1d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AdaptiveAvgPool2d",
+      "type": "class",
+      "name": "AdaptiveAvgPool2d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1475,
+        1512
+      ],
+      "summary": "AdaptiveAvgPool2d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/pooling.py:AdaptiveAvgPool3d",
+      "type": "class",
+      "name": "AdaptiveAvgPool3d",
+      "filePath": "torch/nn/modules/pooling.py",
+      "lineRange": [
+        1515,
+        1552
+      ],
+      "summary": "AdaptiveAvgPool3d 类 — torch/nn/modules/pooling.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/rnn.py",
+      "type": "file",
+      "name": "rnn.py",
+      "filePath": "torch/nn/modules/rnn.py",
+      "summary": "神经网络层 — rnn。 定义类: RNNBase, RNN, LSTM, GRU, RNNCellBase 定义函数: apply_permutation",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/rnn.py:RNNBase",
+      "type": "class",
+      "name": "RNNBase",
+      "filePath": "torch/nn/modules/rnn.py",
+      "lineRange": [
+        48,
+        483
+      ],
+      "summary": "RNNBase 类 — torch/nn/modules/rnn.py 中定义的，方法: flatten_parameters, reset_parameters, check_input, get_expected_hidden_size, check_hidden_size",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/modules/rnn.py:RNN",
+      "type": "class",
+      "name": "RNN",
+      "filePath": "torch/nn/modules/rnn.py",
+      "lineRange": [
+        486,
+        813
+      ],
+      "summary": "RNN 类 — torch/nn/modules/rnn.py 中定义的，方法: forward, forward, forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/rnn.py:LSTM",
+      "type": "class",
+      "name": "LSTM",
+      "filePath": "torch/nn/modules/rnn.py",
+      "lineRange": [
+        830,
+        1203
+      ],
+      "summary": "LSTM 类 — torch/nn/modules/rnn.py 中定义的，方法: get_expected_cell_size, check_forward_args, permute_hidden, forward, forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/modules/rnn.py:GRU",
+      "type": "class",
+      "name": "GRU",
+      "filePath": "torch/nn/modules/rnn.py",
+      "lineRange": [
+        1206,
+        1481
+      ],
+      "summary": "GRU 类 — torch/nn/modules/rnn.py 中定义的，方法: forward, forward, forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/rnn.py:RNNCellBase",
+      "type": "class",
+      "name": "RNNCellBase",
+      "filePath": "torch/nn/modules/rnn.py",
+      "lineRange": [
+        1484,
+        1539
+      ],
+      "summary": "RNNCellBase 类 — torch/nn/modules/rnn.py 中定义的，方法: extra_repr, reset_parameters",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/rnn.py:RNNCell",
+      "type": "class",
+      "name": "RNNCell",
+      "filePath": "torch/nn/modules/rnn.py",
+      "lineRange": [
+        1542,
+        1658
+      ],
+      "summary": "RNNCell 类 — torch/nn/modules/rnn.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/rnn.py:LSTMCell",
+      "type": "class",
+      "name": "LSTMCell",
+      "filePath": "torch/nn/modules/rnn.py",
+      "lineRange": [
+        1661,
+        1768
+      ],
+      "summary": "LSTMCell 类 — torch/nn/modules/rnn.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/rnn.py:GRUCell",
+      "type": "class",
+      "name": "GRUCell",
+      "filePath": "torch/nn/modules/rnn.py",
+      "lineRange": [
+        1771,
+        1876
+      ],
+      "summary": "GRUCell 类 — torch/nn/modules/rnn.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/modules/sparse.py",
+      "type": "file",
+      "name": "sparse.py",
+      "filePath": "torch/nn/modules/sparse.py",
+      "summary": "神经网络层 — sparse。 定义类: Embedding, EmbeddingBag",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/sparse.py:Embedding",
+      "type": "class",
+      "name": "Embedding",
+      "filePath": "torch/nn/modules/sparse.py",
+      "lineRange": [
+        14,
+        264
+      ],
+      "summary": "Embedding 类 — torch/nn/modules/sparse.py 中定义的，方法: reset_parameters, forward, extra_repr, from_pretrained",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/modules/sparse.py:EmbeddingBag",
+      "type": "class",
+      "name": "EmbeddingBag",
+      "filePath": "torch/nn/modules/sparse.py",
+      "lineRange": [
+        267,
+        543
+      ],
+      "summary": "EmbeddingBag 类 — torch/nn/modules/sparse.py 中定义的，方法: reset_parameters, forward, extra_repr, from_pretrained",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/modules/transformer.py",
+      "type": "file",
+      "name": "transformer.py",
+      "filePath": "torch/nn/modules/transformer.py",
+      "summary": "神经网络层 — transformer。 定义类: Transformer, TransformerEncoder, TransformerDecoder, TransformerEncoderLayer, TransformerDecoderLayer",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/modules/transformer.py:Transformer",
+      "type": "class",
+      "name": "Transformer",
+      "filePath": "torch/nn/modules/transformer.py",
+      "lineRange": [
+        58,
+        315
+      ],
+      "summary": "Transformer 类 — torch/nn/modules/transformer.py 中定义的，方法: forward, generate_square_subsequent_mask",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/transformer.py:TransformerEncoder",
+      "type": "class",
+      "name": "TransformerEncoder",
+      "filePath": "torch/nn/modules/transformer.py",
+      "lineRange": [
+        318,
+        551
+      ],
+      "summary": "TransformerEncoder 类 — torch/nn/modules/transformer.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/transformer.py:TransformerDecoder",
+      "type": "class",
+      "name": "TransformerDecoder",
+      "filePath": "torch/nn/modules/transformer.py",
+      "lineRange": [
+        554,
+        656
+      ],
+      "summary": "TransformerDecoder 类 — torch/nn/modules/transformer.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/transformer.py:TransformerEncoderLayer",
+      "type": "class",
+      "name": "TransformerEncoderLayer",
+      "filePath": "torch/nn/modules/transformer.py",
+      "lineRange": [
+        659,
+        978
+      ],
+      "summary": "TransformerEncoderLayer 类 — torch/nn/modules/transformer.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/modules/transformer.py:TransformerDecoderLayer",
+      "type": "class",
+      "name": "TransformerDecoderLayer",
+      "filePath": "torch/nn/modules/transformer.py",
+      "lineRange": [
+        981,
+        1192
+      ],
+      "summary": "TransformerDecoderLayer 类 — torch/nn/modules/transformer.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/parallel/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/nn/parallel/__init__.py",
+      "summary": "神经网络模块包。导出所有层、损失函数和容器模块。 定义类: DistributedDataParallelCPU",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/parallel/comm.py",
+      "type": "file",
+      "name": "comm.py",
+      "filePath": "torch/nn/parallel/comm.py",
+      "summary": "comm.py — PyTorch torch/nn/parallel模块。265行python代码。 定义函数: broadcast, broadcast_coalesced, reduce_add, reduce_add_coalesced, scatter",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/parallel/comm.py:broadcast",
+      "type": "function",
+      "name": "broadcast",
+      "filePath": "torch/nn/parallel/comm.py",
+      "lineRange": [
+        16,
+        47
+      ],
+      "summary": "broadcast — torch/nn/parallel/comm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/parallel/comm.py:broadcast_coalesced",
+      "type": "function",
+      "name": "broadcast_coalesced",
+      "filePath": "torch/nn/parallel/comm.py",
+      "lineRange": [
+        50,
+        67
+      ],
+      "summary": "broadcast_coalesced — torch/nn/parallel/comm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/parallel/comm.py:reduce_add",
+      "type": "function",
+      "name": "reduce_add",
+      "filePath": "torch/nn/parallel/comm.py",
+      "lineRange": [
+        70,
+        121
+      ],
+      "summary": "reduce_add — torch/nn/parallel/comm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/parallel/comm.py:reduce_add_coalesced",
+      "type": "function",
+      "name": "reduce_add_coalesced",
+      "filePath": "torch/nn/parallel/comm.py",
+      "lineRange": [
+        124,
+        168
+      ],
+      "summary": "reduce_add_coalesced — torch/nn/parallel/comm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/parallel/comm.py:scatter",
+      "type": "function",
+      "name": "scatter",
+      "filePath": "torch/nn/parallel/comm.py",
+      "lineRange": [
+        171,
+        219
+      ],
+      "summary": "scatter — torch/nn/parallel/comm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/parallel/comm.py:gather",
+      "type": "function",
+      "name": "gather",
+      "filePath": "torch/nn/parallel/comm.py",
+      "lineRange": [
+        222,
+        264
+      ],
+      "summary": "gather — torch/nn/parallel/comm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/parallel/data_parallel.py",
+      "type": "file",
+      "name": "data_parallel.py",
+      "filePath": "torch/nn/parallel/data_parallel.py",
+      "summary": "data_parallel.py — PyTorch torch/nn/parallel模块。290行python代码。 定义类: DataParallel 定义函数: data_parallel",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/parallel/data_parallel.py:data_parallel",
+      "type": "function",
+      "name": "data_parallel",
+      "filePath": "torch/nn/parallel/data_parallel.py",
+      "lineRange": [
+        221,
+        289
+      ],
+      "summary": "data_parallel — torch/nn/parallel/data_parallel.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/parallel/data_parallel.py:DataParallel",
+      "type": "class",
+      "name": "DataParallel",
+      "filePath": "torch/nn/parallel/data_parallel.py",
+      "lineRange": [
+        54,
+        218
+      ],
+      "summary": "DataParallel 类 — torch/nn/parallel/data_parallel.py 中定义的，方法: forward, replicate, scatter, parallel_apply, gather",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/parallel/distributed.py",
+      "type": "file",
+      "name": "distributed.py",
+      "filePath": "torch/nn/parallel/distributed.py",
+      "summary": "distributed.py — PyTorch torch/nn/parallel模块。2667行python代码。 定义类: _BucketCapacityConfig, _MixedPrecision, _BufferCommHookLocation, _BufferCommHook, _DDPSink",
+      "tags": [
+        "python",
+        "neural-network",
+        "large-file",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/parallel/distributed.py:_BucketCapacityConfig",
+      "type": "class",
+      "name": "_BucketCapacityConfig",
+      "filePath": "torch/nn/parallel/distributed.py",
+      "lineRange": [
+        37,
+        162
+      ],
+      "summary": "_BucketCapacityConfig 类 — torch/nn/parallel/distributed.py 中定义的，方法: create, bucket_cap_mb, has_custom_per_bucket_caps, compute_bucket_size_limits",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/parallel/distributed.py:_MixedPrecision",
+      "type": "class",
+      "name": "_MixedPrecision",
+      "filePath": "torch/nn/parallel/distributed.py",
+      "lineRange": [
+        193,
+        232
+      ],
+      "summary": "_MixedPrecision 类 — torch/nn/parallel/distributed.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/parallel/distributed.py:_DDPSink",
+      "type": "class",
+      "name": "_DDPSink",
+      "filePath": "torch/nn/parallel/distributed.py",
+      "lineRange": [
+        378,
+        409
+      ],
+      "summary": "_DDPSink 类 — torch/nn/parallel/distributed.py 中定义的，方法: forward, backward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/parallel/distributed.py:_DDPJoinHook",
+      "type": "class",
+      "name": "_DDPJoinHook",
+      "filePath": "torch/nn/parallel/distributed.py",
+      "lineRange": [
+        412,
+        463
+      ],
+      "summary": "_DDPJoinHook 类 — torch/nn/parallel/distributed.py 中定义的，方法: main_hook, post_hook",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/parallel/distributed.py:DistributedDataParallel",
+      "type": "class",
+      "name": "DistributedDataParallel",
+      "filePath": "torch/nn/parallel/distributed.py",
+      "lineRange": [
+        466,
+        2666
+      ],
+      "summary": "DistributedDataParallel 类 — torch/nn/parallel/distributed.py 中定义的，方法: broadcast_buffers, broadcast_buffers, no_sync, forward, scatter",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/nn/parallel/replicate.py",
+      "type": "file",
+      "name": "replicate.py",
+      "filePath": "torch/nn/parallel/replicate.py",
+      "summary": "replicate.py — PyTorch torch/nn/parallel模块。215行python代码。 定义函数: replicate",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/parallel/replicate.py:replicate",
+      "type": "function",
+      "name": "replicate",
+      "filePath": "torch/nn/parallel/replicate.py",
+      "lineRange": [
+        118,
+        214
+      ],
+      "summary": "replicate — torch/nn/parallel/replicate.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/parallel/scatter_gather.py",
+      "type": "file",
+      "name": "scatter_gather.py",
+      "filePath": "torch/nn/parallel/scatter_gather.py",
+      "summary": "scatter_gather.py — PyTorch torch/nn/parallel模块。151行python代码。 定义函数: is_namedtuple, scatter, scatter, scatter, scatter_kwargs",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/parallel/scatter_gather.py:scatter",
+      "type": "function",
+      "name": "scatter",
+      "filePath": "torch/nn/parallel/scatter_gather.py",
+      "lineRange": [
+        49,
+        87
+      ],
+      "summary": "scatter — torch/nn/parallel/scatter_gather.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/parallel/scatter_gather.py:scatter_kwargs",
+      "type": "function",
+      "name": "scatter_kwargs",
+      "filePath": "torch/nn/parallel/scatter_gather.py",
+      "lineRange": [
+        90,
+        107
+      ],
+      "summary": "scatter_kwargs — torch/nn/parallel/scatter_gather.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/parallel/scatter_gather.py:gather",
+      "type": "function",
+      "name": "gather",
+      "filePath": "torch/nn/parallel/scatter_gather.py",
+      "lineRange": [
+        110,
+        150
+      ],
+      "summary": "gather — torch/nn/parallel/scatter_gather.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/parameter.py",
+      "type": "file",
+      "name": "parameter.py",
+      "filePath": "torch/nn/parameter.py",
+      "summary": "parameter.py — PyTorch torch/nn模块。311行python代码。 定义类: _ParameterMeta, Parameter, UninitializedTensorMixin, UninitializedParameter, _BufferMeta 定义函数: is_lazy",
+      "tags": [
+        "python",
+        "neural-network",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/parameter.py:Parameter",
+      "type": "class",
+      "name": "Parameter",
+      "filePath": "torch/nn/parameter.py",
+      "lineRange": [
+        30,
+        105
+      ],
+      "summary": "Parameter 类 — torch/nn/parameter.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/parameter.py:UninitializedTensorMixin",
+      "type": "class",
+      "name": "UninitializedTensorMixin",
+      "filePath": "torch/nn/parameter.py",
+      "lineRange": [
+        108,
+        190
+      ],
+      "summary": "UninitializedTensorMixin 类 — torch/nn/parameter.py 中定义的，方法: materialize, shape, share_memory_",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/parameter.py:UninitializedParameter",
+      "type": "class",
+      "name": "UninitializedParameter",
+      "filePath": "torch/nn/parameter.py",
+      "lineRange": [
+        204,
+        234
+      ],
+      "summary": "UninitializedParameter 类 — torch/nn/parameter.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/parameter.py:Buffer",
+      "type": "class",
+      "name": "Buffer",
+      "filePath": "torch/nn/parameter.py",
+      "lineRange": [
+        249,
+        278
+      ],
+      "summary": "Buffer 类 — torch/nn/parameter.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/parameter.py:UninitializedBuffer",
+      "type": "class",
+      "name": "UninitializedBuffer",
+      "filePath": "torch/nn/parameter.py",
+      "lineRange": [
+        281,
+        310
+      ],
+      "summary": "UninitializedBuffer 类 — torch/nn/parameter.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/qat/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/nn/qat/__init__.py",
+      "summary": "神经网络模块包。导出所有层、损失函数和容器模块。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Threshold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:ReLU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:RReLU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Hardtanh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:ReLU6",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Sigmoid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Hardsigmoid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Tanh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:SiLU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Mish",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Hardswish",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:ELU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:CELU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:SELU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:GLU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:GELU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Hardshrink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:LeakyReLU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:LogSigmoid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Softplus",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Softshrink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:MultiheadAttention",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:PReLU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Softsign",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Tanhshrink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Softmin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Softmax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:Softmax2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "class:torch/nn/modules/activation.py:LogSoftmax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "file:torch/nn/init.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/activation.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/adaptive.py",
+      "target": "class:torch/nn/modules/adaptive.py:AdaptiveLogSoftmaxWithLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/adaptive.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/adaptive.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/adaptive.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:_NormBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:_BatchNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:_LazyNormBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:BatchNorm1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:LazyBatchNorm1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:BatchNorm2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:LazyBatchNorm2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:BatchNorm3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:LazyBatchNorm3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "class:torch/nn/modules/batchnorm.py:SyncBatchNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/batchnorm.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/container.py",
+      "target": "class:torch/nn/modules/container.py:Sequential",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/container.py",
+      "target": "class:torch/nn/modules/container.py:ModuleList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/container.py",
+      "target": "class:torch/nn/modules/container.py:ModuleDict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/container.py",
+      "target": "class:torch/nn/modules/container.py:ParameterList",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/container.py",
+      "target": "class:torch/nn/modules/container.py:ParameterDict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/container.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/container.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/container.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:_ConvNd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:Conv1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:Conv2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:Conv3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:_ConvTransposeNd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:ConvTranspose1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:ConvTranspose2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:ConvTranspose3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:_LazyConvXdMixin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:LazyConv1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:LazyConv2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:LazyConv3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:LazyConvTranspose1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:LazyConvTranspose2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "class:torch/nn/modules/conv.py:LazyConvTranspose3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "file:torch/_torch_docs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "file:torch/nn/common_types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/conv.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/dropout.py",
+      "target": "class:torch/nn/modules/dropout.py:Dropout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/dropout.py",
+      "target": "class:torch/nn/modules/dropout.py:Dropout1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/dropout.py",
+      "target": "class:torch/nn/modules/dropout.py:Dropout2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/dropout.py",
+      "target": "class:torch/nn/modules/dropout.py:Dropout3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/dropout.py",
+      "target": "class:torch/nn/modules/dropout.py:AlphaDropout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/dropout.py",
+      "target": "class:torch/nn/modules/dropout.py:FeatureAlphaDropout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/dropout.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/dropout.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/flatten.py",
+      "target": "class:torch/nn/modules/flatten.py:Flatten",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/flatten.py",
+      "target": "class:torch/nn/modules/flatten.py:Unflatten",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/flatten.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/flatten.py",
+      "target": "file:torch/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/fold.py",
+      "target": "class:torch/nn/modules/fold.py:Fold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/fold.py",
+      "target": "class:torch/nn/modules/fold.py:Unfold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/fold.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/fold.py",
+      "target": "file:torch/nn/common_types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/fold.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/linear.py",
+      "target": "class:torch/nn/modules/linear.py:Identity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/linear.py",
+      "target": "class:torch/nn/modules/linear.py:Linear",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/linear.py",
+      "target": "class:torch/nn/modules/linear.py:Bilinear",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/linear.py",
+      "target": "class:torch/nn/modules/linear.py:LazyLinear",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/linear.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/linear.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/linear.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/linear.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:L1Loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:NLLLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:PoissonNLLLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:GaussianNLLLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:KLDivLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:MSELoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:BCELoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:BCEWithLogitsLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:HingeEmbeddingLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:MultiLabelMarginLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:SmoothL1Loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:HuberLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:SoftMarginLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:CrossEntropyLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:LinearCrossEntropyLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:MultiLabelSoftMarginLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:CosineEmbeddingLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:MarginRankingLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:MultiMarginLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:TripletMarginLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:TripletMarginWithDistanceLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "class:torch/nn/modules/loss.py:CTCLoss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/loss.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "class:torch/nn/modules/normalization.py:LocalResponseNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "class:torch/nn/modules/normalization.py:CrossMapLRN2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "class:torch/nn/modules/normalization.py:LayerNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "class:torch/nn/modules/normalization.py:GroupNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "class:torch/nn/modules/normalization.py:RMSNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/normalization.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:_CircularPadNd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:CircularPad1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:CircularPad2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:CircularPad3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:_ConstantPadNd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ConstantPad1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ConstantPad2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ConstantPad3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:_ReflectionPadNd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ReflectionPad1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ReflectionPad2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ReflectionPad3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:_ReplicationPadNd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ReplicationPad1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ReplicationPad2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ReplicationPad3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ZeroPad1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ZeroPad2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "class:torch/nn/modules/padding.py:ZeroPad3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "file:torch/nn/common_types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/padding.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:_MaxPoolNd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:MaxPool1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:MaxPool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:MaxPool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:MaxUnpool1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:MaxUnpool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:MaxUnpool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AvgPool1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AvgPool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AvgPool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:FractionalMaxPool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:FractionalMaxPool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:_LPPoolNd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:LPPool1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:LPPool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:LPPool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AdaptiveMaxPool1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AdaptiveMaxPool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AdaptiveMaxPool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AdaptiveAvgPool1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AdaptiveAvgPool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "class:torch/nn/modules/pooling.py:AdaptiveAvgPool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "file:torch/nn/common_types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/pooling.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "class:torch/nn/modules/rnn.py:RNNBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "class:torch/nn/modules/rnn.py:RNN",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "class:torch/nn/modules/rnn.py:LSTM",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "class:torch/nn/modules/rnn.py:GRU",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "class:torch/nn/modules/rnn.py:RNNCellBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "class:torch/nn/modules/rnn.py:RNNCell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "class:torch/nn/modules/rnn.py:LSTMCell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "class:torch/nn/modules/rnn.py:GRUCell",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "file:torch/nn/utils/rnn.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/rnn.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/sparse.py",
+      "target": "class:torch/nn/modules/sparse.py:Embedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/sparse.py",
+      "target": "class:torch/nn/modules/sparse.py:EmbeddingBag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/sparse.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/sparse.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/sparse.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/sparse.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "class:torch/nn/modules/transformer.py:Transformer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "class:torch/nn/modules/transformer.py:TransformerEncoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "class:torch/nn/modules/transformer.py:TransformerDecoder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "class:torch/nn/modules/transformer.py:TransformerEncoderLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "class:torch/nn/modules/transformer.py:TransformerDecoderLayer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "file:torch/nn/init.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/modules/transformer.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/__init__.py",
+      "target": "file:torch/nn/parallel/data_parallel.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/__init__.py",
+      "target": "file:torch/nn/parallel/distributed.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/__init__.py",
+      "target": "file:torch/nn/parallel/parallel_apply.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/__init__.py",
+      "target": "file:torch/nn/parallel/replicate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/__init__.py",
+      "target": "file:torch/nn/parallel/scatter_gather.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "function:torch/nn/parallel/comm.py:broadcast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "function:torch/nn/parallel/comm.py:broadcast_coalesced",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "function:torch/nn/parallel/comm.py:reduce_add",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "function:torch/nn/parallel/comm.py:reduce_add_coalesced",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "function:torch/nn/parallel/comm.py:scatter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "function:torch/nn/parallel/comm.py:gather",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "file:torch/cuda/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/comm.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/data_parallel.py",
+      "target": "function:torch/nn/parallel/data_parallel.py:data_parallel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/data_parallel.py",
+      "target": "class:torch/nn/parallel/data_parallel.py:DataParallel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/data_parallel.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/data_parallel.py",
+      "target": "file:torch/nn/modules/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/data_parallel.py",
+      "target": "file:torch/nn/parallel/parallel_apply.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/data_parallel.py",
+      "target": "file:torch/nn/parallel/replicate.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/data_parallel.py",
+      "target": "file:torch/nn/parallel/scatter_gather.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/data_parallel.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "class:torch/nn/parallel/distributed.py:_BucketCapacityConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "class:torch/nn/parallel/distributed.py:_MixedPrecision",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "class:torch/nn/parallel/distributed.py:_DDPSink",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "class:torch/nn/parallel/distributed.py:_DDPJoinHook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "class:torch/nn/parallel/distributed.py:DistributedDataParallel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "file:torch/autograd/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "file:torch/distributed/algorithms/join.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "file:torch/nn/modules/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "file:torch/nn/parallel/scatter_gather.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/distributed.py",
+      "target": "file:torch/distributed/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/replicate.py",
+      "target": "function:torch/nn/parallel/replicate.py:replicate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/replicate.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/replicate.py",
+      "target": "file:torch/nn/modules/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/replicate.py",
+      "target": "file:torch/nn/parallel/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/replicate.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/scatter_gather.py",
+      "target": "function:torch/nn/parallel/scatter_gather.py:scatter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/scatter_gather.py",
+      "target": "function:torch/nn/parallel/scatter_gather.py:scatter_kwargs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/scatter_gather.py",
+      "target": "function:torch/nn/parallel/scatter_gather.py:gather",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parallel/scatter_gather.py",
+      "target": "file:torch/nn/parallel/_functions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parallel/scatter_gather.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/parameter.py",
+      "target": "class:torch/nn/parameter.py:Parameter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parameter.py",
+      "target": "class:torch/nn/parameter.py:UninitializedTensorMixin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parameter.py",
+      "target": "class:torch/nn/parameter.py:UninitializedParameter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parameter.py",
+      "target": "class:torch/nn/parameter.py:Buffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parameter.py",
+      "target": "class:torch/nn/parameter.py:UninitializedBuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/parameter.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/qat/__init__.py",
+      "target": "file:torch/nn/qat/modules/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

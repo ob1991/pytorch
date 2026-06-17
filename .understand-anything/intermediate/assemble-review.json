@@ -1,0 +1,16 @@
+{
+  "fixedSectionOk": true,
+  "nodesRecovered": 0,
+  "edgesRestored": 0,
+  "crossBatchEdgesAdded": 0,
+  "typesRemapped": 0,
+  "complexityRemapped": 0,
+  "notes": [
+    "Fixed section: 31 duplicates removed (0.7% of nodes) - reasonable, no action needed",
+    "Could not fix: 134 edges dropped - verified as expected (target files like torch/fx/experimental/symbolic_shapes.py not in scope). 158 importMap references point to 15 files not in the graph.",
+    "Cross-batch edge gaps: added 0 missing import edges from importMap data",
+    "No unknown node types or complexity values found",
+    "All nodes have valid ID fields",
+    "All complexity values are standard (simple/moderate/complex)"
+  ]
+}

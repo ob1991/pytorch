@@ -1,0 +1,5440 @@
+{
+  "nodes": [
+    {
+      "id": "file:torch/fx/node.py",
+      "type": "file",
+      "name": "node.py",
+      "filePath": "torch/fx/node.py",
+      "summary": "FX 图节点定义。表示计算图中的各种操作节点（占位符、调用函数、调用模块等）。 定义类: Node 定义函数: has_side_effect, map_arg, map_aggregate",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/node.py:has_side_effect",
+      "type": "function",
+      "name": "has_side_effect",
+      "filePath": "torch/fx/node.py",
+      "lineRange": [
+        123,
+        137
+      ],
+      "summary": "has_side_effect — torch/fx/node.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/node.py:Node",
+      "type": "class",
+      "name": "Node",
+      "filePath": "torch/fx/node.py",
+      "lineRange": [
+        238,
+        893
+      ],
+      "summary": "Node 类 — torch/fx/node.py 中定义的，方法: next, prev, prepend, append, args",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/fx/passes/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/fx/passes/__init__.py",
+      "summary": "FX 模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/fx/passes/reinplace.py",
+      "type": "file",
+      "name": "reinplace.py",
+      "filePath": "torch/fx/passes/reinplace.py",
+      "summary": "FX 模块 — reinplace。 定义类: _ViewType, _FunctionalizationMetadataProp 定义函数: reinplace",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/passes/reinplace.py:reinplace",
+      "type": "function",
+      "name": "reinplace",
+      "filePath": "torch/fx/passes/reinplace.py",
+      "lineRange": [
+        311,
+        803
+      ],
+      "summary": "reinplace — torch/fx/passes/reinplace.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/fx/passes/reinplace.py:_FunctionalizationMetadataProp",
+      "type": "class",
+      "name": "_FunctionalizationMetadataProp",
+      "filePath": "torch/fx/passes/reinplace.py",
+      "lineRange": [
+        61,
+        131
+      ],
+      "summary": "_FunctionalizationMetadataProp 类 — torch/fx/passes/reinplace.py 中定义的，方法: run_node, propagate",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/fx/passes/split_utils.py",
+      "type": "file",
+      "name": "split_utils.py",
+      "filePath": "torch/fx/passes/split_utils.py",
+      "summary": "FX 模块 — split_utils。 定义类: Component 定义函数: getattr_recursive, setattr_recursive, split_by_tags, move_non_tensor_nodes_on_boundary",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/passes/split_utils.py:getattr_recursive",
+      "type": "function",
+      "name": "getattr_recursive",
+      "filePath": "torch/fx/passes/split_utils.py",
+      "lineRange": [
+        27,
+        38
+      ],
+      "summary": "getattr_recursive — torch/fx/passes/split_utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/fx/passes/split_utils.py:split_by_tags",
+      "type": "function",
+      "name": "split_by_tags",
+      "filePath": "torch/fx/passes/split_utils.py",
+      "lineRange": [
+        77,
+        343
+      ],
+      "summary": "split_by_tags — torch/fx/passes/split_utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/passes/split_utils.py:move_non_tensor_nodes_on_boundary",
+      "type": "function",
+      "name": "move_non_tensor_nodes_on_boundary",
+      "filePath": "torch/fx/passes/split_utils.py",
+      "lineRange": [
+        347,
+        542
+      ],
+      "summary": "move_non_tensor_nodes_on_boundary — torch/fx/passes/split_utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/fx/passes/split_utils.py:Component",
+      "type": "class",
+      "name": "Component",
+      "filePath": "torch/fx/passes/split_utils.py",
+      "lineRange": [
+        52,
+        73
+      ],
+      "summary": "Component 类 — torch/fx/passes/split_utils.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/fx/proxy.py",
+      "type": "file",
+      "name": "proxy.py",
+      "filePath": "torch/fx/proxy.py",
+      "summary": "FX 代理类。在追踪过程中包装张量操作以捕获计算图。 定义类: Scope, ScopeContextManager, TracerBase, GraphAppendingTracer, TraceError 定义函数: assert_fn",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:Scope",
+      "type": "class",
+      "name": "Scope",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        95,
+        123
+      ],
+      "summary": "Scope 类 — torch/fx/proxy.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:ScopeContextManager",
+      "type": "class",
+      "name": "ScopeContextManager",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        127,
+        153
+      ],
+      "summary": "ScopeContextManager 类 — torch/fx/proxy.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:TracerBase",
+      "type": "class",
+      "name": "TracerBase",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        186,
+        520
+      ],
+      "summary": "TracerBase 类 — torch/fx/proxy.py 中定义的，方法: create_node, proxy, create_proxy, create_arg, to_bool",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:Proxy",
+      "type": "class",
+      "name": "Proxy",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        600,
+        806
+      ],
+      "summary": "Proxy 类 — torch/fx/proxy.py 中定义的，方法: keys",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:MetaProxy",
+      "type": "class",
+      "name": "MetaProxy",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        810,
+        852
+      ],
+      "summary": "MetaProxy 类 — torch/fx/proxy.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:Attribute",
+      "type": "class",
+      "name": "Attribute",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        856,
+        877
+      ],
+      "summary": "Attribute 类 — torch/fx/proxy.py 中定义的，方法: node",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:ParameterProxy",
+      "type": "class",
+      "name": "ParameterProxy",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        881,
+        918
+      ],
+      "summary": "ParameterProxy 类 — torch/fx/proxy.py 中定义的，方法: shape, size, dim, ndim, numel",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/fx/subgraph_rewriter.py",
+      "type": "file",
+      "name": "subgraph_rewriter.py",
+      "filePath": "torch/fx/subgraph_rewriter.py",
+      "summary": "FX 模块 — subgraph_rewriter。 定义类: Match, ReplacedPatterns 定义函数: replace_pattern, replace_pattern_with_filters",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/subgraph_rewriter.py:replace_pattern",
+      "type": "function",
+      "name": "replace_pattern",
+      "filePath": "torch/fx/subgraph_rewriter.py",
+      "lineRange": [
+        96,
+        221
+      ],
+      "summary": "replace_pattern — torch/fx/subgraph_rewriter.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/subgraph_rewriter.py:replace_pattern_with_filters",
+      "type": "function",
+      "name": "replace_pattern_with_filters",
+      "filePath": "torch/fx/subgraph_rewriter.py",
+      "lineRange": [
+        226,
+        259
+      ],
+      "summary": "replace_pattern_with_filters — torch/fx/subgraph_rewriter.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/hub.py",
+      "type": "file",
+      "name": "hub.py",
+      "filePath": "torch/hub.py",
+      "summary": "hub.py — PyTorch torch模块。899行python代码。 定义类: _Faketqdm 定义函数: get_dir, set_dir, list, help, load",
+      "tags": [
+        "python",
+        "substantial",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/hub.py:get_dir",
+      "type": "function",
+      "name": "get_dir",
+      "filePath": "torch/hub.py",
+      "lineRange": [
+        427,
+        445
+      ],
+      "summary": "get_dir — torch/hub.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/hub.py:list",
+      "type": "function",
+      "name": "list",
+      "filePath": "torch/hub.py",
+      "lineRange": [
+        459,
+        523
+      ],
+      "summary": "list — torch/hub.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/hub.py:help",
+      "type": "function",
+      "name": "help",
+      "filePath": "torch/hub.py",
+      "lineRange": [
+        526,
+        573
+      ],
+      "summary": "help — torch/hub.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/hub.py:load",
+      "type": "function",
+      "name": "load",
+      "filePath": "torch/hub.py",
+      "lineRange": [
+        576,
+        670
+      ],
+      "summary": "load — torch/hub.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/hub.py:download_url_to_file",
+      "type": "function",
+      "name": "download_url_to_file",
+      "filePath": "torch/hub.py",
+      "lineRange": [
+        707,
+        787
+      ],
+      "summary": "download_url_to_file — torch/hub.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/hub.py:load_state_dict_from_url",
+      "type": "function",
+      "name": "load_state_dict_from_url",
+      "filePath": "torch/hub.py",
+      "lineRange": [
+        829,
+        898
+      ],
+      "summary": "load_state_dict_from_url — torch/hub.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/hub.py:_Faketqdm",
+      "type": "class",
+      "name": "_Faketqdm",
+      "filePath": "torch/hub.py",
+      "lineRange": [
+        25,
+        60
+      ],
+      "summary": "_Faketqdm 类 — torch/hub.py 中定义的，方法: update, set_description, write, close",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/jit/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/jit/__init__.py",
+      "summary": "__init__.py — PyTorch torch/jit模块。316行python代码。 定义类: strict_fusion 定义函数: export_opnames, annotate, script_if_tracing, isinstance, enable_onednn_fusion",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/__init__.py:annotate",
+      "type": "function",
+      "name": "annotate",
+      "filePath": "torch/jit/__init__.py",
+      "lineRange": [
+        129,
+        177
+      ],
+      "summary": "annotate — torch/jit/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/jit/__init__.py:script_if_tracing",
+      "type": "function",
+      "name": "script_if_tracing",
+      "filePath": "torch/jit/__init__.py",
+      "lineRange": [
+        180,
+        201
+      ],
+      "summary": "script_if_tracing — torch/jit/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/__init__.py:isinstance",
+      "type": "function",
+      "name": "isinstance",
+      "filePath": "torch/jit/__init__.py",
+      "lineRange": [
+        205,
+        248
+      ],
+      "summary": "isinstance — torch/jit/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/jit/__init__.py:strict_fusion",
+      "type": "class",
+      "name": "strict_fusion",
+      "filePath": "torch/jit/__init__.py",
+      "lineRange": [
+        251,
+        278
+      ],
+      "summary": "strict_fusion 类 — torch/jit/__init__.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/jit/_check.py",
+      "type": "file",
+      "name": "_check.py",
+      "filePath": "torch/jit/_check.py",
+      "summary": "_check.py — PyTorch torch/jit模块。262行python代码。 定义类: AttributeTypeIsSupportedChecker",
+      "tags": [
+        "python",
+        "jit",
+        "compiler",
+        "legacy"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/jit/_check.py:AttributeTypeIsSupportedChecker",
+      "type": "class",
+      "name": "AttributeTypeIsSupportedChecker",
+      "filePath": "torch/jit/_check.py",
+      "lineRange": [
+        11,
+        261
+      ],
+      "summary": "AttributeTypeIsSupportedChecker 类 — torch/jit/_check.py 中定义的，方法: check, visit_Assign, visit_AnnAssign, visit_Call",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/jit/_ir_utils.py",
+      "type": "file",
+      "name": "_ir_utils.py",
+      "filePath": "torch/jit/_ir_utils.py",
+      "summary": "_ir_utils.py — PyTorch torch/jit模块。33行python代码。 定义类: _InsertPoint 定义函数: insert_point_guard",
+      "tags": [
+        "python",
+        "jit",
+        "compiler",
+        "legacy"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/jit/_ir_utils.py:_InsertPoint",
+      "type": "class",
+      "name": "_InsertPoint",
+      "filePath": "torch/jit/_ir_utils.py",
+      "lineRange": [
+        6,
+        26
+      ],
+      "summary": "_InsertPoint 类 — torch/jit/_ir_utils.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/jit/_recursive.py",
+      "type": "file",
+      "name": "_recursive.py",
+      "filePath": "torch/jit/_recursive.py",
+      "summary": "_recursive.py — PyTorch torch/jit模块。1074行python代码。 定义类: SourceContext, ConcreteTypeStore 定义函数: make_stub, make_stub_from_method, make_stubs_from_exported_methods, jit_ignored_properties, get_annotations",
+      "tags": [
+        "python",
+        "jit",
+        "compiler",
+        "legacy",
+        "substantial",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:make_stub_from_method",
+      "type": "function",
+      "name": "make_stub_from_method",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        73,
+        85
+      ],
+      "summary": "make_stub_from_method — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:make_stubs_from_exported_methods",
+      "type": "function",
+      "name": "make_stubs_from_exported_methods",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        88,
+        98
+      ],
+      "summary": "make_stubs_from_exported_methods — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:jit_ignored_properties",
+      "type": "function",
+      "name": "jit_ignored_properties",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        101,
+        115
+      ],
+      "summary": "jit_ignored_properties — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:get_annotations",
+      "type": "function",
+      "name": "get_annotations",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        158,
+        178
+      ],
+      "summary": "get_annotations — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:infer_concrete_type_builder",
+      "type": "function",
+      "name": "infer_concrete_type_builder",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        181,
+        427
+      ],
+      "summary": "infer_concrete_type_builder — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:create_methods_and_properties_from_stubs",
+      "type": "function",
+      "name": "create_methods_and_properties_from_stubs",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        463,
+        475
+      ],
+      "summary": "create_methods_and_properties_from_stubs — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:get_module_concrete_type",
+      "type": "function",
+      "name": "get_module_concrete_type",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        488,
+        519
+      ],
+      "summary": "get_module_concrete_type — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:create_script_class",
+      "type": "function",
+      "name": "create_script_class",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        522,
+        541
+      ],
+      "summary": "create_script_class — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:create_script_module",
+      "type": "function",
+      "name": "create_script_module",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        544,
+        566
+      ],
+      "summary": "create_script_module — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:create_script_module_impl",
+      "type": "function",
+      "name": "create_script_module_impl",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        569,
+        721
+      ],
+      "summary": "create_script_module_impl — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:get_overload_annotations",
+      "type": "function",
+      "name": "get_overload_annotations",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        742,
+        772
+      ],
+      "summary": "get_overload_annotations — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:get_overload_name_mapping",
+      "type": "function",
+      "name": "get_overload_name_mapping",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        775,
+        786
+      ],
+      "summary": "get_overload_name_mapping — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:make_stubs_for_overloads",
+      "type": "function",
+      "name": "make_stubs_for_overloads",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        800,
+        816
+      ],
+      "summary": "make_stubs_for_overloads — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:check_module_initialized",
+      "type": "function",
+      "name": "check_module_initialized",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        819,
+        838
+      ],
+      "summary": "check_module_initialized — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:infer_methods_to_compile",
+      "type": "function",
+      "name": "infer_methods_to_compile",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        841,
+        895
+      ],
+      "summary": "infer_methods_to_compile — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:get_hook_stubs",
+      "type": "function",
+      "name": "get_hook_stubs",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        898,
+        929
+      ],
+      "summary": "get_hook_stubs — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:get_property_stubs",
+      "type": "function",
+      "name": "get_property_stubs",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        932,
+        949
+      ],
+      "summary": "get_property_stubs — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:interface_script",
+      "type": "function",
+      "name": "interface_script",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        952,
+        976
+      ],
+      "summary": "interface_script — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:try_compile_fn",
+      "type": "function",
+      "name": "try_compile_fn",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        979,
+        1004
+      ],
+      "summary": "try_compile_fn — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:wrap_cpp_module",
+      "type": "function",
+      "name": "wrap_cpp_module",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        1012,
+        1027
+      ],
+      "summary": "wrap_cpp_module — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_recursive.py:lazy_bind",
+      "type": "function",
+      "name": "lazy_bind",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        1041,
+        1073
+      ],
+      "summary": "lazy_bind — torch/jit/_recursive.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/jit/_recursive.py:ConcreteTypeStore",
+      "type": "class",
+      "name": "ConcreteTypeStore",
+      "filePath": "torch/jit/_recursive.py",
+      "lineRange": [
+        430,
+        457
+      ],
+      "summary": "ConcreteTypeStore 类 — torch/jit/_recursive.py 中定义的，方法: get_or_create_concrete_type",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/jit/_script.py",
+      "type": "file",
+      "name": "_script.py",
+      "filePath": "torch/jit/_script.py",
+      "summary": "_script.py — PyTorch torch/jit模块。1804行python代码。 定义类: OrderedDictWrapper, OrderedModuleDict, ScriptMeta, _CachedForward, ScriptWarning 定义函数: script_method, unpackage_script_module, call_prepare_scriptable_func_impl, call_prepare_scriptable_func, create_script_dict",
+      "tags": [
+        "python",
+        "jit",
+        "compiler",
+        "legacy",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_script.py:script_method",
+      "type": "function",
+      "name": "script_method",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        357,
+        385
+      ],
+      "summary": "script_method — torch/jit/_script.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_script.py:unpackage_script_module",
+      "type": "function",
+      "name": "unpackage_script_module",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        396,
+        417
+      ],
+      "summary": "unpackage_script_module — torch/jit/_script.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_script.py:call_prepare_scriptable_func_impl",
+      "type": "function",
+      "name": "call_prepare_scriptable_func_impl",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        1056,
+        1092
+      ],
+      "summary": "call_prepare_scriptable_func_impl — torch/jit/_script.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/jit/_script.py:create_script_dict",
+      "type": "function",
+      "name": "create_script_dict",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        1100,
+        1113
+      ],
+      "summary": "create_script_dict — torch/jit/_script.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_script.py:create_script_list",
+      "type": "function",
+      "name": "create_script_list",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        1116,
+        1128
+      ],
+      "summary": "create_script_list — torch/jit/_script.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_script.py:script",
+      "type": "function",
+      "name": "script",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        1273,
+        1511
+      ],
+      "summary": "script — torch/jit/_script.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_script.py:interface",
+      "type": "function",
+      "name": "interface",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        1589,
+        1671
+      ],
+      "summary": "interface — torch/jit/_script.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/jit/_script.py:OrderedDictWrapper",
+      "type": "class",
+      "name": "OrderedDictWrapper",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        202,
+        234
+      ],
+      "summary": "OrderedDictWrapper 类 — torch/jit/_script.py 中定义的，方法: keys, values, items",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/jit/_script.py:OrderedModuleDict",
+      "type": "class",
+      "name": "OrderedModuleDict",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        237,
+        275
+      ],
+      "summary": "OrderedModuleDict 类 — torch/jit/_script.py 中定义的，方法: items",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/jit/_script.py:ScriptMeta",
+      "type": "class",
+      "name": "ScriptMeta",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        286,
+        345
+      ],
+      "summary": "ScriptMeta 类 — torch/jit/_script.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/jit/_script.py:_ScriptProfileColumn",
+      "type": "class",
+      "name": "_ScriptProfileColumn",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        1693,
+        1718
+      ],
+      "summary": "_ScriptProfileColumn 类 — torch/jit/_script.py 中定义的，方法: add_row, materialize",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/jit/_script.py:_ScriptProfileTable",
+      "type": "class",
+      "name": "_ScriptProfileTable",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        1721,
+        1746
+      ],
+      "summary": "_ScriptProfileTable 类 — torch/jit/_script.py 中定义的，方法: dump_string",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/jit/_script.py:_ScriptProfile",
+      "type": "class",
+      "name": "_ScriptProfile",
+      "filePath": "torch/jit/_script.py",
+      "lineRange": [
+        1749,
+        1790
+      ],
+      "summary": "_ScriptProfile 类 — torch/jit/_script.py 中定义的，方法: enable, disable, dump_string, dump",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/jit/_serialization.py",
+      "type": "file",
+      "name": "_serialization.py",
+      "filePath": "torch/jit/_serialization.py",
+      "summary": "_serialization.py — PyTorch torch/jit模块。315行python代码。 定义函数: save, load, validate_map_location, jit_module_from_flatbuffer, save_jit_module_to_flatbuffer",
+      "tags": [
+        "python",
+        "jit",
+        "compiler",
+        "legacy"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_serialization.py:save",
+      "type": "function",
+      "name": "save",
+      "filePath": "torch/jit/_serialization.py",
+      "lineRange": [
+        23,
+        100
+      ],
+      "summary": "save — torch/jit/_serialization.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/jit/_serialization.py:load",
+      "type": "function",
+      "name": "load",
+      "filePath": "torch/jit/_serialization.py",
+      "lineRange": [
+        103,
+        213
+      ],
+      "summary": "load — torch/jit/_serialization.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_serialization.py:validate_map_location",
+      "type": "function",
+      "name": "validate_map_location",
+      "filePath": "torch/jit/_serialization.py",
+      "lineRange": [
+        216,
+        228
+      ],
+      "summary": "validate_map_location — torch/jit/_serialization.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_serialization.py:save_jit_module_to_flatbuffer",
+      "type": "function",
+      "name": "save_jit_module_to_flatbuffer",
+      "filePath": "torch/jit/_serialization.py",
+      "lineRange": [
+        239,
+        286
+      ],
+      "summary": "save_jit_module_to_flatbuffer — torch/jit/_serialization.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/jit/_serialization.py:get_flatbuffer_module_info",
+      "type": "function",
+      "name": "get_flatbuffer_module_info",
+      "filePath": "torch/jit/_serialization.py",
+      "lineRange": [
+        289,
+        314
+      ],
+      "summary": "get_flatbuffer_module_info — torch/jit/_serialization.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/jit/_state.py",
+      "type": "file",
+      "name": "_state.py",
+      "filePath": "torch/jit/_state.py",
+      "summary": "_state.py — PyTorch torch/jit模块。130行python代码。 定义类: EnabledProxy 定义函数: disable, enable",
+      "tags": [
+        "python",
+        "jit",
+        "compiler",
+        "legacy"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/jit/_state.py:EnabledProxy",
+      "type": "class",
+      "name": "EnabledProxy",
+      "filePath": "torch/jit/_state.py",
+      "lineRange": [
+        17,
+        45
+      ],
+      "summary": "EnabledProxy 类 — torch/jit/_state.py 中定义的，方法: parse_env",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/jit/_trace.py",
+      "type": "file",
+      "name": "_trace.py",
+      "filePath": "torch/jit/_trace.py",
+      "summary": "_trace.py — PyTorch torch/jit模块。1443行python代码。 定义类: ONNXTracedModule, TracingCheckError, TracerWarning, _ExportType, _ExportOutcome 定义函数: verify, indent, make_tuple, make_module, wrap_check_inputs",
+      "tags": [
+        "python",
+        "jit",
+        "compiler",
+        "legacy",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_trace.py:verify",
+      "type": "function",
+      "name": "verify",
+      "filePath": "torch/jit/_trace.py",
+      "lineRange": [
+        202,
+        290
+      ],
+      "summary": "verify — torch/jit/_trace.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/jit/_trace.py:make_module",
+      "type": "function",
+      "name": "make_module",
+      "filePath": "torch/jit/_trace.py",
+      "lineRange": [
+        628,
+        639
+      ],
+      "summary": "make_module — torch/jit/_trace.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_trace.py:analyze_ts_result_with_export_result",
+      "type": "function",
+      "name": "analyze_ts_result_with_export_result",
+      "filePath": "torch/jit/_trace.py",
+      "lineRange": [
+        649,
+        675
+      ],
+      "summary": "analyze_ts_result_with_export_result — torch/jit/_trace.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/jit/_trace.py:trace",
+      "type": "function",
+      "name": "trace",
+      "filePath": "torch/jit/_trace.py",
+      "lineRange": [
+        838,
+        1037
+      ],
+      "summary": "trace — torch/jit/_trace.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/jit/_trace.py:trace_module",
+      "type": "function",
+      "name": "trace_module",
+      "filePath": "torch/jit/_trace.py",
+      "lineRange": [
+        1043,
+        1258
+      ],
+      "summary": "trace_module — torch/jit/_trace.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/jit/_trace.py:ONNXTracedModule",
+      "type": "class",
+      "name": "ONNXTracedModule",
+      "filePath": "torch/jit/_trace.py",
+      "lineRange": [
+        87,
+        153
+      ],
+      "summary": "ONNXTracedModule 类 — torch/jit/_trace.py 中定义的，方法: forward",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/jit/_trace.py:TracedModule",
+      "type": "class",
+      "name": "TracedModule",
+      "filePath": "torch/jit/_trace.py",
+      "lineRange": [
+        1272,
+        1362
+      ],
+      "summary": "TracedModule 类 — torch/jit/_trace.py 中定义的，方法: forward, extra_repr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/library.py",
+      "type": "file",
+      "name": "library.py",
+      "filePath": "torch/library.py",
+      "summary": "自定义算子库接口。允许用户定义和注册自定义操作到 PyTorch 调度系统。 定义类: Library 定义函数: fallthrough_kernel, define, impl, impl, impl",
+      "tags": [
+        "python",
+        "custom-ops",
+        "api",
+        "substantial",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/library.py:define",
+      "type": "function",
+      "name": "define",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        682,
+        745
+      ],
+      "summary": "define — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/library.py:impl",
+      "type": "function",
+      "name": "impl",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        792,
+        858
+      ],
+      "summary": "impl — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/library.py:register_kernel",
+      "type": "function",
+      "name": "register_kernel",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        1004,
+        1060
+      ],
+      "summary": "register_kernel — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/library.py:register_autocast",
+      "type": "function",
+      "name": "register_autocast",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        1063,
+        1143
+      ],
+      "summary": "register_autocast — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/library.py:register_fake",
+      "type": "function",
+      "name": "register_fake",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        1146,
+        1267
+      ],
+      "summary": "register_fake — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/library.py:register_autograd",
+      "type": "function",
+      "name": "register_autograd",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        1309,
+        1430
+      ],
+      "summary": "register_autograd — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/library.py:register_torch_dispatch",
+      "type": "function",
+      "name": "register_torch_dispatch",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        1433,
+        1498
+      ],
+      "summary": "register_torch_dispatch — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/library.py:register_vmap",
+      "type": "function",
+      "name": "register_vmap",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        1501,
+        1626
+      ],
+      "summary": "register_vmap — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/library.py:get_kernel",
+      "type": "function",
+      "name": "get_kernel",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        1692,
+        1763
+      ],
+      "summary": "get_kernel — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/library.py:opcheck",
+      "type": "function",
+      "name": "opcheck",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        1774,
+        1901
+      ],
+      "summary": "opcheck — torch/library.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/library.py:Library",
+      "type": "class",
+      "name": "Library",
+      "filePath": "torch/library.py",
+      "lineRange": [
+        212,
+        610
+      ],
+      "summary": "Library 类 — torch/library.py 中定义的，方法: define, impl, register_symm_mem_args, fallback",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/linalg/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/linalg/__init__.py",
+      "summary": "__init__.py — PyTorch torch/linalg模块。3059行python代码。",
+      "tags": [
+        "python",
+        "package",
+        "large-file"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/masked/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/masked/__init__.py",
+      "summary": "__init__.py — PyTorch torch/masked模块。58行python代码。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/monitor/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/monitor/__init__.py",
+      "summary": "__init__.py — PyTorch torch/monitor模块。40行python代码。 定义类: TensorboardEventHandler",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/monitor/__init__.py:TensorboardEventHandler",
+      "type": "class",
+      "name": "TensorboardEventHandler",
+      "filePath": "torch/monitor/__init__.py",
+      "lineRange": [
+        13,
+        39
+      ],
+      "summary": "TensorboardEventHandler 类 — torch/monitor/__init__.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/multiprocessing/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/multiprocessing/__init__.py",
+      "summary": "__init__.py — PyTorch torch/multiprocessing模块。127行python代码。 定义函数: set_sharing_strategy, get_sharing_strategy, get_all_sharing_strategies",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/multiprocessing/__init__.py:set_sharing_strategy",
+      "type": "function",
+      "name": "set_sharing_strategy",
+      "filePath": "torch/multiprocessing/__init__.py",
+      "lineRange": [
+        61,
+        74
+      ],
+      "summary": "set_sharing_strategy — torch/multiprocessing/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nested/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/nested/__init__.py",
+      "summary": "__init__.py — PyTorch torch/nested模块。523行python代码。 定义函数: as_nested_tensor, nested_tensor, narrow, nested_tensor_from_jagged, masked_select",
+      "tags": [
+        "python",
+        "package",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nested/__init__.py:as_nested_tensor",
+      "type": "function",
+      "name": "as_nested_tensor",
+      "filePath": "torch/nested/__init__.py",
+      "lineRange": [
+        27,
+        152
+      ],
+      "summary": "as_nested_tensor — torch/nested/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nested/__init__.py:nested_tensor",
+      "type": "function",
+      "name": "nested_tensor",
+      "filePath": "torch/nested/__init__.py",
+      "lineRange": [
+        214,
+        282
+      ],
+      "summary": "nested_tensor — torch/nested/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nested/__init__.py:narrow",
+      "type": "function",
+      "name": "narrow",
+      "filePath": "torch/nested/__init__.py",
+      "lineRange": [
+        285,
+        360
+      ],
+      "summary": "narrow — torch/nested/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nested/__init__.py:nested_tensor_from_jagged",
+      "type": "function",
+      "name": "nested_tensor_from_jagged",
+      "filePath": "torch/nested/__init__.py",
+      "lineRange": [
+        363,
+        471
+      ],
+      "summary": "nested_tensor_from_jagged — torch/nested/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nested/__init__.py:masked_select",
+      "type": "function",
+      "name": "masked_select",
+      "filePath": "torch/nested/__init__.py",
+      "lineRange": [
+        474,
+        522
+      ],
+      "summary": "masked_select — torch/nested/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/nn/__init__.py",
+      "summary": "神经网络模块包。导出所有层、损失函数和容器模块。 定义函数: factory_kwargs",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/__init__.py:factory_kwargs",
+      "type": "function",
+      "name": "factory_kwargs",
+      "filePath": "torch/nn/__init__.py",
+      "lineRange": [
+        21,
+        62
+      ],
+      "summary": "factory_kwargs — torch/nn/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/functional.py",
+      "type": "file",
+      "name": "functional.py",
+      "filePath": "torch/nn/functional.py",
+      "summary": "神经网络函数式 API。提供无参数的激活函数、损失函数和卷积等操作。 定义函数: fractional_max_pool2d_with_indices, fractional_max_pool3d_with_indices, max_pool1d_with_indices, max_pool2d_with_indices, max_pool3d_with_indices",
+      "tags": [
+        "python",
+        "neural-network",
+        "large-file",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/functional.py:fractional_max_pool2d_with_indices",
+      "type": "function",
+      "name": "fractional_max_pool2d_with_indices",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        440,
+        515
+      ],
+      "summary": "fractional_max_pool2d_with_indices — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:fractional_max_pool3d_with_indices",
+      "type": "function",
+      "name": "fractional_max_pool3d_with_indices",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        553,
+        632
+      ],
+      "summary": "fractional_max_pool3d_with_indices — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:max_pool1d_with_indices",
+      "type": "function",
+      "name": "max_pool1d_with_indices",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        670,
+        720
+      ],
+      "summary": "max_pool1d_with_indices — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:max_pool2d_with_indices",
+      "type": "function",
+      "name": "max_pool2d_with_indices",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        760,
+        810
+      ],
+      "summary": "max_pool2d_with_indices — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:max_pool3d_with_indices",
+      "type": "function",
+      "name": "max_pool3d_with_indices",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        850,
+        907
+      ],
+      "summary": "max_pool3d_with_indices — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:max_unpool1d",
+      "type": "function",
+      "name": "max_unpool1d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        984,
+        1020
+      ],
+      "summary": "max_unpool1d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:max_unpool2d",
+      "type": "function",
+      "name": "max_unpool2d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1023,
+        1053
+      ],
+      "summary": "max_unpool2d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:max_unpool3d",
+      "type": "function",
+      "name": "max_unpool3d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1056,
+        1086
+      ],
+      "summary": "max_unpool3d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:lp_pool3d",
+      "type": "function",
+      "name": "lp_pool3d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1089,
+        1127
+      ],
+      "summary": "lp_pool3d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:lp_pool2d",
+      "type": "function",
+      "name": "lp_pool2d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1130,
+        1166
+      ],
+      "summary": "lp_pool2d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:lp_pool1d",
+      "type": "function",
+      "name": "lp_pool1d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1169,
+        1205
+      ],
+      "summary": "lp_pool1d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:adaptive_max_pool1d_with_indices",
+      "type": "function",
+      "name": "adaptive_max_pool1d_with_indices",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1208,
+        1233
+      ],
+      "summary": "adaptive_max_pool1d_with_indices — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:adaptive_max_pool2d_with_indices",
+      "type": "function",
+      "name": "adaptive_max_pool2d_with_indices",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1263,
+        1290
+      ],
+      "summary": "adaptive_max_pool2d_with_indices — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:adaptive_max_pool3d_with_indices",
+      "type": "function",
+      "name": "adaptive_max_pool3d_with_indices",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1320,
+        1348
+      ],
+      "summary": "adaptive_max_pool3d_with_indices — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:adaptive_avg_pool2d",
+      "type": "function",
+      "name": "adaptive_avg_pool2d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1394,
+        1407
+      ],
+      "summary": "adaptive_avg_pool2d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:adaptive_avg_pool3d",
+      "type": "function",
+      "name": "adaptive_avg_pool3d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1410,
+        1423
+      ],
+      "summary": "adaptive_avg_pool3d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:dropout",
+      "type": "function",
+      "name": "dropout",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1427,
+        1452
+      ],
+      "summary": "dropout — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:alpha_dropout",
+      "type": "function",
+      "name": "alpha_dropout",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1455,
+        1475
+      ],
+      "summary": "alpha_dropout — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:dropout1d",
+      "type": "function",
+      "name": "dropout1d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1478,
+        1526
+      ],
+      "summary": "dropout1d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:dropout2d",
+      "type": "function",
+      "name": "dropout2d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1529,
+        1586
+      ],
+      "summary": "dropout2d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:dropout3d",
+      "type": "function",
+      "name": "dropout3d",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1589,
+        1638
+      ],
+      "summary": "dropout3d — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:feature_alpha_dropout",
+      "type": "function",
+      "name": "feature_alpha_dropout",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1641,
+        1681
+      ],
+      "summary": "feature_alpha_dropout — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:relu",
+      "type": "function",
+      "name": "relu",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1720,
+        1732
+      ],
+      "summary": "relu — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:glu",
+      "type": "function",
+      "name": "glu",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1745,
+        1769
+      ],
+      "summary": "glu — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:hardtanh",
+      "type": "function",
+      "name": "hardtanh",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1772,
+        1794
+      ],
+      "summary": "hardtanh — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:relu6",
+      "type": "function",
+      "name": "relu6",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1807,
+        1820
+      ],
+      "summary": "relu6 — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:elu",
+      "type": "function",
+      "name": "elu",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1823,
+        1834
+      ],
+      "summary": "elu — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:selu",
+      "type": "function",
+      "name": "selu",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1847,
+        1863
+      ],
+      "summary": "selu — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:celu",
+      "type": "function",
+      "name": "celu",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1876,
+        1896
+      ],
+      "summary": "celu — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:leaky_relu",
+      "type": "function",
+      "name": "leaky_relu",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1909,
+        1930
+      ],
+      "summary": "leaky_relu — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:rrelu",
+      "type": "function",
+      "name": "rrelu",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        1964,
+        1991
+      ],
+      "summary": "rrelu — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:softmin",
+      "type": "function",
+      "name": "softmin",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2097,
+        2127
+      ],
+      "summary": "softmin — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:softmax",
+      "type": "function",
+      "name": "softmax",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2130,
+        2170
+      ],
+      "summary": "softmax — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:gumbel_softmax",
+      "type": "function",
+      "name": "gumbel_softmax",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2173,
+        2244
+      ],
+      "summary": "gumbel_softmax — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:log_softmax",
+      "type": "function",
+      "name": "log_softmax",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2247,
+        2278
+      ],
+      "summary": "log_softmax — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:hardsigmoid",
+      "type": "function",
+      "name": "hardsigmoid",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2314,
+        2333
+      ],
+      "summary": "hardsigmoid — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:silu",
+      "type": "function",
+      "name": "silu",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2383,
+        2405
+      ],
+      "summary": "silu — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:mish",
+      "type": "function",
+      "name": "mish",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2408,
+        2425
+      ],
+      "summary": "mish — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:hardswish",
+      "type": "function",
+      "name": "hardswish",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2428,
+        2450
+      ],
+      "summary": "hardswish — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:embedding",
+      "type": "function",
+      "name": "embedding",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2463,
+        2575
+      ],
+      "summary": "embedding — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/functional.py:embedding_bag",
+      "type": "function",
+      "name": "embedding_bag",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2578,
+        2793
+      ],
+      "summary": "embedding_bag — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/functional.py:batch_norm",
+      "type": "function",
+      "name": "batch_norm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2819,
+        2868
+      ],
+      "summary": "batch_norm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:instance_norm",
+      "type": "function",
+      "name": "instance_norm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2882,
+        2923
+      ],
+      "summary": "instance_norm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:layer_norm",
+      "type": "function",
+      "name": "layer_norm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2926,
+        2949
+      ],
+      "summary": "layer_norm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:rms_norm",
+      "type": "function",
+      "name": "rms_norm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2952,
+        2966
+      ],
+      "summary": "rms_norm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:group_norm",
+      "type": "function",
+      "name": "group_norm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        2969,
+        3004
+      ],
+      "summary": "group_norm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:local_response_norm",
+      "type": "function",
+      "name": "local_response_norm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3007,
+        3048
+      ],
+      "summary": "local_response_norm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:ctc_loss",
+      "type": "function",
+      "name": "ctc_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3054,
+        3127
+      ],
+      "summary": "ctc_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:nll_loss",
+      "type": "function",
+      "name": "nll_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3134,
+        3198
+      ],
+      "summary": "nll_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:poisson_nll_loss",
+      "type": "function",
+      "name": "poisson_nll_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3201,
+        3258
+      ],
+      "summary": "poisson_nll_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:gaussian_nll_loss",
+      "type": "function",
+      "name": "gaussian_nll_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3261,
+        3352
+      ],
+      "summary": "gaussian_nll_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:kl_div",
+      "type": "function",
+      "name": "kl_div",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3355,
+        3429
+      ],
+      "summary": "kl_div — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:cross_entropy",
+      "type": "function",
+      "name": "cross_entropy",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3432,
+        3523
+      ],
+      "summary": "cross_entropy — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:binary_cross_entropy",
+      "type": "function",
+      "name": "binary_cross_entropy",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3526,
+        3585
+      ],
+      "summary": "binary_cross_entropy — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:binary_cross_entropy_with_logits",
+      "type": "function",
+      "name": "binary_cross_entropy_with_logits",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3588,
+        3655
+      ],
+      "summary": "binary_cross_entropy_with_logits — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:linear_cross_entropy",
+      "type": "function",
+      "name": "linear_cross_entropy",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3658,
+        3921
+      ],
+      "summary": "linear_cross_entropy — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/functional.py:smooth_l1_loss",
+      "type": "function",
+      "name": "smooth_l1_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3924,
+        3992
+      ],
+      "summary": "smooth_l1_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:huber_loss",
+      "type": "function",
+      "name": "huber_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        3995,
+        4080
+      ],
+      "summary": "huber_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:l1_loss",
+      "type": "function",
+      "name": "l1_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4083,
+        4156
+      ],
+      "summary": "l1_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:mse_loss",
+      "type": "function",
+      "name": "mse_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4159,
+        4234
+      ],
+      "summary": "mse_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:margin_ranking_loss",
+      "type": "function",
+      "name": "margin_ranking_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4237,
+        4285
+      ],
+      "summary": "margin_ranking_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:hinge_embedding_loss",
+      "type": "function",
+      "name": "hinge_embedding_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4288,
+        4329
+      ],
+      "summary": "hinge_embedding_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:multilabel_margin_loss",
+      "type": "function",
+      "name": "multilabel_margin_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4332,
+        4371
+      ],
+      "summary": "multilabel_margin_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:soft_margin_loss",
+      "type": "function",
+      "name": "soft_margin_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4374,
+        4413
+      ],
+      "summary": "soft_margin_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:multilabel_soft_margin_loss",
+      "type": "function",
+      "name": "multilabel_soft_margin_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4416,
+        4473
+      ],
+      "summary": "multilabel_soft_margin_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:cosine_embedding_loss",
+      "type": "function",
+      "name": "cosine_embedding_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4476,
+        4520
+      ],
+      "summary": "cosine_embedding_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:multi_margin_loss",
+      "type": "function",
+      "name": "multi_margin_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4523,
+        4584
+      ],
+      "summary": "multi_margin_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:upsample",
+      "type": "function",
+      "name": "upsample",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4746,
+        4816
+      ],
+      "summary": "upsample — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:interpolate",
+      "type": "function",
+      "name": "interpolate",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4836,
+        4846
+      ],
+      "summary": "interpolate — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:interpolate",
+      "type": "function",
+      "name": "interpolate",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4850,
+        4860
+      ],
+      "summary": "interpolate — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:interpolate",
+      "type": "function",
+      "name": "interpolate",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4864,
+        4874
+      ],
+      "summary": "interpolate — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:interpolate",
+      "type": "function",
+      "name": "interpolate",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4878,
+        4888
+      ],
+      "summary": "interpolate — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:interpolate",
+      "type": "function",
+      "name": "interpolate",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        4891,
+        5240
+      ],
+      "summary": "interpolate — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/functional.py:upsample_nearest",
+      "type": "function",
+      "name": "upsample_nearest",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        5267,
+        5292
+      ],
+      "summary": "upsample_nearest — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:upsample_bilinear",
+      "type": "function",
+      "name": "upsample_bilinear",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        5339,
+        5364
+      ],
+      "summary": "upsample_bilinear — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/functional.py:grid_sample",
+      "type": "function",
+      "name": "grid_sample",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        5385,
+        5542
+      ],
+      "summary": "grid_sample — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/functional.py:affine_grid",
+      "type": "function",
+      "name": "affine_grid",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        5545,
+        5646
+      ],
+      "summary": "affine_grid — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/functional.py:pad",
+      "type": "function",
+      "name": "pad",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        5649,
+        5737
+      ],
+      "summary": "pad — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:triplet_margin_loss",
+      "type": "function",
+      "name": "triplet_margin_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        5865,
+        5904
+      ],
+      "summary": "triplet_margin_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:triplet_margin_with_distance_loss",
+      "type": "function",
+      "name": "triplet_margin_with_distance_loss",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        5907,
+        5981
+      ],
+      "summary": "triplet_margin_with_distance_loss — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:normalize",
+      "type": "function",
+      "name": "normalize",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        5984,
+        6018
+      ],
+      "summary": "normalize — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:unfold",
+      "type": "function",
+      "name": "unfold",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        6026,
+        6061
+      ],
+      "summary": "unfold — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:fold",
+      "type": "function",
+      "name": "fold",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        6064,
+        6097
+      ],
+      "summary": "fold — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:multi_head_attention_forward",
+      "type": "function",
+      "name": "multi_head_attention_forward",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        6551,
+        7007
+      ],
+      "summary": "multi_head_attention_forward — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/functional.py:grouped_mm",
+      "type": "function",
+      "name": "grouped_mm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        7010,
+        7053
+      ],
+      "summary": "grouped_mm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:scaled_mm",
+      "type": "function",
+      "name": "scaled_mm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        7080,
+        7136
+      ],
+      "summary": "scaled_mm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/functional.py:scaled_grouped_mm",
+      "type": "function",
+      "name": "scaled_grouped_mm",
+      "filePath": "torch/nn/functional.py",
+      "lineRange": [
+        7139,
+        7198
+      ],
+      "summary": "scaled_grouped_mm — torch/nn/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/init.py",
+      "type": "file",
+      "name": "init.py",
+      "filePath": "torch/nn/init.py",
+      "summary": "init.py — PyTorch torch/nn模块。799行python代码。 定义函数: calculate_gain, uniform_, normal_, trunc_normal_, constant_",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/init.py:calculate_gain",
+      "type": "function",
+      "name": "calculate_gain",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        173,
+        244
+      ],
+      "summary": "calculate_gain — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/init.py:uniform_",
+      "type": "function",
+      "name": "uniform_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        247,
+        271
+      ],
+      "summary": "uniform_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/init.py:normal_",
+      "type": "function",
+      "name": "normal_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        274,
+        298
+      ],
+      "summary": "normal_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/init.py:trunc_normal_",
+      "type": "function",
+      "name": "trunc_normal_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        301,
+        334
+      ],
+      "summary": "trunc_normal_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/init.py:constant_",
+      "type": "function",
+      "name": "constant_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        337,
+        352
+      ],
+      "summary": "constant_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/init.py:ones_",
+      "type": "function",
+      "name": "ones_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        355,
+        365
+      ],
+      "summary": "ones_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/init.py:zeros_",
+      "type": "function",
+      "name": "zeros_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        368,
+        378
+      ],
+      "summary": "zeros_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/init.py:eye_",
+      "type": "function",
+      "name": "eye_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        381,
+        399
+      ],
+      "summary": "eye_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/init.py:dirac_",
+      "type": "function",
+      "name": "dirac_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        402,
+        455
+      ],
+      "summary": "dirac_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/init.py:xavier_uniform_",
+      "type": "function",
+      "name": "xavier_uniform_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        479,
+        509
+      ],
+      "summary": "xavier_uniform_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/init.py:xavier_normal_",
+      "type": "function",
+      "name": "xavier_normal_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        512,
+        540
+      ],
+      "summary": "xavier_normal_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/init.py:kaiming_uniform_",
+      "type": "function",
+      "name": "kaiming_uniform_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        554,
+        616
+      ],
+      "summary": "kaiming_uniform_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/init.py:kaiming_normal_",
+      "type": "function",
+      "name": "kaiming_normal_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        619,
+        669
+      ],
+      "summary": "kaiming_normal_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/init.py:orthogonal_",
+      "type": "function",
+      "name": "orthogonal_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        672,
+        720
+      ],
+      "summary": "orthogonal_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/init.py:sparse_",
+      "type": "function",
+      "name": "sparse_",
+      "filePath": "torch/nn/init.py",
+      "lineRange": [
+        723,
+        761
+      ],
+      "summary": "sparse_ — torch/nn/init.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/intrinsic/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/nn/intrinsic/__init__.py",
+      "summary": "神经网络模块包。导出所有层、损失函数和容器模块。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:torch/fx/node.py",
+      "target": "function:torch/fx/node.py:has_side_effect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/node.py",
+      "target": "class:torch/fx/node.py:Node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/node.py",
+      "target": "file:torch/fx/operator_schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/node.py",
+      "target": "file:torch/utils/_dtype_abbrs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/node.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "function:torch/fx/passes/reinplace.py:reinplace",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "class:torch/fx/passes/reinplace.py:_FunctionalizationMetadataProp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "file:torch/_subclasses/fake_tensor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "file:torch/fx/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "file:torch/fx/_compatibility.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "file:torch/multiprocessing/reductions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "file:torch/utils/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/reinplace.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/split_utils.py",
+      "target": "function:torch/fx/passes/split_utils.py:getattr_recursive",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/passes/split_utils.py",
+      "target": "function:torch/fx/passes/split_utils.py:split_by_tags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/passes/split_utils.py",
+      "target": "function:torch/fx/passes/split_utils.py:move_non_tensor_nodes_on_boundary",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/passes/split_utils.py",
+      "target": "class:torch/fx/passes/split_utils.py:Component",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/passes/split_utils.py",
+      "target": "file:torch/fx/_compatibility.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/split_utils.py",
+      "target": "file:torch/fx/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/split_utils.py",
+      "target": "file:torch/fx/passes/utils/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/passes/split_utils.py",
+      "target": "file:torch/fx/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:Scope",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:ScopeContextManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:TracerBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:Proxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:MetaProxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:Attribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:ParameterProxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "file:torch/_library/opaque_object.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "file:torch/_logging/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "file:torch/utils/_traceback.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "file:torch/fx/traceback.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/subgraph_rewriter.py",
+      "target": "function:torch/fx/subgraph_rewriter.py:replace_pattern",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/subgraph_rewriter.py",
+      "target": "function:torch/fx/subgraph_rewriter.py:replace_pattern_with_filters",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/subgraph_rewriter.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "function:torch/hub.py:get_dir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "function:torch/hub.py:list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "function:torch/hub.py:help",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "function:torch/hub.py:load",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "function:torch/hub.py:download_url_to_file",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "function:torch/hub.py:load_state_dict_from_url",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "class:torch/hub.py:_Faketqdm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "file:torch/serialization.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/hub.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "function:torch/jit/__init__.py:annotate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "function:torch/jit/__init__.py:script_if_tracing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "function:torch/jit/__init__.py:isinstance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "class:torch/jit/__init__.py:strict_fusion",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_async.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_await.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_decomposition_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_freeze.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_fuser.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_ir_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_script.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_serialization.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/jit/_trace.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/__init__.py",
+      "target": "file:torch/utils/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_check.py",
+      "target": "class:torch/jit/_check.py:AttributeTypeIsSupportedChecker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_check.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_ir_utils.py",
+      "target": "class:torch/jit/_ir_utils.py:_InsertPoint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_ir_utils.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:make_stub_from_method",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:make_stubs_from_exported_methods",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:jit_ignored_properties",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:get_annotations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:infer_concrete_type_builder",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:create_methods_and_properties_from_stubs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:get_module_concrete_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:create_script_class",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:create_script_module",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:create_script_module_impl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:get_overload_annotations",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:get_overload_name_mapping",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:make_stubs_for_overloads",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:check_module_initialized",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:infer_methods_to_compile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:get_hook_stubs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:get_property_stubs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:interface_script",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:try_compile_fn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:wrap_cpp_module",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "function:torch/jit/_recursive.py:lazy_bind",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "class:torch/jit/_recursive.py:ConcreteTypeStore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "file:torch/_sources.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "file:torch/jit/_builtins.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "file:torch/jit/_check.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "file:torch/jit/_state.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "file:torch/jit/frontend.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_recursive.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "function:torch/jit/_script.py:script_method",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "function:torch/jit/_script.py:unpackage_script_module",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "function:torch/jit/_script.py:call_prepare_scriptable_func_impl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "function:torch/jit/_script.py:create_script_dict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "function:torch/jit/_script.py:create_script_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "function:torch/jit/_script.py:script",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "function:torch/jit/_script.py:interface",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "class:torch/jit/_script.py:OrderedDictWrapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "class:torch/jit/_script.py:OrderedModuleDict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "class:torch/jit/_script.py:ScriptMeta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "class:torch/jit/_script.py:_ScriptProfileColumn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "class:torch/jit/_script.py:_ScriptProfileTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "class:torch/jit/_script.py:_ScriptProfile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/_classes.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/_utils_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/jit/_builtins.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/jit/_fuser.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/jit/_monkeytype_config.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/jit/_recursive.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/jit/_state.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/jit/frontend.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/overrides.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/package/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/utils/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_script.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "function:torch/jit/_serialization.py:save",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "function:torch/jit/_serialization.py:load",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "function:torch/jit/_serialization.py:validate_map_location",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "function:torch/jit/_serialization.py:save_jit_module_to_flatbuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "function:torch/jit/_serialization.py:get_flatbuffer_module_info",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "file:torch/_utils_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "file:torch/jit/_recursive.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "file:torch/serialization.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_serialization.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_state.py",
+      "target": "class:torch/jit/_state.py:EnabledProxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_state.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "function:torch/jit/_trace.py:verify",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "function:torch/jit/_trace.py:make_module",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "function:torch/jit/_trace.py:analyze_ts_result_with_export_result",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "function:torch/jit/_trace.py:trace",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "function:torch/jit/_trace.py:trace_module",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "class:torch/jit/_trace.py:ONNXTracedModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "class:torch/jit/_trace.py:TracedModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "file:torch/autograd/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "file:torch/jit/_script.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "file:torch/jit/_state.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "file:torch/testing/_comparison.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/jit/_trace.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:define",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:impl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:register_kernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:register_autocast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:register_fake",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:register_autograd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:register_torch_dispatch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:register_vmap",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:get_kernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "function:torch/library.py:opcheck",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "class:torch/library.py:Library",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "file:torch/_library/custom_ops.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "file:torch/_library/effects.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "file:torch/_library/infer_schema.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "file:torch/_library/triton.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "file:torch/_ops.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "file:torch/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/library.py",
+      "target": "file:torch/_library/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/masked/__init__.py",
+      "target": "file:torch/masked/_ops.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/masked/__init__.py",
+      "target": "file:torch/masked/maskedtensor/core.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/masked/__init__.py",
+      "target": "file:torch/masked/maskedtensor/creation.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/monitor/__init__.py",
+      "target": "class:torch/monitor/__init__.py:TensorboardEventHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/multiprocessing/__init__.py",
+      "target": "function:torch/multiprocessing/__init__.py:set_sharing_strategy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/multiprocessing/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "function:torch/nested/__init__.py:as_nested_tensor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "function:torch/nested/__init__.py:nested_tensor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "function:torch/nested/__init__.py:narrow",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "function:torch/nested/__init__.py:nested_tensor_from_jagged",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "function:torch/nested/__init__.py:masked_select",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "file:torch/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nested/__init__.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/__init__.py",
+      "target": "function:torch/nn/__init__.py:factory_kwargs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/__init__.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/__init__.py",
+      "target": "file:torch/nn/modules/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/__init__.py",
+      "target": "file:torch/nn/parallel/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:fractional_max_pool2d_with_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:fractional_max_pool3d_with_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:max_pool1d_with_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:max_pool2d_with_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:max_pool3d_with_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:max_unpool1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:max_unpool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:max_unpool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:lp_pool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:lp_pool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:lp_pool1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:adaptive_max_pool1d_with_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:adaptive_max_pool2d_with_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:adaptive_max_pool3d_with_indices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:adaptive_avg_pool2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:adaptive_avg_pool3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:dropout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:alpha_dropout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:dropout1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:dropout2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:dropout3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:feature_alpha_dropout",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:relu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:glu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:hardtanh",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:relu6",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:elu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:selu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:celu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:leaky_relu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:rrelu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:softmin",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:softmax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:gumbel_softmax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:log_softmax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:hardsigmoid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:silu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:mish",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:hardswish",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:embedding",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:embedding_bag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:batch_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:instance_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:layer_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:rms_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:group_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:local_response_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:ctc_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:nll_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:poisson_nll_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:gaussian_nll_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:kl_div",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:cross_entropy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:binary_cross_entropy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:binary_cross_entropy_with_logits",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:linear_cross_entropy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:smooth_l1_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:huber_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:l1_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:mse_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:margin_ranking_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:hinge_embedding_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:multilabel_margin_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:soft_margin_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:multilabel_soft_margin_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:cosine_embedding_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:multi_margin_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:upsample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:interpolate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:interpolate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:interpolate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:interpolate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:interpolate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:upsample_nearest",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:upsample_bilinear",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:grid_sample",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:affine_grid",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:pad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:triplet_margin_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:triplet_margin_with_distance_loss",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:normalize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:unfold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:fold",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:multi_head_attention_forward",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:grouped_mm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:scaled_mm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "function:torch/nn/functional.py:scaled_grouped_mm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "file:torch/_torch_docs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "file:torch/nn/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "file:torch/nn/modules/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "file:torch/overrides.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/functional.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:calculate_gain",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:uniform_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:normal_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:trunc_normal_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:constant_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:ones_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:zeros_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:eye_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:dirac_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:xavier_uniform_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:xavier_normal_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:kaiming_uniform_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:kaiming_normal_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:orthogonal_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "function:torch/nn/init.py:sparse_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/init.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/intrinsic/__init__.py",
+      "target": "file:torch/ao/nn/intrinsic/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/intrinsic/__init__.py",
+      "target": "file:torch/ao/nn/intrinsic/modules/fused.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

@@ -1,0 +1,2611 @@
+{
+  "nodes": [
+    {
+      "id": "file:torch/nn/utils/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/nn/utils/__init__.py",
+      "summary": "神经网络模块包。导出所有层、损失函数和容器模块。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/utils/clip_grad.py",
+      "type": "file",
+      "name": "clip_grad.py",
+      "filePath": "torch/nn/utils/clip_grad.py",
+      "summary": "clip_grad.py — PyTorch torch/nn/utils模块。299行python代码。 定义函数: clip_grad_norm_, clip_grad_norm, clip_grad_value_",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/utils/clip_grad.py:clip_grad_norm_",
+      "type": "function",
+      "name": "clip_grad_norm_",
+      "filePath": "torch/nn/utils/clip_grad.py",
+      "lineRange": [
+        185,
+        232
+      ],
+      "summary": "clip_grad_norm_ — torch/nn/utils/clip_grad.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/clip_grad.py:clip_grad_norm",
+      "type": "function",
+      "name": "clip_grad_norm",
+      "filePath": "torch/nn/utils/clip_grad.py",
+      "lineRange": [
+        240,
+        253
+      ],
+      "summary": "clip_grad_norm — torch/nn/utils/clip_grad.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/utils/clip_grad.py:clip_grad_value_",
+      "type": "function",
+      "name": "clip_grad_value_",
+      "filePath": "torch/nn/utils/clip_grad.py",
+      "lineRange": [
+        257,
+        298
+      ],
+      "summary": "clip_grad_value_ — torch/nn/utils/clip_grad.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/utils/convert_parameters.py",
+      "type": "file",
+      "name": "convert_parameters.py",
+      "filePath": "torch/nn/utils/convert_parameters.py",
+      "summary": "convert_parameters.py — PyTorch torch/nn/utils模块。91行python代码。 定义函数: parameters_to_vector, vector_to_parameters",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/convert_parameters.py:parameters_to_vector",
+      "type": "function",
+      "name": "parameters_to_vector",
+      "filePath": "torch/nn/utils/convert_parameters.py",
+      "lineRange": [
+        6,
+        25
+      ],
+      "summary": "parameters_to_vector — torch/nn/utils/convert_parameters.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/utils/convert_parameters.py:vector_to_parameters",
+      "type": "function",
+      "name": "vector_to_parameters",
+      "filePath": "torch/nn/utils/convert_parameters.py",
+      "lineRange": [
+        28,
+        54
+      ],
+      "summary": "vector_to_parameters — torch/nn/utils/convert_parameters.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/utils/parametrizations.py",
+      "type": "file",
+      "name": "parametrizations.py",
+      "filePath": "torch/nn/utils/parametrizations.py",
+      "summary": "parametrizations.py — PyTorch torch/nn/utils模块。637行python代码。 定义类: _OrthMaps, _Orthogonal, _WeightNorm, _SpectralNorm 定义函数: orthogonal, weight_norm, spectral_norm",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/utils/parametrizations.py:orthogonal",
+      "type": "function",
+      "name": "orthogonal",
+      "filePath": "torch/nn/utils/parametrizations.py",
+      "lineRange": [
+        193,
+        313
+      ],
+      "summary": "orthogonal — torch/nn/utils/parametrizations.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/utils/parametrizations.py:weight_norm",
+      "type": "function",
+      "name": "weight_norm",
+      "filePath": "torch/nn/utils/parametrizations.py",
+      "lineRange": [
+        336,
+        400
+      ],
+      "summary": "weight_norm — torch/nn/utils/parametrizations.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/parametrizations.py:spectral_norm",
+      "type": "function",
+      "name": "spectral_norm",
+      "filePath": "torch/nn/utils/parametrizations.py",
+      "lineRange": [
+        535,
+        636
+      ],
+      "summary": "spectral_norm — torch/nn/utils/parametrizations.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/nn/utils/parametrizations.py:_Orthogonal",
+      "type": "class",
+      "name": "_Orthogonal",
+      "filePath": "torch/nn/utils/parametrizations.py",
+      "lineRange": [
+        40,
+        190
+      ],
+      "summary": "_Orthogonal 类 — torch/nn/utils/parametrizations.py 中定义的，方法: forward, right_inverse",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/parametrizations.py:_WeightNorm",
+      "type": "class",
+      "name": "_WeightNorm",
+      "filePath": "torch/nn/utils/parametrizations.py",
+      "lineRange": [
+        316,
+        333
+      ],
+      "summary": "_WeightNorm 类 — torch/nn/utils/parametrizations.py 中定义的，方法: forward, right_inverse",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/parametrizations.py:_SpectralNorm",
+      "type": "class",
+      "name": "_SpectralNorm",
+      "filePath": "torch/nn/utils/parametrizations.py",
+      "lineRange": [
+        403,
+        532
+      ],
+      "summary": "_SpectralNorm 类 — torch/nn/utils/parametrizations.py 中定义的，方法: forward, right_inverse",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/utils/prune.py",
+      "type": "file",
+      "name": "prune.py",
+      "filePath": "torch/nn/utils/prune.py",
+      "summary": "prune.py — PyTorch torch/nn/utils模块。1396行python代码。 定义类: BasePruningMethod, PruningContainer, Identity, RandomUnstructured, L1Unstructured 定义函数: identity, random_unstructured, l1_unstructured, random_structured, ln_structured",
+      "tags": [
+        "python",
+        "neural-network",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:identity",
+      "type": "function",
+      "name": "identity",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        836,
+        868
+      ],
+      "summary": "identity — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:random_unstructured",
+      "type": "function",
+      "name": "random_unstructured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        871,
+        905
+      ],
+      "summary": "random_unstructured — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:l1_unstructured",
+      "type": "function",
+      "name": "l1_unstructured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        908,
+        949
+      ],
+      "summary": "l1_unstructured — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:random_structured",
+      "type": "function",
+      "name": "random_structured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        952,
+        988
+      ],
+      "summary": "random_structured — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:ln_structured",
+      "type": "function",
+      "name": "ln_structured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        991,
+        1035
+      ],
+      "summary": "ln_structured — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:global_unstructured",
+      "type": "function",
+      "name": "global_unstructured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        1038,
+        1161
+      ],
+      "summary": "global_unstructured — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:custom_from_mask",
+      "type": "function",
+      "name": "custom_from_mask",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        1164,
+        1194
+      ],
+      "summary": "custom_from_mask — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:remove",
+      "type": "function",
+      "name": "remove",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        1197,
+        1224
+      ],
+      "summary": "remove — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/nn/utils/prune.py:is_pruned",
+      "type": "function",
+      "name": "is_pruned",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        1227,
+        1253
+      ],
+      "summary": "is_pruned — torch/nn/utils/prune.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/prune.py:BasePruningMethod",
+      "type": "class",
+      "name": "BasePruningMethod",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        11,
+        266
+      ],
+      "summary": "BasePruningMethod 类 — torch/nn/utils/prune.py 中定义的，方法: compute_mask, apply_mask, apply, prune, remove",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/utils/prune.py:PruningContainer",
+      "type": "class",
+      "name": "PruningContainer",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        269,
+        416
+      ],
+      "summary": "PruningContainer 类 — torch/nn/utils/prune.py 中定义的，方法: add_pruning_method, compute_mask",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/prune.py:Identity",
+      "type": "class",
+      "name": "Identity",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        419,
+        441
+      ],
+      "summary": "Identity 类 — torch/nn/utils/prune.py 中定义的，方法: compute_mask, apply",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/prune.py:RandomUnstructured",
+      "type": "class",
+      "name": "RandomUnstructured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        444,
+        500
+      ],
+      "summary": "RandomUnstructured 类 — torch/nn/utils/prune.py 中定义的，方法: compute_mask, apply",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/prune.py:L1Unstructured",
+      "type": "class",
+      "name": "L1Unstructured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        503,
+        566
+      ],
+      "summary": "L1Unstructured 类 — torch/nn/utils/prune.py 中定义的，方法: compute_mask, apply",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/prune.py:RandomStructured",
+      "type": "class",
+      "name": "RandomStructured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        569,
+        672
+      ],
+      "summary": "RandomStructured 类 — torch/nn/utils/prune.py 中定义的，方法: compute_mask, apply",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/prune.py:LnStructured",
+      "type": "class",
+      "name": "LnStructured",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        675,
+        802
+      ],
+      "summary": "LnStructured 类 — torch/nn/utils/prune.py 中定义的，方法: compute_mask, apply",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/prune.py:CustomFromMask",
+      "type": "class",
+      "name": "CustomFromMask",
+      "filePath": "torch/nn/utils/prune.py",
+      "lineRange": [
+        805,
+        833
+      ],
+      "summary": "CustomFromMask 类 — torch/nn/utils/prune.py 中定义的，方法: compute_mask, apply",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/utils/spectral_norm.py",
+      "type": "file",
+      "name": "spectral_norm.py",
+      "filePath": "torch/nn/utils/spectral_norm.py",
+      "summary": "spectral_norm.py — PyTorch torch/nn/utils模块。365行python代码。 定义类: SpectralNorm, SpectralNormLoadStateDictPreHook, SpectralNormStateDictHook 定义函数: spectral_norm, remove_spectral_norm",
+      "tags": [
+        "python",
+        "neural-network",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/utils/spectral_norm.py:spectral_norm",
+      "type": "function",
+      "name": "spectral_norm",
+      "filePath": "torch/nn/utils/spectral_norm.py",
+      "lineRange": [
+        262,
+        332
+      ],
+      "summary": "spectral_norm — torch/nn/utils/spectral_norm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/spectral_norm.py:remove_spectral_norm",
+      "type": "function",
+      "name": "remove_spectral_norm",
+      "filePath": "torch/nn/utils/spectral_norm.py",
+      "lineRange": [
+        335,
+        364
+      ],
+      "summary": "remove_spectral_norm — torch/nn/utils/spectral_norm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/spectral_norm.py:SpectralNorm",
+      "type": "class",
+      "name": "SpectralNorm",
+      "filePath": "torch/nn/utils/spectral_norm.py",
+      "lineRange": [
+        20,
+        185
+      ],
+      "summary": "SpectralNorm 类 — torch/nn/utils/spectral_norm.py 中定义的，方法: reshape_weight_to_matrix, compute_weight, remove, apply",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/nn/utils/spectral_norm.py:SpectralNormLoadStateDictPreHook",
+      "type": "class",
+      "name": "SpectralNormLoadStateDictPreHook",
+      "filePath": "torch/nn/utils/spectral_norm.py",
+      "lineRange": [
+        188,
+        242
+      ],
+      "summary": "SpectralNormLoadStateDictPreHook 类 — torch/nn/utils/spectral_norm.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/nn/utils/stateless.py",
+      "type": "file",
+      "name": "stateless.py",
+      "filePath": "torch/nn/utils/stateless.py",
+      "summary": "stateless.py — PyTorch torch/nn/utils模块。280行python代码。 定义函数: functional_call",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/nn/utils/stateless.py:functional_call",
+      "type": "function",
+      "name": "functional_call",
+      "filePath": "torch/nn/utils/stateless.py",
+      "lineRange": [
+        165,
+        240
+      ],
+      "summary": "functional_call — torch/nn/utils/stateless.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/nn/utils/weight_norm.py",
+      "type": "file",
+      "name": "weight_norm.py",
+      "filePath": "torch/nn/utils/weight_norm.py",
+      "summary": "weight_norm.py — PyTorch torch/nn/utils模块。166行python代码。 定义类: WeightNorm 定义函数: weight_norm, remove_weight_norm",
+      "tags": [
+        "python",
+        "neural-network"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/weight_norm.py:weight_norm",
+      "type": "function",
+      "name": "weight_norm",
+      "filePath": "torch/nn/utils/weight_norm.py",
+      "lineRange": [
+        84,
+        145
+      ],
+      "summary": "weight_norm — torch/nn/utils/weight_norm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/nn/utils/weight_norm.py:remove_weight_norm",
+      "type": "function",
+      "name": "remove_weight_norm",
+      "filePath": "torch/nn/utils/weight_norm.py",
+      "lineRange": [
+        148,
+        165
+      ],
+      "summary": "remove_weight_norm — torch/nn/utils/weight_norm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/nn/utils/weight_norm.py:WeightNorm",
+      "type": "class",
+      "name": "WeightNorm",
+      "filePath": "torch/nn/utils/weight_norm.py",
+      "lineRange": [
+        15,
+        78
+      ],
+      "summary": "WeightNorm 类 — torch/nn/utils/weight_norm.py 中定义的，方法: compute_weight, apply, remove",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/onnx/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/onnx/__init__.py",
+      "summary": "__init__.py — PyTorch torch/onnx模块。362行python代码。 定义函数: export, is_in_onnx_export",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/onnx/__init__.py:export",
+      "type": "function",
+      "name": "export",
+      "filePath": "torch/onnx/__init__.py",
+      "lineRange": [
+        65,
+        353
+      ],
+      "summary": "export — torch/onnx/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/onnx/_internal/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/onnx/_internal/__init__.py",
+      "summary": "__init__.py — PyTorch torch/onnx/_internal模块。1行python代码。",
+      "tags": [
+        "python",
+        "package",
+        "minimal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/optim/__init__.py",
+      "summary": "优化器 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/optim/adadelta.py",
+      "type": "file",
+      "name": "adadelta.py",
+      "filePath": "torch/optim/adadelta.py",
+      "summary": "优化器 — adadelta。 定义类: Adadelta 定义函数: adadelta",
+      "tags": [
+        "python",
+        "optimizer"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/optim/adadelta.py:adadelta",
+      "type": "function",
+      "name": "adadelta",
+      "filePath": "torch/optim/adadelta.py",
+      "lineRange": [
+        412,
+        473
+      ],
+      "summary": "adadelta — torch/optim/adadelta.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/adadelta.py:Adadelta",
+      "type": "class",
+      "name": "Adadelta",
+      "filePath": "torch/optim/adadelta.py",
+      "lineRange": [
+        28,
+        189
+      ],
+      "summary": "Adadelta 类 — torch/optim/adadelta.py 中定义的，方法: step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/adagrad.py",
+      "type": "file",
+      "name": "adagrad.py",
+      "filePath": "torch/optim/adagrad.py",
+      "summary": "优化器 — adagrad。 定义类: Adagrad 定义函数: adagrad",
+      "tags": [
+        "python",
+        "optimizer",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/optim/adagrad.py:adagrad",
+      "type": "function",
+      "name": "adagrad",
+      "filePath": "torch/optim/adagrad.py",
+      "lineRange": [
+        285,
+        356
+      ],
+      "summary": "adagrad — torch/optim/adagrad.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/adagrad.py:Adagrad",
+      "type": "class",
+      "name": "Adagrad",
+      "filePath": "torch/optim/adagrad.py",
+      "lineRange": [
+        28,
+        231
+      ],
+      "summary": "Adagrad 类 — torch/optim/adagrad.py 中定义的，方法: share_memory, step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/adam.py",
+      "type": "file",
+      "name": "adam.py",
+      "filePath": "torch/optim/adam.py",
+      "summary": "优化器 — adam。 定义类: Adam 定义函数: adam",
+      "tags": [
+        "python",
+        "optimizer",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/optim/adam.py:adam",
+      "type": "function",
+      "name": "adam",
+      "filePath": "torch/optim/adam.py",
+      "lineRange": [
+        903,
+        990
+      ],
+      "summary": "adam — torch/optim/adam.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/adam.py:Adam",
+      "type": "class",
+      "name": "Adam",
+      "filePath": "torch/optim/adam.py",
+      "lineRange": [
+        34,
+        272
+      ],
+      "summary": "Adam 类 — torch/optim/adam.py 中定义的，方法: step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/adamax.py",
+      "type": "file",
+      "name": "adamax.py",
+      "filePath": "torch/optim/adamax.py",
+      "summary": "优化器 — adamax。 定义类: Adamax 定义函数: adamax",
+      "tags": [
+        "python",
+        "optimizer"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/optim/adamax.py:adamax",
+      "type": "function",
+      "name": "adamax",
+      "filePath": "torch/optim/adamax.py",
+      "lineRange": [
+        425,
+        485
+      ],
+      "summary": "adamax — torch/optim/adamax.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/adamax.py:Adamax",
+      "type": "class",
+      "name": "Adamax",
+      "filePath": "torch/optim/adamax.py",
+      "lineRange": [
+        29,
+        175
+      ],
+      "summary": "Adamax 类 — torch/optim/adamax.py 中定义的，方法: step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/adamw.py",
+      "type": "file",
+      "name": "adamw.py",
+      "filePath": "torch/optim/adamw.py",
+      "summary": "优化器 — adamw。 定义类: AdamW 定义函数: adamw",
+      "tags": [
+        "python",
+        "optimizer"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/optim/adamw.py:adamw",
+      "type": "function",
+      "name": "adamw",
+      "filePath": "torch/optim/adamw.py",
+      "lineRange": [
+        130,
+        181
+      ],
+      "summary": "adamw — torch/optim/adamw.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/adamw.py:AdamW",
+      "type": "class",
+      "name": "AdamW",
+      "filePath": "torch/optim/adamw.py",
+      "lineRange": [
+        20,
+        57
+      ],
+      "summary": "AdamW 类 — torch/optim/adamw.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/asgd.py",
+      "type": "file",
+      "name": "asgd.py",
+      "filePath": "torch/optim/asgd.py",
+      "summary": "优化器 — asgd。 定义类: ASGD 定义函数: asgd",
+      "tags": [
+        "python",
+        "optimizer"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/optim/asgd.py:asgd",
+      "type": "function",
+      "name": "asgd",
+      "filePath": "torch/optim/asgd.py",
+      "lineRange": [
+        424,
+        478
+      ],
+      "summary": "asgd — torch/optim/asgd.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/asgd.py:ASGD",
+      "type": "class",
+      "name": "ASGD",
+      "filePath": "torch/optim/asgd.py",
+      "lineRange": [
+        29,
+        171
+      ],
+      "summary": "ASGD 类 — torch/optim/asgd.py 中定义的，方法: step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/lr_scheduler.py",
+      "type": "file",
+      "name": "lr_scheduler.py",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "summary": "学习率调度器。提供各种学习率调整策略，包括 Step、Cosine、ReduceLROnPlateau 等。 定义类: LRScheduler, _LRScheduler, _enable_get_lr_call, _initial_mode, LambdaLR",
+      "tags": [
+        "python",
+        "optimizer",
+        "large-file",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:LRScheduler",
+      "type": "class",
+      "name": "LRScheduler",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        95,
+        301
+      ],
+      "summary": "LRScheduler 类 — torch/optim/lr_scheduler.py 中定义的，方法: state_dict, load_state_dict, get_last_lr, get_lr, step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:LambdaLR",
+      "type": "class",
+      "name": "LambdaLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        343,
+        466
+      ],
+      "summary": "LambdaLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: state_dict, load_state_dict, get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:MultiplicativeLR",
+      "type": "class",
+      "name": "MultiplicativeLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        469,
+        589
+      ],
+      "summary": "MultiplicativeLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: state_dict, load_state_dict, get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:StepLR",
+      "type": "class",
+      "name": "StepLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        592,
+        676
+      ],
+      "summary": "StepLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:MultiStepLR",
+      "type": "class",
+      "name": "MultiStepLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        679,
+        770
+      ],
+      "summary": "MultiStepLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:ConstantLR",
+      "type": "class",
+      "name": "ConstantLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        773,
+        874
+      ],
+      "summary": "ConstantLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:LinearLR",
+      "type": "class",
+      "name": "LinearLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        877,
+        1004
+      ],
+      "summary": "LinearLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:ExponentialLR",
+      "type": "class",
+      "name": "ExponentialLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        1007,
+        1079
+      ],
+      "summary": "ExponentialLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:SequentialLR",
+      "type": "class",
+      "name": "SequentialLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        1082,
+        1233
+      ],
+      "summary": "SequentialLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: recursive_undo, step, state_dict, load_state_dict",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:PolynomialLR",
+      "type": "class",
+      "name": "PolynomialLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        1236,
+        1334
+      ],
+      "summary": "PolynomialLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:CosineAnnealingLR",
+      "type": "class",
+      "name": "CosineAnnealingLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        1337,
+        1474
+      ],
+      "summary": "CosineAnnealingLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:ChainedScheduler",
+      "type": "class",
+      "name": "ChainedScheduler",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        1477,
+        1580
+      ],
+      "summary": "ChainedScheduler 类 — torch/optim/lr_scheduler.py 中定义的，方法: step, state_dict, load_state_dict",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:ReduceLROnPlateau",
+      "type": "class",
+      "name": "ReduceLROnPlateau",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        1583,
+        1784
+      ],
+      "summary": "ReduceLROnPlateau 类 — torch/optim/lr_scheduler.py 中定义的，方法: step, in_cooldown, load_state_dict",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:CyclicLR",
+      "type": "class",
+      "name": "CyclicLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        1787,
+        2101
+      ],
+      "summary": "CyclicLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: scale_fn, get_lr, state_dict, load_state_dict",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:CosineAnnealingWarmRestarts",
+      "type": "class",
+      "name": "CosineAnnealingWarmRestarts",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        2104,
+        2273
+      ],
+      "summary": "CosineAnnealingWarmRestarts 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr, step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/lr_scheduler.py:OneCycleLR",
+      "type": "class",
+      "name": "OneCycleLR",
+      "filePath": "torch/optim/lr_scheduler.py",
+      "lineRange": [
+        2284,
+        2605
+      ],
+      "summary": "OneCycleLR 类 — torch/optim/lr_scheduler.py 中定义的，方法: get_lr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/optimizer.py",
+      "type": "file",
+      "name": "optimizer.py",
+      "filePath": "torch/optim/optimizer.py",
+      "summary": "优化器基类。定义所有优化器的公共接口和参数管理。 定义类: _RequiredParameter, Optimizer 定义函数: register_optimizer_step_pre_hook, register_optimizer_step_post_hook",
+      "tags": [
+        "python",
+        "optimizer",
+        "substantial",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/optim/optimizer.py:register_optimizer_step_pre_hook",
+      "type": "function",
+      "name": "register_optimizer_step_pre_hook",
+      "filePath": "torch/optim/optimizer.py",
+      "lineRange": [
+        289,
+        306
+      ],
+      "summary": "register_optimizer_step_pre_hook — torch/optim/optimizer.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/optim/optimizer.py:register_optimizer_step_post_hook",
+      "type": "function",
+      "name": "register_optimizer_step_post_hook",
+      "filePath": "torch/optim/optimizer.py",
+      "lineRange": [
+        309,
+        326
+      ],
+      "summary": "register_optimizer_step_post_hook — torch/optim/optimizer.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/optim/optimizer.py:Optimizer",
+      "type": "class",
+      "name": "Optimizer",
+      "filePath": "torch/optim/optimizer.py",
+      "lineRange": [
+        339,
+        1189
+      ],
+      "summary": "Optimizer 类 — torch/optim/optimizer.py 中定义的，方法: profile_hook_step, register_step_pre_hook, register_step_post_hook, register_state_dict_pre_hook, register_state_dict_post_hook",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/optim/rmsprop.py",
+      "type": "file",
+      "name": "rmsprop.py",
+      "filePath": "torch/optim/rmsprop.py",
+      "summary": "优化器 — rmsprop。 定义类: RMSprop 定义函数: rmsprop",
+      "tags": [
+        "python",
+        "optimizer",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/optim/rmsprop.py:rmsprop",
+      "type": "function",
+      "name": "rmsprop",
+      "filePath": "torch/optim/rmsprop.py",
+      "lineRange": [
+        477,
+        542
+      ],
+      "summary": "rmsprop — torch/optim/rmsprop.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/rmsprop.py:RMSprop",
+      "type": "class",
+      "name": "RMSprop",
+      "filePath": "torch/optim/rmsprop.py",
+      "lineRange": [
+        30,
+        197
+      ],
+      "summary": "RMSprop 类 — torch/optim/rmsprop.py 中定义的，方法: step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/sgd.py",
+      "type": "file",
+      "name": "sgd.py",
+      "filePath": "torch/optim/sgd.py",
+      "summary": "优化器 — sgd。 定义类: SGD 定义函数: sgd",
+      "tags": [
+        "python",
+        "optimizer",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/optim/sgd.py:sgd",
+      "type": "function",
+      "name": "sgd",
+      "filePath": "torch/optim/sgd.py",
+      "lineRange": [
+        252,
+        319
+      ],
+      "summary": "sgd — torch/optim/sgd.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/sgd.py:SGD",
+      "type": "class",
+      "name": "SGD",
+      "filePath": "torch/optim/sgd.py",
+      "lineRange": [
+        28,
+        152
+      ],
+      "summary": "SGD 类 — torch/optim/sgd.py 中定义的，方法: step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/optim/sparse_adam.py",
+      "type": "file",
+      "name": "sparse_adam.py",
+      "filePath": "torch/optim/sparse_adam.py",
+      "summary": "优化器 — sparse_adam。 定义类: SparseAdam",
+      "tags": [
+        "python",
+        "optimizer"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/optim/sparse_adam.py:SparseAdam",
+      "type": "class",
+      "name": "SparseAdam",
+      "filePath": "torch/optim/sparse_adam.py",
+      "lineRange": [
+        13,
+        129
+      ],
+      "summary": "SparseAdam 类 — torch/optim/sparse_adam.py 中定义的，方法: step",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/overrides.py",
+      "type": "file",
+      "name": "overrides.py",
+      "filePath": "torch/overrides.py",
+      "summary": "overrides.py — PyTorch torch模块。2242行python代码。 定义类: TorchFunctionMode, BaseTorchFunctionMode 定义函数: get_ignored_functions, get_default_nowrap_functions, get_testing_overrides, wrap_torch_function, handle_torch_function",
+      "tags": [
+        "python",
+        "large-file",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/overrides.py:get_ignored_functions",
+      "type": "function",
+      "name": "get_ignored_functions",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        105,
+        393
+      ],
+      "summary": "get_ignored_functions — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/overrides.py:get_default_nowrap_functions",
+      "type": "function",
+      "name": "get_default_nowrap_functions",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        397,
+        419
+      ],
+      "summary": "get_default_nowrap_functions — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/overrides.py:get_testing_overrides",
+      "type": "function",
+      "name": "get_testing_overrides",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        424,
+        1604
+      ],
+      "summary": "get_testing_overrides — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/overrides.py:wrap_torch_function",
+      "type": "function",
+      "name": "wrap_torch_function",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        1607,
+        1646
+      ],
+      "summary": "wrap_torch_function — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/overrides.py:handle_torch_function",
+      "type": "function",
+      "name": "handle_torch_function",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        1728,
+        1814
+      ],
+      "summary": "handle_torch_function — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/overrides.py:resolve_name",
+      "type": "function",
+      "name": "resolve_name",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        1965,
+        1982
+      ],
+      "summary": "resolve_name — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/overrides.py:is_tensor_method_or_property",
+      "type": "function",
+      "name": "is_tensor_method_or_property",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        1994,
+        2016
+      ],
+      "summary": "is_tensor_method_or_property — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/overrides.py:is_tensor_like",
+      "type": "function",
+      "name": "is_tensor_like",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        2019,
+        2053
+      ],
+      "summary": "is_tensor_like — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/overrides.py:enable_reentrant_dispatch",
+      "type": "function",
+      "name": "enable_reentrant_dispatch",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        2159,
+        2171
+      ],
+      "summary": "enable_reentrant_dispatch — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/overrides.py:redispatch_function",
+      "type": "function",
+      "name": "redispatch_function",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        2174,
+        2241
+      ],
+      "summary": "redispatch_function — torch/overrides.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/overrides.py:TorchFunctionMode",
+      "type": "class",
+      "name": "TorchFunctionMode",
+      "filePath": "torch/overrides.py",
+      "lineRange": [
+        2056,
+        2110
+      ],
+      "summary": "TorchFunctionMode 类 — torch/overrides.py 中定义的，方法: push",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/package/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/package/__init__.py",
+      "summary": "__init__.py — PyTorch torch/package模块。13行python代码。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/profiler/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/profiler/__init__.py",
+      "summary": "__init__.py — PyTorch torch/profiler模块。61行python代码。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:torch/nn/utils/clip_grad.py",
+      "target": "function:torch/nn/utils/clip_grad.py:clip_grad_norm_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/clip_grad.py",
+      "target": "function:torch/nn/utils/clip_grad.py:clip_grad_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/clip_grad.py",
+      "target": "function:torch/nn/utils/clip_grad.py:clip_grad_value_",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/clip_grad.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/clip_grad.py",
+      "target": "file:torch/utils/_foreach_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/clip_grad.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/convert_parameters.py",
+      "target": "function:torch/nn/utils/convert_parameters.py:parameters_to_vector",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/convert_parameters.py",
+      "target": "function:torch/nn/utils/convert_parameters.py:vector_to_parameters",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/convert_parameters.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "function:torch/nn/utils/parametrizations.py:orthogonal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "function:torch/nn/utils/parametrizations.py:weight_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "function:torch/nn/utils/parametrizations.py:spectral_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "class:torch/nn/utils/parametrizations.py:_Orthogonal",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "class:torch/nn/utils/parametrizations.py:_WeightNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "class:torch/nn/utils/parametrizations.py:_SpectralNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "file:torch/nn/modules/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "file:torch/nn/utils/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/parametrizations.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:identity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:random_unstructured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:l1_unstructured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:random_structured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:ln_structured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:global_unstructured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:custom_from_mask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:remove",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "function:torch/nn/utils/prune.py:is_pruned",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "class:torch/nn/utils/prune.py:BasePruningMethod",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "class:torch/nn/utils/prune.py:PruningContainer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "class:torch/nn/utils/prune.py:Identity",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "class:torch/nn/utils/prune.py:RandomUnstructured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "class:torch/nn/utils/prune.py:L1Unstructured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "class:torch/nn/utils/prune.py:RandomStructured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "class:torch/nn/utils/prune.py:LnStructured",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "class:torch/nn/utils/prune.py:CustomFromMask",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/prune.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/spectral_norm.py",
+      "target": "function:torch/nn/utils/spectral_norm.py:spectral_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/spectral_norm.py",
+      "target": "function:torch/nn/utils/spectral_norm.py:remove_spectral_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/spectral_norm.py",
+      "target": "class:torch/nn/utils/spectral_norm.py:SpectralNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/spectral_norm.py",
+      "target": "class:torch/nn/utils/spectral_norm.py:SpectralNormLoadStateDictPreHook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/spectral_norm.py",
+      "target": "file:torch/nn/modules/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/spectral_norm.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/spectral_norm.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/stateless.py",
+      "target": "function:torch/nn/utils/stateless.py:functional_call",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/stateless.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/stateless.py",
+      "target": "file:torch/nn/utils/_named_member_accessor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/stateless.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/weight_norm.py",
+      "target": "function:torch/nn/utils/weight_norm.py:weight_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/weight_norm.py",
+      "target": "function:torch/nn/utils/weight_norm.py:remove_weight_norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/weight_norm.py",
+      "target": "class:torch/nn/utils/weight_norm.py:WeightNorm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/nn/utils/weight_norm.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/weight_norm.py",
+      "target": "file:torch/nn/modules/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/nn/utils/weight_norm.py",
+      "target": "file:torch/nn/parameter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/onnx/__init__.py",
+      "target": "function:torch/onnx/__init__.py:export",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/onnx/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/_adafactor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/_muon.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/_stateless.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/adadelta.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/adagrad.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/adam.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/adamax.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/adamw.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/asgd.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/lbfgs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/nadam.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/optimizer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/radam.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/rmsprop.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/rprop.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/sgd.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/__init__.py",
+      "target": "file:torch/optim/sparse_adam.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adadelta.py",
+      "target": "function:torch/optim/adadelta.py:adadelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adadelta.py",
+      "target": "class:torch/optim/adadelta.py:Adadelta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adadelta.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adadelta.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adagrad.py",
+      "target": "function:torch/optim/adagrad.py:adagrad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adagrad.py",
+      "target": "class:torch/optim/adagrad.py:Adagrad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adagrad.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adagrad.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adam.py",
+      "target": "function:torch/optim/adam.py:adam",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adam.py",
+      "target": "class:torch/optim/adam.py:Adam",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adam.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adam.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adamax.py",
+      "target": "function:torch/optim/adamax.py:adamax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adamax.py",
+      "target": "class:torch/optim/adamax.py:Adamax",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adamax.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adamax.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/adamw.py",
+      "target": "function:torch/optim/adamw.py:adamw",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adamw.py",
+      "target": "class:torch/optim/adamw.py:AdamW",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/adamw.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/asgd.py",
+      "target": "function:torch/optim/asgd.py:asgd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/asgd.py",
+      "target": "class:torch/optim/asgd.py:ASGD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/asgd.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/asgd.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:LRScheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:LambdaLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:MultiplicativeLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:StepLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:MultiStepLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:ConstantLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:LinearLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:ExponentialLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:SequentialLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:PolynomialLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:CosineAnnealingLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:ChainedScheduler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:ReduceLROnPlateau",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:CyclicLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:CosineAnnealingWarmRestarts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "class:torch/optim/lr_scheduler.py:OneCycleLR",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/lr_scheduler.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/optimizer.py",
+      "target": "function:torch/optim/optimizer.py:register_optimizer_step_pre_hook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/optimizer.py",
+      "target": "function:torch/optim/optimizer.py:register_optimizer_step_post_hook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/optimizer.py",
+      "target": "class:torch/optim/optimizer.py:Optimizer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/optimizer.py",
+      "target": "file:torch/utils/_foreach_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/optimizer.py",
+      "target": "file:torch/utils/hooks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/optimizer.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/optimizer.py",
+      "target": "file:torch/utils/hooks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/rmsprop.py",
+      "target": "function:torch/optim/rmsprop.py:rmsprop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/rmsprop.py",
+      "target": "class:torch/optim/rmsprop.py:RMSprop",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/rmsprop.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/rmsprop.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/sgd.py",
+      "target": "function:torch/optim/sgd.py:sgd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/sgd.py",
+      "target": "class:torch/optim/sgd.py:SGD",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/sgd.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/sgd.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/sparse_adam.py",
+      "target": "class:torch/optim/sparse_adam.py:SparseAdam",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/optim/sparse_adam.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/optim/sparse_adam.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:get_ignored_functions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:get_default_nowrap_functions",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:get_testing_overrides",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:wrap_torch_function",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:handle_torch_function",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:resolve_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:is_tensor_method_or_property",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:is_tensor_like",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:enable_reentrant_dispatch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "function:torch/overrides.py:redispatch_function",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "class:torch/overrides.py:TorchFunctionMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/overrides.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/profiler/__init__.py",
+      "target": "file:torch/_environment.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/profiler/__init__.py",
+      "target": "file:torch/autograd/profiler.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/profiler/__init__.py",
+      "target": "file:torch/optim/optimizer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    }
+  ]
+}

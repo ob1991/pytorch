@@ -1,0 +1,236 @@
+{
+  "title": "PyTorch 深度学习框架架构导览",
+  "description": "本导览将带你逐步了解 PyTorch 的核心架构，从顶层 API 到底层 GPU 代码生成，涵盖自动微分、神经网络模块、即时编译和分布式训练等关键子系统。",
+  "language": "zh",
+  "steps": [
+    {
+      "id": "step:1",
+      "title": "项目概览与入口",
+      "description": "PyTorch 是一个基于张量计算和自动微分的深度学习框架。其核心入口 `__init__.py` 导出了所有主要 API，包括张量操作、神经网络模块、优化器和 CUDA 支持。从这里开始了解框架的整体结构。",
+      "nodeIds": [
+        "file:torch/__init__.py",
+        "file:torch/functional.py",
+        "file:torch/_tensor.py"
+      ],
+      "concepts": [
+        "张量（Tensor）",
+        "自动微分（Autograd）",
+        "GPU 加速"
+      ],
+      "complexity": "beginner"
+    },
+    {
+      "id": "step:2",
+      "title": "张量核心与算子系统",
+      "description": "张量（Tensor）是 PyTorch 的核心数据结构，类似于 NumPy 数组但支持 GPU 加速。`_ops.py` 定义了所有操作的注册和分发机制，`_classes.py` 管理 Python 绑定的 C++ 类。算子系统通过调度器将操作分发到正确的后端实现。",
+      "nodeIds": [
+        "file:torch/_tensor.py",
+        "file:torch/_ops.py",
+        "file:torch/_classes.py",
+        "file:torch/overrides.py"
+      ],
+      "concepts": [
+        "张量操作",
+        "算子注册",
+        "调度系统",
+        "方法重载"
+      ],
+      "complexity": "beginner"
+    },
+    {
+      "id": "step:3",
+      "title": "CUDA GPU 加速",
+      "description": "CUDA 后端提供了 GPU 加速支持。`cuda/__init__.py` 管理设备、流和事件，`memory.py` 实现 GPU 内存的分配和缓存，`graphs.py` 支持 CUDA Graph 以降低内核启动开销。这些模块是 PyTorch GPU 性能的关键。",
+      "nodeIds": [
+        "file:torch/cuda/__init__.py",
+        "file:torch/cuda/memory.py",
+        "file:torch/cuda/streams.py",
+        "file:torch/cuda/graphs.py"
+      ],
+      "concepts": [
+        "CUDA 设备管理",
+        "GPU 内存分配",
+        "CUDA 流与事件",
+        "CUDA Graphs"
+      ],
+      "complexity": "intermediate"
+    },
+    {
+      "id": "step:4",
+      "title": "自动微分引擎",
+      "description": "Autograd 是 PyTorch 的自动微分引擎。`function.py` 定义了自定义 autograd Function 的接口，`grad_mode.py` 提供了梯度管理的上下文管理器（no_grad、enable_grad），`graph.py` 实现了计算图的构建和反向传播。训练神经网络时，每个操作都会被记录到计算图中。",
+      "nodeIds": [
+        "file:torch/autograd/__init__.py",
+        "file:torch/autograd/function.py",
+        "file:torch/autograd/grad_mode.py",
+        "file:torch/autograd/graph.py"
+      ],
+      "concepts": [
+        "自动微分",
+        "计算图",
+        "反向传播",
+        "梯度模式"
+      ],
+      "complexity": "intermediate"
+    },
+    {
+      "id": "step:5",
+      "title": "神经网络模块与优化器",
+      "description": "`nn` 包提供了构建神经网络的所有基础组件：线性层、卷积、RNN、Transformer、激活函数和损失函数。`optim` 包实现了各种优化算法（SGD、Adam、AdamW 等）。这些模块是用户构建模型的主要接口。",
+      "nodeIds": [
+        "file:torch/nn/__init__.py",
+        "file:torch/nn/modules/__init__.py",
+        "file:torch/nn/modules/linear.py",
+        "file:torch/nn/modules/conv.py",
+        "file:torch/nn/modules/transformer.py",
+        "file:torch/optim/__init__.py",
+        "file:torch/optim/optimizer.py",
+        "file:torch/optim/sgd.py"
+      ],
+      "concepts": [
+        "神经网络层",
+        "损失函数",
+        "优化器",
+        "参数管理"
+      ],
+      "complexity": "beginner"
+    },
+    {
+      "id": "step:6",
+      "title": "FX 中间表示",
+      "description": "FX 是 PyTorch 的计算图中间表示。它通过符号追踪（tracer）将 Python 代码转换为可操作的计算图（graph），图中的每个操作由节点（node）表示。FX 图是 JIT 编译、导出和优化的基础。",
+      "nodeIds": [
+        "file:torch/fx/__init__.py",
+        "file:torch/fx/graph.py",
+        "file:torch/fx/node.py",
+        "file:torch/fx/tracer.py",
+        "file:torch/fx/proxy.py",
+        "file:torch/fx/interpreter.py"
+      ],
+      "concepts": [
+        "计算图",
+        "符号追踪",
+        "图操作",
+        "中间表示"
+      ],
+      "complexity": "intermediate"
+    },
+    {
+      "id": "step:7",
+      "title": "Dynamo 即时编译器",
+      "description": "TorchDynamo 是 PyTorch 2.0 引入的 JIT 编译器前端。它通过 Python 字节码分析将现有代码捕获为 FX 图，无需修改源代码。`eval_frame.py` 提供了 `torch.compile` 入口，`convert_frame.py` 实现帧到图的编译，`symbolic_convert.py` 解释字节码构建图。这是 PyTorch 2.0 性能优化的核心。",
+      "nodeIds": [
+        "file:torch/_dynamo/__init__.py",
+        "file:torch/_dynamo/eval_frame.py",
+        "file:torch/_dynamo/convert_frame.py",
+        "file:torch/_dynamo/symbolic_convert.py",
+        "file:torch/_dynamo/guards.py",
+        "file:torch/_dynamo/config.py"
+      ],
+      "concepts": [
+        "即时编译（JIT）",
+        "字节码分析",
+        "帧编译",
+        "保护机制（Guards）"
+      ],
+      "complexity": "advanced"
+    },
+    {
+      "id": "step:8",
+      "title": "Inductor GPU 代码生成器",
+      "description": "TorchInductor 将 FX 图编译为针对 GPU 优化的内核代码。`compile_fx.py` 是编译入口，`ir.py` 定义了中间表示，`lowering.py` 将算子映射到内核模板，`select_algorithm.py` 自动选择最佳实现。Inductor 为 GPU 生成 Triton 内核，为 CPU 生成 C++ 代码。",
+      "nodeIds": [
+        "file:torch/_inductor/__init__.py",
+        "file:torch/_inductor/compile_fx.py",
+        "file:torch/_inductor/graph.py",
+        "file:torch/_inductor/ir.py",
+        "file:torch/_inductor/lowering.py",
+        "file:torch/_inductor/select_algorithm.py"
+      ],
+      "concepts": [
+        "GPU 代码生成",
+        "Triton 内核",
+        "算子降级",
+        "自动调优"
+      ],
+      "complexity": "advanced"
+    },
+    {
+      "id": "step:9",
+      "title": "模型导出系统",
+      "description": "Export 系统支持将 PyTorch 模型导出为可部署的格式。`exported_program.py` 定义了 ExportedProgram 结构（包含计算图和元数据），`dynamic_shapes.py` 处理动态形状约束，`unflatten.py` 将平坦图恢复为模块层次结构。这是 PyTorch 部署管线的关键。",
+      "nodeIds": [
+        "file:torch/export/__init__.py",
+        "file:torch/export/exported_program.py",
+        "file:torch/export/dynamic_shapes.py",
+        "file:torch/export/graph_module.py",
+        "file:torch/export/unflatten.py"
+      ],
+      "concepts": [
+        "模型导出",
+        "动态形状",
+        "图序列化",
+        "部署"
+      ],
+      "complexity": "intermediate"
+    },
+    {
+      "id": "step:10",
+      "title": "分布式训练框架",
+      "description": "分布式模块支持多 GPU 和多节点训练。`distributed_c10d.py` 实现进程组管理和集合通信（allreduce、broadcast 等），是分布式数据并行（DDP）、FSDP 和张量并行的基础。分布式通信通过 NCCL、Gloo 和 MPI 后端实现。",
+      "nodeIds": [
+        "file:torch/distributed/__init__.py",
+        "file:torch/distributed/distributed_c10d.py",
+        "file:torch/distributed/fsdp/__init__.py",
+        "file:torch/distributed/tensor/__init__.py"
+      ],
+      "concepts": [
+        "集合通信",
+        "进程组",
+        "分布式数据并行",
+        "FSDP",
+        "张量并行"
+      ],
+      "complexity": "advanced"
+    },
+    {
+      "id": "step:11",
+      "title": "原生函数代码生成（TorchGen）",
+      "description": "TorchGen 是 PyTorch 的代码生成框架。它从 `native_functions.yaml` 读取算子定义，为所有后端的 C++ 算子生成注册、调度和 API 绑定代码。`gen.py` 是主生成器，`model.py` 定义了算子数据模型。生成的代码包括 CUDA 内核注册、自动微分公式和 Python 绑定。",
+      "nodeIds": [
+        "file:torchgen/__init__.py",
+        "file:torchgen/gen.py",
+        "file:torchgen/model.py",
+        "file:torchgen/dest/register_dispatch_key.py",
+        "file:torchgen/api/cpp.py"
+      ],
+      "concepts": [
+        "代码生成",
+        "原生函数",
+        "算子注册",
+        "YAML 配置"
+      ],
+      "complexity": "advanced"
+    },
+    {
+      "id": "step:12",
+      "title": "函数式变换与高阶操作",
+      "description": "Functorch 提供了函数式变换，包括 vmap（自动向量化）、grad（梯度计算）和 functionalize（函数式化）。高阶操作（Higher Order Ops）是在 FX 图中表示控制流和复杂模式的特殊操作。这些功能为研究人员提供了灵活的原语组合能力。",
+      "nodeIds": [
+        "file:torch/_functorch/__init__.py",
+        "file:torch/_functorch/vmap.py",
+        "file:torch/_functorch/eager_transforms.py",
+        "file:torch/_higher_order_ops/__init__.py",
+        "file:torch/_functorch/config.py"
+      ],
+      "concepts": [
+        "vmap",
+        "grad",
+        "函数式变换",
+        "高阶操作",
+        "组合式 API"
+      ],
+      "complexity": "advanced"
+    }
+  ]
+}

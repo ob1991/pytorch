@@ -1,0 +1,1797 @@
+{
+  "nodes": [
+    {
+      "id": "file:torch/autograd/_functions/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/autograd/_functions/__init__.py",
+      "summary": "自动求导内部函数的包初始化文件，仅包含导入语句，作为子模块的入口点。",
+      "tags": ["entry-point", "barrel", "python-package"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/autograd/forward_ad.py",
+      "type": "file",
+      "name": "forward_ad.py",
+      "filePath": "torch/autograd/forward_ad.py",
+      "summary": "实现前向模式自动微分（forward-mode AD）的API，包括创建和操作对偶张量（dual tensor）以及管理前向梯度的层级。",
+      "tags": ["autograd", "forward-ad", "dual-tensor"],
+      "complexity": "moderate",
+      "languageNotes": "使用_DecoratorContextManager基类实现上下文管理器，通过_functorch.predispatch完成底层操作。"
+    },
+    {
+      "id": "file:torch/autograd/function.py",
+      "type": "file",
+      "name": "function.py",
+      "filePath": "torch/autograd/function.py",
+      "summary": "定义自定义autograd.Function的基类体系，包括FunctionCtx上下文管理、FunctionMeta元类、Function主类以及once_differentiable装饰器，是PyTorch扩展自动求导的核心接口。",
+      "tags": ["autograd", "custom-function", "base-class", "api"],
+      "complexity": "complex",
+      "languageNotes": "使用元类FunctionMeta在类定义时自动生成对应的BackwardCFunction子类，并分配唯一ID。"
+    },
+    {
+      "id": "file:torch/autograd/grad_mode.py",
+      "type": "file",
+      "name": "grad_mode.py",
+      "filePath": "torch/autograd/grad_mode.py",
+      "summary": "提供梯度计算的上下文管理器，包括no_grad、enable_grad、set_grad_enabled、inference_mode等多种模式控制，影响自动求导引擎的行为。",
+      "tags": ["autograd", "gradient-mode", "context-manager"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/autograd/graph.py",
+      "type": "file",
+      "name": "graph.py",
+      "filePath": "torch/autograd/graph.py",
+      "summary": "实现自动求导图的核心抽象，包括Node抽象基类、GradientEdge、saved_tensors_hooks、save_on_cpu、register_multi_grad_hook以及allow_mutation_on_saved_tensors等高级功能。",
+      "tags": ["autograd", "graph", "hooks", "saved-tensors"],
+      "complexity": "complex",
+      "languageNotes": "使用abc.ABC定义抽象基类，大量使用contextlib.contextmanager和contextvars实现上下文管理。"
+    },
+    {
+      "id": "file:torch/autograd/profiler.py",
+      "type": "file",
+      "name": "profiler.py",
+      "filePath": "torch/autograd/profiler.py",
+      "summary": "实现自动求导性能分析器，提供profile上下文管理器、record_function标记、NVTX/ITT范围注释以及KinetoStepTracker步数跟踪功能。",
+      "tags": ["profiler", "performance", "kineto", "nvtx"],
+      "complexity": "complex",
+      "languageNotes": "支持多种profiler状态（KINETO、NVTX、ITT）和多种设备（CUDA、XPU、MTIA、HPU）。"
+    },
+    {
+      "id": "file:torch/autograd/variable.py",
+      "type": "file",
+      "name": "variable.py",
+      "filePath": "torch/autograd/variable.py",
+      "summary": "定义Variable类和VariableMeta元类，作为torch.Tensor的遗留包装，后者承载自动求导引擎的执行接口。",
+      "tags": ["autograd", "variable", "legacy"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/backends/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/backends/__init__.py",
+      "summary": "torch.backends包的入口，使用模块替换模式将所有子模块（cuda、mkl、cudnn等）的API提升到顶层，并提供ContextProp属性描述符和flags上下文管理器。",
+      "tags": ["backends", "module-replacement", "configuration"],
+      "complexity": "moderate",
+      "languageNotes": "使用sys.modules替换模式将模块替换为GenericModule实例，实现惰性属性访问。"
+    },
+    {
+      "id": "file:torch/backends/cuda/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/backends/cuda/__init__.py",
+      "summary": "管理CUDA后端的运行时配置，包括cuFFT计划缓存、cuBLAS设置（TF32、FP16归约）、线性代数库选择、BLAS库选择以及SDPA（scaled dot product attention）后端控制。",
+      "tags": ["cuda", "backend", "configuration", "sdp"],
+      "complexity": "complex",
+      "languageNotes": "使用ContextProp描述符模式实现属性读写，支持多种SDPA后端的启用/禁用控制。"
+    },
+    {
+      "id": "file:torch/backends/mkl/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/backends/mkl/__init__.py",
+      "summary": "提供MKL（Intel Math Kernel Library）可用性检测和运行时verbose日志控制的上下文管理器。",
+      "tags": ["mkl", "backend", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/backends/openmp/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/backends/openmp/__init__.py",
+      "summary": "提供OpenMP并行支持的可用性检测函数。",
+      "tags": ["openmp", "backend", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/backends/quantized/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/backends/quantized/__init__.py",
+      "summary": "管理量化引擎（QuantizedEngine）的运行时选择和查询，支持fbgemm、qnnpack、onednn、x86等多种后端。",
+      "tags": ["quantized", "backend", "configuration"],
+      "complexity": "simple",
+      "languageNotes": "使用sys.modules模块替换模式将模块替换为QuantizedEngine实例。"
+    },
+    {
+      "id": "file:torch/compiler/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/compiler/__init__.py",
+      "summary": "提供torch.compile编译器前端的公共API，包括compile、set_stance、allow_in_graph、disable以及编译状态查询（is_compiling、is_exporting）等函数，作为torch._dynamo的封装层。",
+      "tags": ["compiler", "api", "torch-compile", "dynamo"],
+      "complexity": "complex",
+      "languageNotes": "大量函数为torch._dynamo中对应功能的薄封装，提供更稳定的公共API。"
+    },
+    {
+      "id": "file:torch/cuda/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/cuda/__init__.py",
+      "summary": "torch.cuda包的主入口，实现CUDA设备管理（设备列表、属性查询、上下文切换）、流管理、同步原语、内存管理初始化以及CUDA兼容性检查等功能。",
+      "tags": ["cuda", "device-management", "gpu", "entry-point"],
+      "complexity": "complex",
+      "languageNotes": "使用惰性初始化模式，在首次需要时才初始化CUDA状态。包含大量设备属性和兼容性检查逻辑。"
+    },
+    {
+      "id": "file:torch/cuda/_memory_viz.py",
+      "type": "file",
+      "name": "_memory_viz.py",
+      "filePath": "torch/cuda/_memory_viz.py",
+      "summary": "提供CUDA内存可视化工具，包括flamegraph生成、内存段（segments）和块（blocks）的格式化输出，以及内存快照的比较功能。",
+      "tags": ["memory", "visualization", "debug", "cuda"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/cuda/_sanitizer.py",
+      "type": "file",
+      "name": "_sanitizer.py",
+      "filePath": "torch/cuda/_sanitizer.py",
+      "summary": "实现CUDA API调用的消毒剂（sanitizer），通过TorchDispatchMode拦截和验证CUDA张量操作的正确性，用于检测内存访问错误和数据竞争。",
+      "tags": ["cuda", "sanitizer", "debug", "memory-safety"],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/cuda/_utils.py",
+      "type": "file",
+      "name": "_utils.py",
+      "filePath": "torch/cuda/_utils.py",
+      "summary": "提供CUDA底层工具函数，包括CUDA/NVRTC/ROCm运行时库的加载、NVRTC内核编译、CUDA错误检查、以及_CudaModule和_CudaKernel类用于加载和调用编译后的CUDA内核。",
+      "tags": ["cuda", "utilities", "nvrtc", "kernel"],
+      "complexity": "moderate",
+      "languageNotes": "使用ctypes与CUDA驱动库直接交互，支持NVRTC和HIP RTC两种在线编译路径。"
+    },
+    {
+      "id": "file:torch/cuda/comm.py",
+      "type": "file",
+      "name": "comm.py",
+      "filePath": "torch/cuda/comm.py",
+      "summary": "将通信原语（broadcast、gather、scatter等）从torch.nn.parallel.comm重新导出，作为向后兼容的别名模块。",
+      "tags": ["communication", "barrel", "cuda"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/cuda/graphs.py",
+      "type": "file",
+      "name": "graphs.py",
+      "filePath": "torch/cuda/graphs.py",
+      "summary": "实现CUDA Graph捕获和重放功能，包括CUDAGraph类、graph上下文管理器、graph_pool_handle以及make_graphed_callables高阶函数，用于将模型封装为CUDA Graph以降低启动开销。",
+      "tags": ["cuda", "graph", "capture", "optimization"],
+      "complexity": "complex",
+      "languageNotes": "支持CUDA graph capture的各种模式（global/thread_local/relaxed），以及输入活性检查。"
+    },
+    {
+      "id": "file:torch/cuda/memory.py",
+      "type": "file",
+      "name": "memory.py",
+      "filePath": "torch/cuda/memory.py",
+      "summary": "提供CUDA设备内存管理API，包括缓存分配器控制、内存统计查询、内存快照、CUDAPluggableAllocator自定义分配器、MemPool内存池以及内存使用分析。",
+      "tags": ["cuda", "memory", "allocator", "management"],
+      "complexity": "complex",
+      "languageNotes": "支持可插拔分配器（CUDAPluggableAllocator），允许用户使用自定义的内存分配策略。"
+    },
+    {
+      "id": "file:torch/cuda/nccl.py",
+      "type": "file",
+      "name": "nccl.py",
+      "filePath": "torch/cuda/nccl.py",
+      "summary": "提供基于NCCL的GPU间通信原语，包括all_reduce、reduce、broadcast、all_gather、reduce_scatter等集合操作，以及NCCL版本查询和初始化功能。",
+      "tags": ["cuda", "nccl", "communication", "distributed"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/cuda/nvtx.py",
+      "type": "file",
+      "name": "nvtx.py",
+      "filePath": "torch/cuda/nvtx.py",
+      "summary": "提供NVIDIA Tools Extension（NVTX）的Python接口，包括范围标记（range_push/pop）、时间戳标记（mark）以及基于上下文管理器的range装饰器，用于GPU性能分析。",
+      "tags": ["cuda", "nvtx", "profiling", "annotation"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/cuda/profiler.py",
+      "type": "file",
+      "name": "profiler.py",
+      "filePath": "torch/cuda/profiler.py",
+      "summary": "提供CUDA分析器的启动/停止控制以及profile上下文管理器，用于CUDA内核级性能数据采集。",
+      "tags": ["cuda", "profiler", "performance"],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/cuda/streams.py",
+      "type": "file",
+      "name": "streams.py",
+      "filePath": "torch/cuda/streams.py",
+      "summary": "实现CUDA流（Stream）和事件（Event）的Python封装，支持流的创建、同步、事件记录和等待，以及外部流（ExternalStream）的包装。",
+      "tags": ["cuda", "stream", "event", "synchronization"],
+      "complexity": "moderate",
+      "languageNotes": "Stream和Event类继承自torch._C中的C++基类，通过ctypes暴露CUDA流句柄。"
+    },
+    {
+      "id": "file:torch/distributed/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/__init__.py",
+      "summary": "torch.distributed包的入口，提供分布式训练的可用性检测、错误类型定义以及c10d分布式后端的初始化。",
+      "tags": ["distributed", "entry-point", "c10d"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/autograd/forward_ad.py:enter_dual_level",
+      "type": "function",
+      "name": "enter_dual_level",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [23, 44],
+      "summary": "进入一个新的前向梯度层级，用于创建和对偶张量以计算前向梯度。",
+      "tags": ["forward-ad", "dual-level", "entry"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/autograd/forward_ad.py:exit_dual_level",
+      "type": "function",
+      "name": "exit_dual_level",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [47, 69],
+      "summary": "退出指定的前向梯度层级，删除该层级关联的所有梯度。",
+      "tags": ["forward-ad", "dual-level", "exit"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/autograd/forward_ad.py:make_dual",
+      "type": "function",
+      "name": "make_dual",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [77, 138],
+      "summary": "将张量值与其切线关联创建对偶张量，用于前向模式AD的雅可比向量积计算。",
+      "tags": ["forward-ad", "dual-tensor", "jvp"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/autograd/forward_ad.py:unpack_dual",
+      "type": "function",
+      "name": "unpack_dual",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [151, 182],
+      "summary": "解包对偶张量获取其原始张量值和前向梯度，返回namedtuple包含primal和tangent。",
+      "tags": ["forward-ad", "dual-tensor", "unpack"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/forward_ad.py:dual_level",
+      "type": "class",
+      "name": "dual_level",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [185, 224],
+      "summary": "前向模式AD的上下文管理器，所有前向AD计算必须在此上下文中进行。",
+      "tags": ["forward-ad", "context-manager", "dual-level"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/function.py:FunctionCtx",
+      "type": "class",
+      "name": "FunctionCtx",
+      "filePath": "torch/autograd/function.py",
+      "lineRange": [39, 281],
+      "summary": "自定义autograd.Function的上下文管理类，提供save_for_backward、mark_dirty、mark_non_differentiable、set_materialize_grads等方法。",
+      "tags": ["autograd", "context", "saved-tensors"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/function.py:BackwardCFunction",
+      "type": "class",
+      "name": "BackwardCFunction",
+      "filePath": "torch/autograd/function.py",
+      "lineRange": [297, 343],
+      "summary": "内部使用的自动求导反向函数类，继承自C++基类，在反向传播时调用用户定义的backward/vjp方法。",
+      "tags": ["autograd", "internal", "backward"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/function.py:FunctionMeta",
+      "type": "class",
+      "name": "FunctionMeta",
+      "filePath": "torch/autograd/function.py",
+      "lineRange": [346, 362],
+      "summary": "Function类的元类，在类定义时自动为每个自定义Function生成对应的BackwardCFunction子类。",
+      "tags": ["autograd", "metaclass", "function"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/function.py:Function",
+      "type": "class",
+      "name": "Function",
+      "filePath": "torch/autograd/function.py",
+      "lineRange": [514, 640],
+      "summary": "自定义autograd.Function的基类，用户应继承此类并实现forward和backward静态方法，通过apply调用。",
+      "tags": ["autograd", "base-class", "custom-function", "api"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/autograd/function.py:once_differentiable",
+      "type": "function",
+      "name": "once_differentiable",
+      "filePath": "torch/autograd/function.py",
+      "lineRange": [646, 694],
+      "summary": "装饰器标记backward函数只可微分一次，二次求导时会抛出错误。",
+      "tags": ["autograd", "decorator", "differentiability"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/function.py:InplaceFunction",
+      "type": "class",
+      "name": "InplaceFunction",
+      "filePath": "torch/autograd/function.py",
+      "lineRange": [697, 706],
+      "summary": "遗留的原地操作Function子类，仅用于向后兼容，新代码应使用Function。",
+      "tags": ["autograd", "legacy", "inplace"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/function.py:NestedIOFunction",
+      "type": "class",
+      "name": "NestedIOFunction",
+      "filePath": "torch/autograd/function.py",
+      "lineRange": [817, 898],
+      "summary": "支持嵌套输入输出的遗留Function子类，自动展平和恢复嵌套张量结构。",
+      "tags": ["autograd", "legacy", "nested-io"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/grad_mode.py:no_grad",
+      "type": "class",
+      "name": "no_grad",
+      "filePath": "torch/autograd/grad_mode.py",
+      "lineRange": [22, 86],
+      "summary": "上下文管理器/装饰器，禁用梯度计算，适用于推理阶段以减少内存消耗。",
+      "tags": ["gradient-mode", "context-manager", "inference"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/grad_mode.py:enable_grad",
+      "type": "class",
+      "name": "enable_grad",
+      "filePath": "torch/autograd/grad_mode.py",
+      "lineRange": [89, 141],
+      "summary": "上下文管理器/装饰器，在no_grad或set_grad_enabled(False)作用域内重新启用梯度计算。",
+      "tags": ["gradient-mode", "context-manager"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/grad_mode.py:set_grad_enabled",
+      "type": "class",
+      "name": "set_grad_enabled",
+      "filePath": "torch/autograd/grad_mode.py",
+      "lineRange": [144, 210],
+      "summary": "上下文管理器/装饰器，根据mode参数启用或禁用梯度计算。",
+      "tags": ["gradient-mode", "context-manager"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/grad_mode.py:inference_mode",
+      "type": "class",
+      "name": "inference_mode",
+      "filePath": "torch/autograd/grad_mode.py",
+      "lineRange": [213, 301],
+      "summary": "上下文管理器/装饰器，启用推理模式，比no_grad更高效地禁用视图跟踪和版本计数器更新。",
+      "tags": ["gradient-mode", "context-manager", "inference"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/grad_mode.py:set_multithreading_enabled",
+      "type": "class",
+      "name": "set_multithreading_enabled",
+      "filePath": "torch/autograd/grad_mode.py",
+      "lineRange": [314, 353],
+      "summary": "上下文管理器，启用或禁用多线程反向传播。",
+      "tags": ["gradient-mode", "multithreading", "backward"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/grad_mode.py:enforce_grad_layout_policy",
+      "type": "class",
+      "name": "enforce_grad_layout_policy",
+      "filePath": "torch/autograd/grad_mode.py",
+      "lineRange": [356, 411],
+      "summary": "上下文管理器，控制梯度布局策略的强制程度，允许在内存优化场景中放松布局约束。",
+      "tags": ["gradient-mode", "memory", "layout"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/graph.py:Node",
+      "type": "class",
+      "name": "Node",
+      "filePath": "torch/autograd/graph.py",
+      "lineRange": [56, 187],
+      "summary": "自动求导图中计算节点的抽象基类，提供name、next_functions、register_hook、register_prehook等接口。",
+      "tags": ["autograd", "graph", "abstract-class"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/graph.py:saved_tensors_hooks",
+      "type": "class",
+      "name": "saved_tensors_hooks",
+      "filePath": "torch/autograd/graph.py",
+      "lineRange": [265, 346],
+      "summary": "上下文管理器，为保存的张量设置pack/unpack钩子，自定义张量在保存和取回时的序列化行为。",
+      "tags": ["autograd", "hooks", "saved-tensors"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/graph.py:save_on_cpu",
+      "type": "class",
+      "name": "save_on_cpu",
+      "filePath": "torch/autograd/graph.py",
+      "lineRange": [349, 419],
+      "summary": "上下文管理器，将前向传播中保存的张量移到CPU存储，反向传播时再拷贝回原设备，以节省GPU内存。",
+      "tags": ["autograd", "memory", "gpu", "cpu-offloading"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/autograd/graph.py:register_multi_grad_hook",
+      "type": "function",
+      "name": "register_multi_grad_hook",
+      "filePath": "torch/autograd/graph.py",
+      "lineRange": [512, 640],
+      "summary": "注册一个多梯度反向钩子，在多个张量的梯度都计算完成后（all模式）或任意一个计算完成后（any模式）触发回调。",
+      "tags": ["autograd", "hooks", "multi-grad"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/autograd/graph.py:allow_mutation_on_saved_tensors",
+      "type": "function",
+      "name": "allow_mutation_on_saved_tensors",
+      "filePath": "torch/autograd/graph.py",
+      "lineRange": [803, 849],
+      "summary": "上下文管理器，允许在保存张量后进行原地修改，通过自动克隆机制确保反向传播时仍能访问原始值。",
+      "tags": ["autograd", "mutation", "saved-tensors"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/autograd/graph.py:_engine_run_backward",
+      "type": "function",
+      "name": "_engine_run_backward",
+      "filePath": "torch/autograd/graph.py",
+      "lineRange": [900, 919],
+      "summary": "内部函数，通过C++引擎执行反向传播，支持DEBUG级别的日志钩子注册。",
+      "tags": ["autograd", "internal", "backward"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/autograd/profiler.py:profile",
+      "type": "class",
+      "name": "profile",
+      "filePath": "torch/autograd/profiler.py",
+      "lineRange": [113, 836],
+      "summary": "自动求导分析器的上下文管理器，记录PyTorch函数的执行时间，支持CPU/CUDA/XPU等多种设备的性能分析。",
+      "tags": ["profiler", "performance", "kineto", "analysis"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/autograd/profiler.py:record_function",
+      "type": "class",
+      "name": "record_function",
+      "filePath": "torch/autograd/profiler.py",
+      "lineRange": [840, 958],
+      "summary": "上下文管理器/装饰器，为代码块添加自定义标签，便于在分析器结果中识别。",
+      "tags": ["profiler", "annotation", "label"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/profiler.py:emit_nvtx",
+      "type": "class",
+      "name": "emit_nvtx",
+      "filePath": "torch/autograd/profiler.py",
+      "lineRange": [1032, 1150],
+      "summary": "上下文管理器，使每个自动求导操作都生成NVTX范围，用于NVIDIA Visual Profiler中的可视化分析。",
+      "tags": ["profiler", "nvtx", "visualization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/profiler.py:KinetoStepTracker",
+      "type": "class",
+      "name": "KinetoStepTracker",
+      "filePath": "torch/autograd/profiler.py",
+      "lineRange": [1245, 1334],
+      "summary": "全局步数跟踪器，管理多个请求者（profiler、optimizer）的步数计数，避免重复调用kineto step。",
+      "tags": ["profiler", "step-tracking", "kineto"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/variable.py:Variable",
+      "type": "class",
+      "name": "Variable",
+      "filePath": "torch/autograd/variable.py",
+      "lineRange": [14, 16],
+      "summary": "遗留的Variable类，继承自torch._C._LegacyVariableBase，承载自动求引引擎的执行接口。",
+      "tags": ["autograd", "legacy", "variable"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/backends/cuda/__init__.py:cuFFTPlanCacheManager",
+      "type": "class",
+      "name": "cuFFTPlanCacheManager",
+      "filePath": "torch/backends/cuda/__init__.py",
+      "lineRange": [94, 129],
+      "summary": "管理所有cuFFT计划缓存，通过设备索引访问特定缓存的size、max_size属性和clear方法。",
+      "tags": ["cuda", "fft", "cache"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/backends/cuda/__init__.py:cuBLASModule",
+      "type": "class",
+      "name": "cuBLASModule",
+      "filePath": "torch/backends/cuda/__init__.py",
+      "lineRange": [132, 210],
+      "summary": "管理cuBLAS运行时配置，包括TF32支持、FP16/BF16归约精度、FP16累加等设置。",
+      "tags": ["cuda", "blas", "configuration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/backends/cuda/__init__.py:preferred_linalg_library",
+      "type": "function",
+      "name": "preferred_linalg_library",
+      "filePath": "torch/backends/cuda/__init__.py",
+      "lineRange": [221, 278],
+      "summary": "设置或查询CUDA线性代数操作的首选库（cuSOLVER或MAGMA）。",
+      "tags": ["cuda", "linalg", "configuration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/backends/cuda/__init__.py:preferred_blas_library",
+      "type": "function",
+      "name": "preferred_blas_library",
+      "filePath": "torch/backends/cuda/__init__.py",
+      "lineRange": [292, 333],
+      "summary": "设置或查询CUDA BLAS操作的首选库（cuBLAS、cuBLASLt或CK[ROCm]）。",
+      "tags": ["cuda", "blas", "configuration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/backends/mkl/__init__.py:verbose",
+      "type": "class",
+      "name": "verbose",
+      "filePath": "torch/backends/mkl/__init__.py",
+      "lineRange": [14, 59],
+      "summary": "上下文管理器，按需启用oneMKL的verbose日志输出，用于调试性能问题。",
+      "tags": ["mkl", "verbose", "debug"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/compiler/__init__.py:compile",
+      "type": "function",
+      "name": "compile",
+      "filePath": "torch/compiler/__init__.py",
+      "lineRange": [52, 57],
+      "summary": "torch.compile的别名函数，委托给torch.compile执行。",
+      "tags": ["compiler", "torch-compile", "api"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/compiler/__init__.py:allow_in_graph",
+      "type": "function",
+      "name": "allow_in_graph",
+      "filePath": "torch/compiler/__init__.py",
+      "lineRange": [73, 153],
+      "summary": "标记函数在编译器前端（Dynamo）中跳过符号自省，直接写入计算图，用于处理Dynamo无法自省的函数。",
+      "tags": ["compiler", "dynamo", "graph"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/compiler/__init__.py:set_stance",
+      "type": "function",
+      "name": "set_stance",
+      "filePath": "torch/compiler/__init__.py",
+      "lineRange": [298, 377],
+      "summary": "设置编译器的当前姿态，支持force_eager、eager_on_recompile、fail_on_recompile等多种模式。",
+      "tags": ["compiler", "stance", "configuration"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/compiler/__init__.py:disable",
+      "type": "function",
+      "name": "disable",
+      "filePath": "torch/compiler/__init__.py",
+      "lineRange": [250, 262],
+      "summary": "装饰器，禁用指定函数的torch.compile编译，支持递归禁用调用的函数。",
+      "tags": ["compiler", "decorator", "disable"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/compiler/__init__.py:is_compiling",
+      "type": "function",
+      "name": "is_compiling",
+      "filePath": "torch/compiler/__init__.py",
+      "lineRange": [477, 497],
+      "summary": "查询当前是否处于torch.compile或torch.export的图执行/追踪过程中。",
+      "tags": ["compiler", "query", "state"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/compiler/__init__.py:set_default_backend",
+      "type": "function",
+      "name": "set_default_backend",
+      "filePath": "torch/compiler/__init__.py",
+      "lineRange": [265, 284],
+      "summary": "设置torch.compile未指定backend参数时使用的默认后端。",
+      "tags": ["compiler", "backend", "configuration"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/cuda/__init__.py:is_available",
+      "type": "function",
+      "name": "is_available",
+      "filePath": "torch/cuda/__init__.py",
+      "lineRange": [169, 188],
+      "summary": "检查CUDA当前是否可用，支持基于NVML的非fork中毒检测模式。",
+      "tags": ["cuda", "availability", "detection"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/cuda/__init__.py:is_bf16_supported",
+      "type": "function",
+      "name": "is_bf16_supported",
+      "filePath": "torch/cuda/__init__.py",
+      "lineRange": [191, 211],
+      "summary": "检查当前CUDA/ROCm设备是否支持bfloat16数据类型。",
+      "tags": ["cuda", "bf16", "capability"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/cuda/__init__.py:_lazy_init",
+      "type": "function",
+      "name": "_lazy_init",
+      "filePath": "torch/cuda/__init__.py",
+      "lineRange": [497, 550],
+      "summary": "惰性初始化CUDA状态，执行所有排队的初始化调用并设置设备属性函数。",
+      "tags": ["cuda", "initialization", "lazy"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/cuda/__init__.py:StreamContext",
+      "type": "class",
+      "name": "StreamContext",
+      "filePath": "torch/cuda/__init__.py",
+      "lineRange": [752, 810],
+      "summary": "上下文管理器，在作用域内选择指定的CUDA流执行所有CUDA内核操作。",
+      "tags": ["cuda", "stream", "context-manager"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/cuda/_utils.py:_check_cuda",
+      "type": "function",
+      "name": "_check_cuda",
+      "filePath": "torch/cuda/_utils.py",
+      "lineRange": [61, 70],
+      "summary": "检查CUDA驱动API调用结果，非零时抛出包含错误信息的RuntimeError。",
+      "tags": ["cuda", "error-checking", "utility"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/cuda/_utils.py:_check_cuda_bindings",
+      "type": "function",
+      "name": "_check_cuda_bindings",
+      "filePath": "torch/cuda/_utils.py",
+      "lineRange": [73, 99],
+      "summary": "检查cuda.bindings（cuda-python）运行时调用的结果，非成功时抛出错误。",
+      "tags": ["cuda", "error-checking", "bindings"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/cuda/_utils.py:_nvrtc_compile",
+      "type": "function",
+      "name": "_nvrtc_compile",
+      "filePath": "torch/cuda/_utils.py",
+      "lineRange": [183, 326],
+      "summary": "使用NVRTC编译CUDA内核源码，返回编译后的二进制代码和修饰后的内核名称。",
+      "tags": ["cuda", "nvrtc", "compilation", "kernel"],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/cuda/_utils.py:_CudaModule",
+      "type": "class",
+      "name": "_CudaModule",
+      "filePath": "torch/cuda/_utils.py",
+      "lineRange": [329, 356],
+      "summary": "包装编译后的CUDA模块，按需加载和缓存内核函数。",
+      "tags": ["cuda", "module", "kernel"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/cuda/_utils.py:_CudaKernel",
+      "type": "class",
+      "name": "_CudaKernel",
+      "filePath": "torch/cuda/_utils.py",
+      "lineRange": [359, 500],
+      "summary": "表示编译后的CUDA内核，支持使用PyTorch张量参数进行调用，自动处理参数类型转换。",
+      "tags": ["cuda", "kernel", "launch"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/cuda/graphs.py:CUDAGraph",
+      "type": "class",
+      "name": "CUDAGraph",
+      "filePath": "torch/cuda/graphs.py",
+      "lineRange": [78, 350],
+      "summary": "CUDA Graph封装类，支持图的捕获（capture_begin/capture_end）、重放（replay）以及内存池管理，用于降低GPU内核启动开销。",
+      "tags": ["cuda", "graph", "capture", "optimization"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/cuda/graphs.py:graph",
+      "type": "function",
+      "name": "graph",
+      "filePath": "torch/cuda/graphs.py",
+      "lineRange": [365, 509],
+      "summary": "上下文管理器，在指定流上自动开始和结束CUDA Graph捕获。",
+      "tags": ["cuda", "graph", "context-manager"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/cuda/graphs.py:make_graphed_callables",
+      "type": "function",
+      "name": "make_graphed_callables",
+      "filePath": "torch/cuda/graphs.py",
+      "lineRange": [510, 841],
+      "summary": "将可调用对象封装为CUDA Graph版本，在首次调用时捕获图，后续调用直接重放以减少开销。",
+      "tags": ["cuda", "graph", "optimization", "wrapper"],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/cuda/nccl.py:is_available",
+      "type": "function",
+      "name": "is_available",
+      "filePath": "torch/cuda/nccl.py",
+      "lineRange": [14, 32],
+      "summary": "检查NCCL是否可用于给定的张量集合（非稀疏、连续、CUDA张量）。",
+      "tags": ["nccl", "availability", "check"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/cuda/nccl.py:all_reduce",
+      "type": "function",
+      "name": "all_reduce",
+      "filePath": "torch/cuda/nccl.py",
+      "lineRange": [71, 76],
+      "summary": "执行NCCL all_reduce集合操作，对所有输入张量执行归约并将结果写回。",
+      "tags": ["nccl", "collective", "all-reduce"],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/cuda/nccl.py:broadcast",
+      "type": "function",
+      "name": "broadcast",
+      "filePath": "torch/cuda/nccl.py",
+      "lineRange": [124, 128],
+      "summary": "执行NCCL broadcast集合操作，从root rank广播张量到所有rank。",
+      "tags": ["nccl", "collective", "broadcast"],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/cuda/streams.py:Stream",
+      "type": "class",
+      "name": "Stream",
+      "filePath": "torch/cuda/streams.py",
+      "lineRange": [17, 133],
+      "summary": "CUDA流的Python封装，支持流的创建、事件等待、流间同步和上下文管理器用法。",
+      "tags": ["cuda", "stream", "synchronization"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/cuda/streams.py:Event",
+      "type": "class",
+      "name": "Event",
+      "filePath": "torch/cuda/streams.py",
+      "lineRange": [159, 271],
+      "summary": "CUDA事件的Python封装，支持事件记录、等待、时间测量和进程间共享。",
+      "tags": ["cuda", "event", "synchronization", "timing"],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/__init__.py:is_available",
+      "type": "function",
+      "name": "is_available",
+      "filePath": "torch/distributed/__init__.py",
+      "lineRange": [17, 28],
+      "summary": "检查分布式包是否可用（编译时是否启用分布式支持）。",
+      "tags": ["distributed", "availability", "check"],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "file:torch/_functorch/autograd_function.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "file:torch/_functorch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "file:torch/utils/hooks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "file:torch/utils/_contextlib.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "file:torch/autograd/variable.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "file:torch/utils/_python_dispatch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "file:torch/utils/hooks.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "file:torch/autograd/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "file:torch/autograd/profiler_util.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "file:torch/futures/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "file:torch/cuda/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/variable.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/backends/__init__.py",
+      "target": "file:torch/backends/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/backends/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/backends/mkl/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/backends/openmp/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/backends/quantized/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "file:torch/_higher_order_ops/invoke_subgraph.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/__init__.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/__init__.py",
+      "target": "file:torch/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/__init__.py",
+      "target": "file:torch/storage.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/_sanitizer.py",
+      "target": "file:torch/utils/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/_sanitizer.py",
+      "target": "file:torch/utils/_python_dispatch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/_sanitizer.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/_sanitizer.py",
+      "target": "file:torch/cuda/_gpu_trace.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/_utils.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/_utils.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/comm.py",
+      "target": "file:torch/nn/parallel/comm.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "file:torch/cuda/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/memory.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/memory.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/memory.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/nccl.py",
+      "target": "file:torch/cuda/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/streams.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/cuda/streams.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:enter_dual_level",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:exit_dual_level",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:make_dual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:unpack_dual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "class:torch/autograd/forward_ad.py:dual_level",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:enter_dual_level",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:exit_dual_level",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:make_dual",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:unpack_dual",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "class:torch/autograd/forward_ad.py:dual_level",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:FunctionCtx",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:BackwardCFunction",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:FunctionMeta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:Function",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "function:torch/autograd/function.py:once_differentiable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:InplaceFunction",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:NestedIOFunction",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:BackwardCFunction",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:FunctionMeta",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:Function",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "function:torch/autograd/function.py:once_differentiable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:InplaceFunction",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/function.py",
+      "target": "class:torch/autograd/function.py:NestedIOFunction",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:no_grad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:enable_grad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:set_grad_enabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:inference_mode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:set_multithreading_enabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:enforce_grad_layout_policy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:no_grad",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:enable_grad",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:set_grad_enabled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:inference_mode",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:set_multithreading_enabled",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/grad_mode.py",
+      "target": "class:torch/autograd/grad_mode.py:enforce_grad_layout_policy",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "class:torch/autograd/graph.py:Node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "class:torch/autograd/graph.py:saved_tensors_hooks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "class:torch/autograd/graph.py:save_on_cpu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "function:torch/autograd/graph.py:register_multi_grad_hook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "function:torch/autograd/graph.py:allow_mutation_on_saved_tensors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "function:torch/autograd/graph.py:_engine_run_backward",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "class:torch/autograd/graph.py:Node",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "class:torch/autograd/graph.py:saved_tensors_hooks",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "class:torch/autograd/graph.py:save_on_cpu",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "function:torch/autograd/graph.py:register_multi_grad_hook",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/graph.py",
+      "target": "function:torch/autograd/graph.py:allow_mutation_on_saved_tensors",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "class:torch/autograd/profiler.py:profile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "class:torch/autograd/profiler.py:record_function",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "class:torch/autograd/profiler.py:emit_nvtx",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "class:torch/autograd/profiler.py:KinetoStepTracker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "class:torch/autograd/profiler.py:profile",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "class:torch/autograd/profiler.py:record_function",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "class:torch/autograd/profiler.py:emit_nvtx",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/autograd/profiler.py",
+      "target": "class:torch/autograd/profiler.py:KinetoStepTracker",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "class:torch/backends/cuda/__init__.py:cuFFTPlanCacheManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "class:torch/backends/cuda/__init__.py:cuBLASModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "function:torch/backends/cuda/__init__.py:preferred_linalg_library",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "function:torch/backends/cuda/__init__.py:preferred_blas_library",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "class:torch/backends/cuda/__init__.py:cuFFTPlanCacheManager",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "class:torch/backends/cuda/__init__.py:cuBLASModule",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "function:torch/backends/cuda/__init__.py:preferred_linalg_library",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/backends/cuda/__init__.py",
+      "target": "function:torch/backends/cuda/__init__.py:preferred_blas_library",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/backends/mkl/__init__.py",
+      "target": "class:torch/backends/mkl/__init__.py:verbose",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:compile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:allow_in_graph",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:set_stance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:disable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:is_compiling",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:set_default_backend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:compile",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:allow_in_graph",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:set_stance",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:disable",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:is_compiling",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/compiler/__init__.py",
+      "target": "function:torch/compiler/__init__.py:set_default_backend",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/cuda/__init__.py",
+      "target": "function:torch/cuda/__init__.py:is_available",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/__init__.py",
+      "target": "function:torch/cuda/__init__.py:is_bf16_supported",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/__init__.py",
+      "target": "function:torch/cuda/__init__.py:_lazy_init",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/__init__.py",
+      "target": "class:torch/cuda/__init__.py:StreamContext",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/_utils.py",
+      "target": "function:torch/cuda/_utils.py:_check_cuda",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/_utils.py",
+      "target": "function:torch/cuda/_utils.py:_check_cuda_bindings",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/_utils.py",
+      "target": "function:torch/cuda/_utils.py:_nvrtc_compile",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/_utils.py",
+      "target": "class:torch/cuda/_utils.py:_CudaModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/_utils.py",
+      "target": "class:torch/cuda/_utils.py:_CudaKernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "class:torch/cuda/graphs.py:CUDAGraph",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "function:torch/cuda/graphs.py:graph",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "function:torch/cuda/graphs.py:make_graphed_callables",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "class:torch/cuda/graphs.py:CUDAGraph",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "function:torch/cuda/graphs.py:graph",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/cuda/graphs.py",
+      "target": "function:torch/cuda/graphs.py:make_graphed_callables",
+      "type": "exports",
+      "direction": "forward",
+      "weight": 0.8
+    },
+    {
+      "source": "file:torch/cuda/streams.py",
+      "target": "class:torch/cuda/streams.py:Stream",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/cuda/streams.py",
+      "target": "class:torch/cuda/streams.py:Event",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    },
+    {
+      "source": "file:torch/distributed/__init__.py",
+      "target": "function:torch/distributed/__init__.py:is_available",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1.0
+    }
+  ]
+}

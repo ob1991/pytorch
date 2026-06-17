@@ -1,0 +1,3476 @@
+{
+  "nodes": [
+    {
+      "id": "file:torch/distributed/_composable/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/_composable/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package",
+        "minimal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/distributed/_tensor/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/_tensor/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/distributed/algorithms/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/algorithms/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package",
+        "minimal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/distributed/checkpoint/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/checkpoint/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/distributed/distributed_c10d.py",
+      "type": "file",
+      "name": "distributed_c10d.py",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "summary": "分布式通信核心。实现进程组管理、集合通信操作（allreduce、broadcast 等）。 定义类: Backend, BackendConfig, _reduce_op, P2POp, _CollOp 定义函数: supports_complex, get_group_rank, get_global_rank, get_process_group_ranks, is_mpi_available",
+      "tags": [
+        "python",
+        "distributed",
+        "parallel",
+        "large-file",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:supports_complex",
+      "type": "function",
+      "name": "supports_complex",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        254,
+        264
+      ],
+      "summary": "supports_complex — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_group_rank",
+      "type": "function",
+      "name": "get_group_rank",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1109,
+        1134
+      ],
+      "summary": "get_group_rank — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_global_rank",
+      "type": "function",
+      "name": "get_global_rank",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1137,
+        1161
+      ],
+      "summary": "get_global_rank — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_process_group_ranks",
+      "type": "function",
+      "name": "get_process_group_ranks",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1175,
+        1186
+      ],
+      "summary": "get_process_group_ranks — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:is_backend_available",
+      "type": "function",
+      "name": "is_backend_available",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1367,
+        1389
+      ],
+      "summary": "is_backend_available — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:is_torchelastic_launched",
+      "type": "function",
+      "name": "is_torchelastic_launched",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1397,
+        1407
+      ],
+      "summary": "is_torchelastic_launched — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_backend_config",
+      "type": "function",
+      "name": "get_backend_config",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1449,
+        1466
+      ],
+      "summary": "get_backend_config — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_backend",
+      "type": "function",
+      "name": "get_backend",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1469,
+        1492
+      ],
+      "summary": "get_backend — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_default_backend_for_device",
+      "type": "function",
+      "name": "get_default_backend_for_device",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1495,
+        1515
+      ],
+      "summary": "get_default_backend_for_device — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_node_local_rank",
+      "type": "function",
+      "name": "get_node_local_rank",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1561,
+        1584
+      ],
+      "summary": "get_node_local_rank — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:init_process_group",
+      "type": "function",
+      "name": "init_process_group",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        1664,
+        1957
+      ],
+      "summary": "init_process_group — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:destroy_process_group",
+      "type": "function",
+      "name": "destroy_process_group",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2359,
+        2455
+      ],
+      "summary": "destroy_process_group — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_rank",
+      "type": "function",
+      "name": "get_rank",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2550,
+        2574
+      ],
+      "summary": "get_rank — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:get_world_size",
+      "type": "function",
+      "name": "get_world_size",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2577,
+        2593
+      ],
+      "summary": "get_world_size — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:isend",
+      "type": "function",
+      "name": "isend",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2596,
+        2650
+      ],
+      "summary": "isend — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:irecv",
+      "type": "function",
+      "name": "irecv",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2653,
+        2707
+      ],
+      "summary": "irecv — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:send",
+      "type": "function",
+      "name": "send",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2711,
+        2751
+      ],
+      "summary": "send — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:recv",
+      "type": "function",
+      "name": "recv",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2755,
+        2804
+      ],
+      "summary": "recv — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:batch_isend_irecv",
+      "type": "function",
+      "name": "batch_isend_irecv",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2990,
+        3073
+      ],
+      "summary": "batch_isend_irecv — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:broadcast",
+      "type": "function",
+      "name": "broadcast",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3086,
+        3152
+      ],
+      "summary": "broadcast — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:all_reduce",
+      "type": "function",
+      "name": "all_reduce",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3156,
+        3253
+      ],
+      "summary": "all_reduce — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:all_reduce_coalesced",
+      "type": "function",
+      "name": "all_reduce_coalesced",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3263,
+        3333
+      ],
+      "summary": "all_reduce_coalesced — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:reduce",
+      "type": "function",
+      "name": "reduce",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3337,
+        3399
+      ],
+      "summary": "reduce — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:all_gather_object",
+      "type": "function",
+      "name": "all_gather_object",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3439,
+        3530
+      ],
+      "summary": "all_gather_object — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:gather_object",
+      "type": "function",
+      "name": "gather_object",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3534,
+        3661
+      ],
+      "summary": "gather_object — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:send_object_list",
+      "type": "function",
+      "name": "send_object_list",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3665,
+        3779
+      ],
+      "summary": "send_object_list — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:recv_object_list",
+      "type": "function",
+      "name": "recv_object_list",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3783,
+        3921
+      ],
+      "summary": "recv_object_list — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:broadcast_object_list",
+      "type": "function",
+      "name": "broadcast_object_list",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        3925,
+        4053
+      ],
+      "summary": "broadcast_object_list — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:scatter_object_list",
+      "type": "function",
+      "name": "scatter_object_list",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4057,
+        4188
+      ],
+      "summary": "scatter_object_list — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:all_gather",
+      "type": "function",
+      "name": "all_gather",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4192,
+        4288
+      ],
+      "summary": "all_gather — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:all_gather_into_tensor",
+      "type": "function",
+      "name": "all_gather_into_tensor",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4292,
+        4395
+      ],
+      "summary": "all_gather_into_tensor — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:all_gather_coalesced",
+      "type": "function",
+      "name": "all_gather_coalesced",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4435,
+        4534
+      ],
+      "summary": "all_gather_coalesced — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:gather",
+      "type": "function",
+      "name": "gather",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4550,
+        4650
+      ],
+      "summary": "gather — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:scatter",
+      "type": "function",
+      "name": "scatter",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4654,
+        4768
+      ],
+      "summary": "scatter — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:reduce_scatter",
+      "type": "function",
+      "name": "reduce_scatter",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4772,
+        4825
+      ],
+      "summary": "reduce_scatter — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:reduce_scatter_tensor",
+      "type": "function",
+      "name": "reduce_scatter_tensor",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4829,
+        4926
+      ],
+      "summary": "reduce_scatter_tensor — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:all_to_all_single",
+      "type": "function",
+      "name": "all_to_all_single",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        4960,
+        5105
+      ],
+      "summary": "all_to_all_single — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:all_to_all",
+      "type": "function",
+      "name": "all_to_all",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        5109,
+        5244
+      ],
+      "summary": "all_to_all — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:barrier",
+      "type": "function",
+      "name": "barrier",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        5248,
+        5321
+      ],
+      "summary": "barrier — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:monitored_barrier",
+      "type": "function",
+      "name": "monitored_barrier",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        5324,
+        5401
+      ],
+      "summary": "monitored_barrier — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:split_group",
+      "type": "function",
+      "name": "split_group",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        5481,
+        5697
+      ],
+      "summary": "split_group — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:new_group",
+      "type": "function",
+      "name": "new_group",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        5701,
+        5794
+      ],
+      "summary": "new_group — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:new_subgroups",
+      "type": "function",
+      "name": "new_subgroups",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        5957,
+        6063
+      ],
+      "summary": "new_subgroups — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:new_subgroups_by_enumeration",
+      "type": "function",
+      "name": "new_subgroups_by_enumeration",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        6066,
+        6149
+      ],
+      "summary": "new_subgroups_by_enumeration — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:shrink_group",
+      "type": "function",
+      "name": "shrink_group",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        6222,
+        6289
+      ],
+      "summary": "shrink_group — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/distributed/distributed_c10d.py:record_comm",
+      "type": "function",
+      "name": "record_comm",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        6741,
+        6762
+      ],
+      "summary": "record_comm — torch/distributed/distributed_c10d.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/distributed/distributed_c10d.py:Backend",
+      "type": "class",
+      "name": "Backend",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        268,
+        405
+      ],
+      "summary": "Backend 类 — torch/distributed/distributed_c10d.py 中定义的，方法: register_backend",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/distributed/distributed_c10d.py:BackendConfig",
+      "type": "class",
+      "name": "BackendConfig",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        408,
+        489
+      ],
+      "summary": "BackendConfig 类 — torch/distributed/distributed_c10d.py 中定义的，方法: get_device_backend_map",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/distributed/distributed_c10d.py:_reduce_op",
+      "type": "class",
+      "name": "_reduce_op",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        534,
+        555
+      ],
+      "summary": "_reduce_op 类 — torch/distributed/distributed_c10d.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/distributed/distributed_c10d.py:P2POp",
+      "type": "class",
+      "name": "P2POp",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        561,
+        628
+      ],
+      "summary": "P2POp 类 — torch/distributed/distributed_c10d.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/distributed/distributed_c10d.py:_CollOp",
+      "type": "class",
+      "name": "_CollOp",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        631,
+        655
+      ],
+      "summary": "_CollOp 类 — torch/distributed/distributed_c10d.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/distributed/distributed_c10d.py:_World",
+      "type": "class",
+      "name": "_World",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        671,
+        800
+      ],
+      "summary": "_World 类 — torch/distributed/distributed_c10d.py 中定义的，方法: default_pg, default_pg, pg_map, pg_names, pg_group_ranks",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/distributed/distributed_c10d.py:_WorldMeta",
+      "type": "class",
+      "name": "_WorldMeta",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        807,
+        821
+      ],
+      "summary": "_WorldMeta 类 — torch/distributed/distributed_c10d.py 中定义的，方法: WORLD, WORLD",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/distributed/distributed_c10d.py:_CoalescingManager",
+      "type": "class",
+      "name": "_CoalescingManager",
+      "filePath": "torch/distributed/distributed_c10d.py",
+      "lineRange": [
+        2821,
+        2831
+      ],
+      "summary": "_CoalescingManager 类 — torch/distributed/distributed_c10d.py 中定义的，方法: append, wait",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/distributed/elastic/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/elastic/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/distributed/fsdp/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/fsdp/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/distributed/nn/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/nn/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package",
+        "minimal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/distributed/optim/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/optim/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/distributed/remote_device.py",
+      "type": "file",
+      "name": "remote_device.py",
+      "filePath": "torch/distributed/remote_device.py",
+      "summary": "分布式模块 — remote_device。 定义类: _remote_device",
+      "tags": [
+        "python",
+        "distributed",
+        "parallel"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/distributed/remote_device.py:_remote_device",
+      "type": "class",
+      "name": "_remote_device",
+      "filePath": "torch/distributed/remote_device.py",
+      "lineRange": [
+        6,
+        119
+      ],
+      "summary": "_remote_device 类 — torch/distributed/remote_device.py 中定义的，方法: worker_name, rank, device",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/distributed/rpc/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/rpc/__init__.py",
+      "summary": "分布式模块 — __init__。 定义函数: is_available",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/distributed/tensor/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/tensor/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/distributed/tensor/parallel/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/distributed/tensor/parallel/__init__.py",
+      "summary": "分布式模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/export/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/export/__init__.py",
+      "summary": "导出模块 — __init__。 定义函数: export, save, load, draft_export, register_dataclass",
+      "tags": [
+        "python",
+        "package",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/export/__init__.py:export",
+      "type": "function",
+      "name": "export",
+      "filePath": "torch/export/__init__.py",
+      "lineRange": [
+        59,
+        205
+      ],
+      "summary": "export — torch/export/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/export/__init__.py:save",
+      "type": "function",
+      "name": "save",
+      "filePath": "torch/export/__init__.py",
+      "lineRange": [
+        211,
+        280
+      ],
+      "summary": "save — torch/export/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/export/__init__.py:load",
+      "type": "function",
+      "name": "load",
+      "filePath": "torch/export/__init__.py",
+      "lineRange": [
+        283,
+        434
+      ],
+      "summary": "load — torch/export/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/export/__init__.py:draft_export",
+      "type": "function",
+      "name": "draft_export",
+      "filePath": "torch/export/__init__.py",
+      "lineRange": [
+        437,
+        462
+      ],
+      "summary": "draft_export — torch/export/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/export/__init__.py:register_dataclass",
+      "type": "function",
+      "name": "register_dataclass",
+      "filePath": "torch/export/__init__.py",
+      "lineRange": [
+        465,
+        510
+      ],
+      "summary": "register_dataclass — torch/export/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/export/dynamic_shapes.py",
+      "type": "file",
+      "name": "dynamic_shapes.py",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "summary": "动态形状规范。定义导出时的动态维度约束。 定义类: _DimHintType, _DimHint, Dim, _StaticDim, _DerivedDim 定义函数: dims, refine_dynamic_shapes_from_suggested_fixes",
+      "tags": [
+        "python",
+        "export",
+        "deployment",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/export/dynamic_shapes.py:refine_dynamic_shapes_from_suggested_fixes",
+      "type": "function",
+      "name": "refine_dynamic_shapes_from_suggested_fixes",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        1281,
+        1417
+      ],
+      "summary": "refine_dynamic_shapes_from_suggested_fixes — torch/export/dynamic_shapes.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/export/dynamic_shapes.py:_DimHint",
+      "type": "class",
+      "name": "_DimHint",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        62,
+        106
+      ],
+      "summary": "_DimHint 类 — torch/export/dynamic_shapes.py 中定义的，方法: AUTO, DYNAMIC, STATIC",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/dynamic_shapes.py:Dim",
+      "type": "class",
+      "name": "Dim",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        109,
+        256
+      ],
+      "summary": "Dim 类 — torch/export/dynamic_shapes.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/dynamic_shapes.py:_StaticDim",
+      "type": "class",
+      "name": "_StaticDim",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        262,
+        280
+      ],
+      "summary": "_StaticDim 类 — torch/export/dynamic_shapes.py 中定义的，方法: min, max",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/dynamic_shapes.py:_DerivedDim",
+      "type": "class",
+      "name": "_DerivedDim",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        283,
+        357
+      ],
+      "summary": "_DerivedDim 类 — torch/export/dynamic_shapes.py 中定义的，方法: min, max",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/dynamic_shapes.py:_Constraint",
+      "type": "class",
+      "name": "_Constraint",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        383,
+        451
+      ],
+      "summary": "_Constraint 类 — torch/export/dynamic_shapes.py 中定义的，方法: serializable_spec",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/dynamic_shapes.py:_DerivedConstraint",
+      "type": "class",
+      "name": "_DerivedConstraint",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        473,
+        496
+      ],
+      "summary": "_DerivedConstraint 类 — torch/export/dynamic_shapes.py 中定义的，方法: serializable_spec",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/dynamic_shapes.py:ShapesCollection",
+      "type": "class",
+      "name": "ShapesCollection",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        741,
+        835
+      ],
+      "summary": "ShapesCollection 类 — torch/export/dynamic_shapes.py 中定义的，方法: dynamic_shapes",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/dynamic_shapes.py:AdditionalInputs",
+      "type": "class",
+      "name": "AdditionalInputs",
+      "filePath": "torch/export/dynamic_shapes.py",
+      "lineRange": [
+        838,
+        932
+      ],
+      "summary": "AdditionalInputs 类 — torch/export/dynamic_shapes.py 中定义的，方法: add, dynamic_shapes, verify",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/export/exported_program.py",
+      "type": "file",
+      "name": "exported_program.py",
+      "filePath": "torch/export/exported_program.py",
+      "summary": "ExportedProgram 表示。封装导出的计算图及其元数据。 定义类: ModuleCallSignature, ModuleCallEntry, ExportedProgram 定义函数: default_decompositions",
+      "tags": [
+        "python",
+        "export",
+        "deployment",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/export/exported_program.py:ExportedProgram",
+      "type": "class",
+      "name": "ExportedProgram",
+      "filePath": "torch/export/exported_program.py",
+      "lineRange": [
+        1058,
+        1718
+      ],
+      "summary": "ExportedProgram 类 — torch/export/exported_program.py 中定义的，方法: graph_module, graph_module, graph, graph, graph_signature",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/export/unflatten.py",
+      "type": "file",
+      "name": "unflatten.py",
+      "filePath": "torch/export/unflatten.py",
+      "summary": "导出模块 — unflatten。 定义类: _AttrKind, _TensorID, _SubmoduleBase, InterpreterModule, InterpreterModuleDispatcher 定义函数: unflatten",
+      "tags": [
+        "python",
+        "export",
+        "deployment",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/export/unflatten.py:unflatten",
+      "type": "function",
+      "name": "unflatten",
+      "filePath": "torch/export/unflatten.py",
+      "lineRange": [
+        796,
+        829
+      ],
+      "summary": "unflatten — torch/export/unflatten.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/export/unflatten.py:InterpreterModule",
+      "type": "class",
+      "name": "InterpreterModule",
+      "filePath": "torch/export/unflatten.py",
+      "lineRange": [
+        160,
+        252
+      ],
+      "summary": "InterpreterModule 类 — torch/export/unflatten.py 中定义的，方法: forward, finalize, print_readable",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/unflatten.py:InterpreterModuleDispatcher",
+      "type": "class",
+      "name": "InterpreterModuleDispatcher",
+      "filePath": "torch/export/unflatten.py",
+      "lineRange": [
+        255,
+        301
+      ],
+      "summary": "InterpreterModuleDispatcher 类 — torch/export/unflatten.py 中定义的，方法: forward, call_modules, print_readable",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/unflatten.py:FlatArgsAdapter",
+      "type": "class",
+      "name": "FlatArgsAdapter",
+      "filePath": "torch/export/unflatten.py",
+      "lineRange": [
+        304,
+        323
+      ],
+      "summary": "FlatArgsAdapter 类 — torch/export/unflatten.py 中定义的，方法: adapt, get_flat_arg_paths",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/export/unflatten.py:UnflattenedModule",
+      "type": "class",
+      "name": "UnflattenedModule",
+      "filePath": "torch/export/unflatten.py",
+      "lineRange": [
+        326,
+        793
+      ],
+      "summary": "UnflattenedModule 类 — torch/export/unflatten.py 中定义的，方法: process_forward_inputs, forward, finalize, print_readable",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/export/unflatten.py:_ModuleFrame",
+      "type": "class",
+      "name": "_ModuleFrame",
+      "filePath": "torch/export/unflatten.py",
+      "lineRange": [
+        1098,
+        1600
+      ],
+      "summary": "_ModuleFrame 类 — torch/export/unflatten.py 中定义的，方法: add_placeholder, copy_sym_call_function, remap_input, uplift_common_custom_metadata, finalize_outputs",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/export/unflatten.py:_IVals",
+      "type": "class",
+      "name": "_IVals",
+      "filePath": "torch/export/unflatten.py",
+      "lineRange": [
+        1663,
+        1729
+      ],
+      "summary": "_IVals 类 — torch/export/unflatten.py 中定义的，方法: read, update",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/export/passes/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/export/passes/__init__.py",
+      "summary": "导出模块 — __init__。 定义函数: move_to_device_pass",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/export/passes/__init__.py:move_to_device_pass",
+      "type": "function",
+      "name": "move_to_device_pass",
+      "filePath": "torch/export/passes/__init__.py",
+      "lineRange": [
+        11,
+        97
+      ],
+      "summary": "move_to_device_pass — torch/export/passes/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/fft/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/fft/__init__.py",
+      "summary": "__init__.py — PyTorch torch/fft模块。1443行python代码。",
+      "tags": [
+        "python",
+        "package",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/functional.py",
+      "type": "file",
+      "name": "functional.py",
+      "filePath": "torch/functional.py",
+      "summary": "函数式 API 模块。提供张量操作、神经网络函数和损失函数的直接调用接口。 定义函数: broadcast_tensors, broadcast_shapes, split, einsum, stft",
+      "tags": [
+        "python",
+        "functional-api",
+        "large-file",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/functional.py:broadcast_tensors",
+      "type": "function",
+      "name": "broadcast_tensors",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        48,
+        77
+      ],
+      "summary": "broadcast_tensors — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/functional.py:broadcast_shapes",
+      "type": "function",
+      "name": "broadcast_shapes",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        80,
+        118
+      ],
+      "summary": "broadcast_shapes — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:split",
+      "type": "function",
+      "name": "split",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        121,
+        173
+      ],
+      "summary": "split — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:einsum",
+      "type": "function",
+      "name": "einsum",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        176,
+        383
+      ],
+      "summary": "einsum — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/functional.py:stft",
+      "type": "function",
+      "name": "stft",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        508,
+        691
+      ],
+      "summary": "stft — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/functional.py:tensordot",
+      "type": "function",
+      "name": "tensordot",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1307,
+        1410
+      ],
+      "summary": "tensordot — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/functional.py:cartesian_prod",
+      "type": "function",
+      "name": "cartesian_prod",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1413,
+        1445
+      ],
+      "summary": "cartesian_prod — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:block_diag",
+      "type": "function",
+      "name": "block_diag",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1448,
+        1481
+      ],
+      "summary": "block_diag — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:cdist",
+      "type": "function",
+      "name": "cdist",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1484,
+        1542
+      ],
+      "summary": "cdist — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:atleast_1d",
+      "type": "function",
+      "name": "atleast_1d",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1545,
+        1580
+      ],
+      "summary": "atleast_1d — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:atleast_2d",
+      "type": "function",
+      "name": "atleast_2d",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1583,
+        1620
+      ],
+      "summary": "atleast_2d — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:atleast_3d",
+      "type": "function",
+      "name": "atleast_3d",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1623,
+        1668
+      ],
+      "summary": "atleast_3d — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:norm",
+      "type": "function",
+      "name": "norm",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1735,
+        1955
+      ],
+      "summary": "norm — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/functional.py:unravel_index",
+      "type": "function",
+      "name": "unravel_index",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        1958,
+        2013
+      ],
+      "summary": "unravel_index — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/functional.py:chain_matmul",
+      "type": "function",
+      "name": "chain_matmul",
+      "filePath": "torch/functional.py",
+      "lineRange": [
+        2058,
+        2102
+      ],
+      "summary": "chain_matmul — torch/functional.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/fx/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/fx/__init__.py",
+      "summary": "FX 模块 — __init__。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/fx/graph.py",
+      "type": "file",
+      "name": "graph.py",
+      "filePath": "torch/fx/graph.py",
+      "summary": "FX 计算图表示。提供图结构的构建、操作和序列化。 定义类: _CustomBuiltin, _Namespace, PythonCode, _InsertPoint, _node_list",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation",
+        "large-file",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/fx/graph.py:_Namespace",
+      "type": "class",
+      "name": "_Namespace",
+      "filePath": "torch/fx/graph.py",
+      "lineRange": [
+        151,
+        229
+      ],
+      "summary": "_Namespace 类 — torch/fx/graph.py 中定义的，方法: create_name, associate_name_with_obj",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/graph.py:_node_list",
+      "type": "class",
+      "name": "_node_list",
+      "filePath": "torch/fx/graph.py",
+      "lineRange": [
+        278,
+        301
+      ],
+      "summary": "_node_list 类 — torch/fx/graph.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/graph.py:CodeGen",
+      "type": "class",
+      "name": "CodeGen",
+      "filePath": "torch/fx/graph.py",
+      "lineRange": [
+        356,
+        1031
+      ],
+      "summary": "CodeGen 类 — torch/fx/graph.py 中定义的，方法: gen_fn_def, generate_output, process_inputs, process_outputs, additional_globals",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/fx/graph.py:_BoxedCodeGen",
+      "type": "class",
+      "name": "_BoxedCodeGen",
+      "filePath": "torch/fx/graph.py",
+      "lineRange": [
+        1040,
+        1079
+      ],
+      "summary": "_BoxedCodeGen 类 — torch/fx/graph.py 中定义的，方法: gen_fn_def",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/graph.py:_PyTreeCodeGen",
+      "type": "class",
+      "name": "_PyTreeCodeGen",
+      "filePath": "torch/fx/graph.py",
+      "lineRange": [
+        1082,
+        1215
+      ],
+      "summary": "_PyTreeCodeGen 类 — torch/fx/graph.py 中定义的，方法: process_inputs, process_outputs, gen_var_bindings, gen_fn_def, generate_output",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/fx/graph.py:_ExportCodeGen",
+      "type": "class",
+      "name": "_ExportCodeGen",
+      "filePath": "torch/fx/graph.py",
+      "lineRange": [
+        1218,
+        1267
+      ],
+      "summary": "_ExportCodeGen 类 — torch/fx/graph.py 中定义的，方法: process_inputs, process_outputs, gen_fn_def, gen_var_bindings, generate_output",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/fx/graph.py:_FindNodesLookupTable",
+      "type": "class",
+      "name": "_FindNodesLookupTable",
+      "filePath": "torch/fx/graph.py",
+      "lineRange": [
+        1270,
+        1303
+      ],
+      "summary": "_FindNodesLookupTable 类 — torch/fx/graph.py 中定义的，方法: insert, remove, find_nodes",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/graph.py:Graph",
+      "type": "class",
+      "name": "Graph",
+      "filePath": "torch/fx/graph.py",
+      "lineRange": [
+        1307,
+        2381
+      ],
+      "summary": "Graph 类 — torch/fx/graph.py 中定义的，方法: owning_module, owning_module, nodes, output_node, find_nodes",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/fx/interpreter.py",
+      "type": "file",
+      "name": "interpreter.py",
+      "filePath": "torch/fx/interpreter.py",
+      "summary": "FX 模块 — interpreter。 定义类: Interpreter, Transformer",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/fx/interpreter.py:Interpreter",
+      "type": "class",
+      "name": "Interpreter",
+      "filePath": "torch/fx/interpreter.py",
+      "lineRange": [
+        52,
+        514
+      ],
+      "summary": "Interpreter 类 — torch/fx/interpreter.py 中定义的，方法: run, boxed_run, run_node, placeholder, get_attr",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/fx/interpreter.py:Transformer",
+      "type": "class",
+      "name": "Transformer",
+      "filePath": "torch/fx/interpreter.py",
+      "lineRange": [
+        518,
+        670
+      ],
+      "summary": "Transformer 类 — torch/fx/interpreter.py 中定义的，方法: placeholder, get_attr, call_module, call_function, transform",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/fx/node.py",
+      "type": "file",
+      "name": "node.py",
+      "filePath": "torch/fx/node.py",
+      "summary": "FX 图节点定义。表示计算图中的各种操作节点（占位符、调用函数、调用模块等）。 定义类: Node 定义函数: has_side_effect, map_arg, map_aggregate",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/node.py:has_side_effect",
+      "type": "function",
+      "name": "has_side_effect",
+      "filePath": "torch/fx/node.py",
+      "lineRange": [
+        123,
+        137
+      ],
+      "summary": "has_side_effect — torch/fx/node.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/node.py:Node",
+      "type": "class",
+      "name": "Node",
+      "filePath": "torch/fx/node.py",
+      "lineRange": [
+        238,
+        893
+      ],
+      "summary": "Node 类 — torch/fx/node.py 中定义的，方法: next, prev, prepend, append, args",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/fx/proxy.py",
+      "type": "file",
+      "name": "proxy.py",
+      "filePath": "torch/fx/proxy.py",
+      "summary": "FX 代理类。在追踪过程中包装张量操作以捕获计算图。 定义类: Scope, ScopeContextManager, TracerBase, GraphAppendingTracer, TraceError 定义函数: assert_fn",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:Scope",
+      "type": "class",
+      "name": "Scope",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        95,
+        123
+      ],
+      "summary": "Scope 类 — torch/fx/proxy.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:ScopeContextManager",
+      "type": "class",
+      "name": "ScopeContextManager",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        127,
+        153
+      ],
+      "summary": "ScopeContextManager 类 — torch/fx/proxy.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:TracerBase",
+      "type": "class",
+      "name": "TracerBase",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        186,
+        520
+      ],
+      "summary": "TracerBase 类 — torch/fx/proxy.py 中定义的，方法: create_node, proxy, create_proxy, create_arg, to_bool",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:Proxy",
+      "type": "class",
+      "name": "Proxy",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        600,
+        806
+      ],
+      "summary": "Proxy 类 — torch/fx/proxy.py 中定义的，方法: keys",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:MetaProxy",
+      "type": "class",
+      "name": "MetaProxy",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        810,
+        852
+      ],
+      "summary": "MetaProxy 类 — torch/fx/proxy.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:Attribute",
+      "type": "class",
+      "name": "Attribute",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        856,
+        877
+      ],
+      "summary": "Attribute 类 — torch/fx/proxy.py 中定义的，方法: node",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/fx/proxy.py:ParameterProxy",
+      "type": "class",
+      "name": "ParameterProxy",
+      "filePath": "torch/fx/proxy.py",
+      "lineRange": [
+        881,
+        918
+      ],
+      "summary": "ParameterProxy 类 — torch/fx/proxy.py 中定义的，方法: shape, size, dim, ndim, numel",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/fx/subgraph_rewriter.py",
+      "type": "file",
+      "name": "subgraph_rewriter.py",
+      "filePath": "torch/fx/subgraph_rewriter.py",
+      "summary": "FX 模块 — subgraph_rewriter。 定义类: Match, ReplacedPatterns 定义函数: replace_pattern, replace_pattern_with_filters",
+      "tags": [
+        "python",
+        "fx-graph",
+        "intermediate-representation"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/subgraph_rewriter.py:replace_pattern",
+      "type": "function",
+      "name": "replace_pattern",
+      "filePath": "torch/fx/subgraph_rewriter.py",
+      "lineRange": [
+        96,
+        221
+      ],
+      "summary": "replace_pattern — torch/fx/subgraph_rewriter.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/fx/subgraph_rewriter.py:replace_pattern_with_filters",
+      "type": "function",
+      "name": "replace_pattern_with_filters",
+      "filePath": "torch/fx/subgraph_rewriter.py",
+      "lineRange": [
+        226,
+        259
+      ],
+      "summary": "replace_pattern_with_filters — torch/fx/subgraph_rewriter.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:torch/distributed/_tensor/__init__.py",
+      "target": "file:torch/distributed/tensor/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:supports_complex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_group_rank",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_global_rank",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_process_group_ranks",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:is_backend_available",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:is_torchelastic_launched",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_backend_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_backend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_default_backend_for_device",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_node_local_rank",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:init_process_group",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:destroy_process_group",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_rank",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:get_world_size",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:isend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:irecv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:send",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:recv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:batch_isend_irecv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:broadcast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:all_reduce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:all_reduce_coalesced",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:reduce",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:all_gather_object",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:gather_object",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:send_object_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:recv_object_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:broadcast_object_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:scatter_object_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:all_gather",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:all_gather_into_tensor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:all_gather_coalesced",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:gather",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:scatter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:reduce_scatter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:reduce_scatter_tensor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:all_to_all_single",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:all_to_all",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:barrier",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:monitored_barrier",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:split_group",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:new_group",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:new_subgroups",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:new_subgroups_by_enumeration",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:shrink_group",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "function:torch/distributed/distributed_c10d.py:record_comm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "class:torch/distributed/distributed_c10d.py:Backend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "class:torch/distributed/distributed_c10d.py:BackendConfig",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "class:torch/distributed/distributed_c10d.py:_reduce_op",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "class:torch/distributed/distributed_c10d.py:P2POp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "class:torch/distributed/distributed_c10d.py:_CollOp",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "class:torch/distributed/distributed_c10d.py:_World",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "class:torch/distributed/distributed_c10d.py:_WorldMeta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "class:torch/distributed/distributed_c10d.py:_CoalescingManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "file:torch/_utils_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "file:torch/monitor/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "file:torch/overrides.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "file:torch/utils/_typing_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/distributed_c10d.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/nn/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/optim/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/optim/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/remote_device.py",
+      "target": "class:torch/distributed/remote_device.py:_remote_device",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/distributed/remote_device.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/rpc/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/rpc/__init__.py",
+      "target": "file:torch/distributed/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/__init__.py",
+      "target": "file:torch/distributed/device_mesh.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/__init__.py",
+      "target": "file:torch/distributed/tensor/_api.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/__init__.py",
+      "target": "file:torch/distributed/tensor/placement_types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/__init__.py",
+      "target": "file:torch/optim/optimizer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/__init__.py",
+      "target": "file:torch/utils/_foreach_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/__init__.py",
+      "target": "file:torch/_higher_order_ops/print.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/__init__.py",
+      "target": "file:torch/distributed/tensor/_ops/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/parallel/__init__.py",
+      "target": "file:torch/distributed/tensor/parallel/api.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/parallel/__init__.py",
+      "target": "file:torch/distributed/tensor/parallel/loss.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/distributed/tensor/parallel/__init__.py",
+      "target": "file:torch/distributed/tensor/parallel/style.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "function:torch/export/__init__.py:export",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "function:torch/export/__init__.py:save",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "function:torch/export/__init__.py:load",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "function:torch/export/__init__.py:draft_export",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "function:torch/export/__init__.py:register_dataclass",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "file:torch/fx/passes/infra/pass_base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "file:torch/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/__init__.py",
+      "target": "file:torch/export/custom_ops.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "function:torch/export/dynamic_shapes.py:refine_dynamic_shapes_from_suggested_fixes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "class:torch/export/dynamic_shapes.py:_DimHint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "class:torch/export/dynamic_shapes.py:Dim",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "class:torch/export/dynamic_shapes.py:_StaticDim",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "class:torch/export/dynamic_shapes.py:_DerivedDim",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "class:torch/export/dynamic_shapes.py:_Constraint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "class:torch/export/dynamic_shapes.py:_DerivedConstraint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "class:torch/export/dynamic_shapes.py:ShapesCollection",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "class:torch/export/dynamic_shapes.py:AdditionalInputs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/dynamic_shapes.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "class:torch/export/exported_program.py:ExportedProgram",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_guards.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_higher_order_ops/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_library/fake_class_registry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_subclasses/fake_impls.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_subclasses/fake_tensor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/fx/_symbolic_trace.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/fx/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/fx/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/fx/immutable_collections.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/fx/passes/runtime_assert.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_export/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_export/verifier.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_guards.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/_subclasses/fake_tensor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/export/_tree_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/export/decomp_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/fx/_compatibility.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/fx/passes/infra/pass_base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/fx/passes/infra/pass_manager.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/exported_program.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "function:torch/export/unflatten.py:unflatten",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "class:torch/export/unflatten.py:InterpreterModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "class:torch/export/unflatten.py:InterpreterModuleDispatcher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "class:torch/export/unflatten.py:FlatArgsAdapter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "class:torch/export/unflatten.py:UnflattenedModule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "class:torch/export/unflatten.py:_ModuleFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "class:torch/export/unflatten.py:_IVals",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/_library/fake_class_registry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/_library/opaque_object.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/export/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/export/_tree_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/export/exported_program.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/fx/_symbolic_trace.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/fx/graph_module.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/fx/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/unflatten.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/passes/__init__.py",
+      "target": "function:torch/export/passes/__init__.py:move_to_device_pass",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/export/passes/__init__.py",
+      "target": "file:torch/export/exported_program.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/passes/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/export/passes/__init__.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fft/__init__.py",
+      "target": "file:torch/_torch_docs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fft/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:broadcast_tensors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:broadcast_shapes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:split",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:einsum",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:stft",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:tensordot",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:cartesian_prod",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:block_diag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:cdist",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:atleast_1d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:atleast_2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:atleast_3d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:norm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:unravel_index",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "function:torch/functional.py:chain_matmul",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "file:torch/_jit_internal.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "file:torch/_lowrank.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "file:torch/overrides.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/functional.py",
+      "target": "file:torch/nn/functional.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/__init__.py",
+      "target": "file:torch/fx/_symbolic_trace.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/__init__.py",
+      "target": "file:torch/fx/graph.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/__init__.py",
+      "target": "file:torch/fx/graph_module.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/__init__.py",
+      "target": "file:torch/fx/interpreter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/__init__.py",
+      "target": "file:torch/fx/node.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/__init__.py",
+      "target": "file:torch/fx/proxy.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/__init__.py",
+      "target": "file:torch/fx/subgraph_rewriter.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "class:torch/fx/graph.py:_Namespace",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "class:torch/fx/graph.py:_node_list",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "class:torch/fx/graph.py:CodeGen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "class:torch/fx/graph.py:_BoxedCodeGen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "class:torch/fx/graph.py:_PyTreeCodeGen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "class:torch/fx/graph.py:_ExportCodeGen",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "class:torch/fx/graph.py:_FindNodesLookupTable",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "class:torch/fx/graph.py:Graph",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "file:torch/_library/opaque_object.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "file:torch/utils/_dtype_abbrs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/graph.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/interpreter.py",
+      "target": "class:torch/fx/interpreter.py:Interpreter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/interpreter.py",
+      "target": "class:torch/fx/interpreter.py:Transformer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/interpreter.py",
+      "target": "file:torch/_logging/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/interpreter.py",
+      "target": "file:torch/hub.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/interpreter.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/interpreter.py",
+      "target": "file:torch/fx/traceback.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/fx/node.py",
+      "target": "function:torch/fx/node.py:has_side_effect",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/node.py",
+      "target": "class:torch/fx/node.py:Node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:Scope",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:ScopeContextManager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:TracerBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:Proxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:MetaProxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:Attribute",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/proxy.py",
+      "target": "class:torch/fx/proxy.py:ParameterProxy",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/subgraph_rewriter.py",
+      "target": "function:torch/fx/subgraph_rewriter.py:replace_pattern",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/fx/subgraph_rewriter.py",
+      "target": "function:torch/fx/subgraph_rewriter.py:replace_pattern_with_filters",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}

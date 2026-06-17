@@ -1,0 +1,6395 @@
+{
+  "nodes": [
+    {
+      "id": "file:torch/_inductor/select_algorithm.py",
+      "type": "file",
+      "name": "select_algorithm.py",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "summary": "Inductor 内核编译器 — select_algorithm。 定义类: KernelNamespace, BenchmarkTensors, AutotuneArgs, PartialRender, SubgraphInfo 定义函数: get_mm_log_filename, get_flex_attention_log_filename, get_conv_log_filename, append_to_log, get_num_workers",
+      "tags": [
+        "python",
+        "gpu-codegen",
+        "inductor",
+        "compiler",
+        "large-file",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_inductor/select_algorithm.py:append_to_log",
+      "type": "function",
+      "name": "append_to_log",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3417,
+        3430
+      ],
+      "summary": "append_to_log — torch/_inductor/select_algorithm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/select_algorithm.py:get_num_workers",
+      "type": "function",
+      "name": "get_num_workers",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3526,
+        3541
+      ],
+      "summary": "get_num_workers — torch/_inductor/select_algorithm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/select_algorithm.py:create_precompile_key",
+      "type": "function",
+      "name": "create_precompile_key",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3548,
+        3558
+      ],
+      "summary": "create_precompile_key — torch/_inductor/select_algorithm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/select_algorithm.py:filter_choices_by_name_regex",
+      "type": "function",
+      "name": "filter_choices_by_name_regex",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3586,
+        3597
+      ],
+      "summary": "filter_choices_by_name_regex — torch/_inductor/select_algorithm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/select_algorithm.py:filter_choices_by_desc_regex",
+      "type": "function",
+      "name": "filter_choices_by_desc_regex",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3600,
+        3611
+      ],
+      "summary": "filter_choices_by_desc_regex — torch/_inductor/select_algorithm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/select_algorithm.py:autotune_select_algorithm",
+      "type": "function",
+      "name": "autotune_select_algorithm",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        5714,
+        5726
+      ],
+      "summary": "autotune_select_algorithm — torch/_inductor/select_algorithm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/select_algorithm.py:add_preprocessing_fn",
+      "type": "function",
+      "name": "add_preprocessing_fn",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        5742,
+        5763
+      ],
+      "summary": "add_preprocessing_fn — torch/_inductor/select_algorithm.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:AutotuneArgs",
+      "type": "class",
+      "name": "AutotuneArgs",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        142,
+        179
+      ],
+      "summary": "AutotuneArgs 类 — torch/_inductor/select_algorithm.py 中定义的，方法: get_benchmark_tensors, from_choice_args, verify",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:PartialRender",
+      "type": "class",
+      "name": "PartialRender",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        182,
+        344
+      ],
+      "summary": "PartialRender 类 — torch/_inductor/select_algorithm.py 中定义的，方法: code, finalize_hook, finalize_remaining, finalize_all",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:SubgraphInfo",
+      "type": "class",
+      "name": "SubgraphInfo",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        352,
+        384
+      ],
+      "summary": "SubgraphInfo 类 — torch/_inductor/select_algorithm.py 中定义的，方法: to_dict",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:ModificationWrapper",
+      "type": "class",
+      "name": "ModificationWrapper",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        387,
+        473
+      ],
+      "summary": "ModificationWrapper 类 — torch/_inductor/select_algorithm.py 中定义的，方法: load, indirect_indexing, store",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:TritonTemplateKernel",
+      "type": "class",
+      "name": "TritonTemplateKernel",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        480,
+        1916
+      ],
+      "summary": "TritonTemplateKernel 类 — torch/_inductor/select_algorithm.py 中定义的，方法: index_dtype, input_dependent_preserved_state, record_input_dependent_tracked_event, replay_cached_events, set_subgraph_body",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:ExternalTritonTemplateKernel",
+      "type": "class",
+      "name": "ExternalTritonTemplateKernel",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        1919,
+        2344
+      ],
+      "summary": "ExternalTritonTemplateKernel 类 — torch/_inductor/select_algorithm.py 中定义的，方法: get_unfused_epilogues, call_kernel, emit_kernel_override",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:GeneratedCodeCache",
+      "type": "class",
+      "name": "GeneratedCodeCache",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        2378,
+        2494
+      ],
+      "summary": "GeneratedCodeCache 类 — torch/_inductor/select_algorithm.py 中定义的，方法: cache_clear, make_key, get_entry, put_entry",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:TritonTemplate",
+      "type": "class",
+      "name": "TritonTemplate",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        2497,
+        3021
+      ],
+      "summary": "TritonTemplate 类 — torch/_inductor/select_algorithm.py 中定义的，方法: uid, maybe_append_choice, generate_and_load, generate",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:ExternKernelChoice",
+      "type": "class",
+      "name": "ExternKernelChoice",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3024,
+        3133
+      ],
+      "summary": "ExternKernelChoice 类 — torch/_inductor/select_algorithm.py 中定义的，方法: lookup, to_callable, call_name, hash_key, bind",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:TritonTemplateCaller",
+      "type": "class",
+      "name": "TritonTemplateCaller",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3136,
+        3239
+      ],
+      "summary": "TritonTemplateCaller 类 — torch/_inductor/select_algorithm.py 中定义的，方法: benchmark, precompile, call_name, hash_key, output_node",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:ExternKernelCaller",
+      "type": "class",
+      "name": "ExternKernelCaller",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3242,
+        3382
+      ],
+      "summary": "ExternKernelCaller 类 — torch/_inductor/select_algorithm.py 中定义的，方法: benchmark, benchmark_collective, to_callable, hash_key, output_node",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:DataProcessorChoiceCallerWrapper",
+      "type": "class",
+      "name": "DataProcessorChoiceCallerWrapper",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3433,
+        3461
+      ],
+      "summary": "DataProcessorChoiceCallerWrapper 类 — torch/_inductor/select_algorithm.py 中定义的，方法: benchmark, output_node",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:DataProcessorTemplateWrapper",
+      "type": "class",
+      "name": "DataProcessorTemplateWrapper",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3464,
+        3511
+      ],
+      "summary": "DataProcessorTemplateWrapper 类 — torch/_inductor/select_algorithm.py 中定义的，方法: maybe_append_choice, generate",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:AlgorithmSelectorCache",
+      "type": "class",
+      "name": "AlgorithmSelectorCache",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        3710,
+        5700
+      ],
+      "summary": "AlgorithmSelectorCache 类 — torch/_inductor/select_algorithm.py 中定义的，方法: cache_clear, pick_deterministic_choice, benchmark, autotune, do_autotuning",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/_inductor/select_algorithm.py:SymbolicGridFn",
+      "type": "class",
+      "name": "SymbolicGridFn",
+      "filePath": "torch/_inductor/select_algorithm.py",
+      "lineRange": [
+        5801,
+        5828
+      ],
+      "summary": "SymbolicGridFn 类 — torch/_inductor/select_algorithm.py 中定义的，方法: sympy_call",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_inductor/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "torch/_inductor/utils.py",
+      "summary": "Inductor 内核编译器 — utils。 定义类: align, GraphPartitionMap, CachedMethod, LineContext, ValueWithLineMap 定义函数: get_gpu_type, fp8_bench, do_bench_using_profiling, has_torchvision_roi_align, decode_device",
+      "tags": [
+        "python",
+        "gpu-codegen",
+        "inductor",
+        "compiler",
+        "large-file",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:fp8_bench",
+      "type": "function",
+      "name": "fp8_bench",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        235,
+        306
+      ],
+      "summary": "fp8_bench — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:do_bench_using_profiling",
+      "type": "function",
+      "name": "do_bench_using_profiling",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        309,
+        330
+      ],
+      "summary": "do_bench_using_profiling — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:has_torchvision_roi_align",
+      "type": "function",
+      "name": "has_torchvision_roi_align",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        472,
+        484
+      ],
+      "summary": "has_torchvision_roi_align — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:convert_to_symint",
+      "type": "function",
+      "name": "convert_to_symint",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        609,
+        623
+      ],
+      "summary": "convert_to_symint — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_pointwise_use",
+      "type": "function",
+      "name": "is_pointwise_use",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        643,
+        664
+      ],
+      "summary": "is_pointwise_use — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:gen_gm_and_inputs",
+      "type": "function",
+      "name": "gen_gm_and_inputs",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        667,
+        688
+      ],
+      "summary": "gen_gm_and_inputs — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:timed",
+      "type": "function",
+      "name": "timed",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        699,
+        714
+      ],
+      "summary": "timed — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:print_performance",
+      "type": "function",
+      "name": "print_performance",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        717,
+        730
+      ],
+      "summary": "print_performance — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:tuple_sorted",
+      "type": "function",
+      "name": "tuple_sorted",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        758,
+        771
+      ],
+      "summary": "tuple_sorted — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:cache_on_self",
+      "type": "function",
+      "name": "cache_on_self",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        787,
+        813
+      ],
+      "summary": "cache_on_self — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:cache_on_self_and_args",
+      "type": "function",
+      "name": "cache_on_self_and_args",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        826,
+        869
+      ],
+      "summary": "cache_on_self_and_args — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:aggregate_origins",
+      "type": "function",
+      "name": "aggregate_origins",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        872,
+        891
+      ],
+      "summary": "aggregate_origins — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_fused_kernel_name",
+      "type": "function",
+      "name": "get_fused_kernel_name",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        894,
+        946
+      ],
+      "summary": "get_fused_kernel_name — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_kernel_metadata",
+      "type": "function",
+      "name": "get_kernel_metadata",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        949,
+        1108
+      ],
+      "summary": "get_kernel_metadata — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:dominated_nodes",
+      "type": "function",
+      "name": "dominated_nodes",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1111,
+        1128
+      ],
+      "summary": "dominated_nodes — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:gather_origins",
+      "type": "function",
+      "name": "gather_origins",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1131,
+        1157
+      ],
+      "summary": "gather_origins — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:sympy_str",
+      "type": "function",
+      "name": "sympy_str",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1160,
+        1204
+      ],
+      "summary": "sympy_str — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_bounds_index_expr",
+      "type": "function",
+      "name": "get_bounds_index_expr",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1207,
+        1218
+      ],
+      "summary": "get_bounds_index_expr — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_first_incompatible_cudagraph_node",
+      "type": "function",
+      "name": "get_first_incompatible_cudagraph_node",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1304,
+        1316
+      ],
+      "summary": "get_first_incompatible_cudagraph_node — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_all_devices",
+      "type": "function",
+      "name": "get_all_devices",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1326,
+        1342
+      ],
+      "summary": "get_all_devices — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:unload_xpu_triton_pyds",
+      "type": "function",
+      "name": "unload_xpu_triton_pyds",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1348,
+        1375
+      ],
+      "summary": "unload_xpu_triton_pyds — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:fresh_cache",
+      "type": "function",
+      "name": "fresh_cache",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1423,
+        1478
+      ],
+      "summary": "fresh_cache — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:argsort",
+      "type": "function",
+      "name": "argsort",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1487,
+        1500
+      ],
+      "summary": "argsort — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:argsort_sym",
+      "type": "function",
+      "name": "argsort_sym",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1503,
+        1539
+      ],
+      "summary": "argsort_sym — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:make_codegen_buffer",
+      "type": "function",
+      "name": "make_codegen_buffer",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1825,
+        1835
+      ],
+      "summary": "make_codegen_buffer — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_big_gpu",
+      "type": "function",
+      "name": "is_big_gpu",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1910,
+        1935
+      ],
+      "summary": "is_big_gpu — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_tma_workspace_arg",
+      "type": "function",
+      "name": "get_tma_workspace_arg",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1973,
+        1990
+      ],
+      "summary": "get_tma_workspace_arg — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_triton_template",
+      "type": "function",
+      "name": "use_triton_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2043,
+        2069
+      ],
+      "summary": "use_triton_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:can_use_tma",
+      "type": "function",
+      "name": "can_use_tma",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2072,
+        2202
+      ],
+      "summary": "can_use_tma — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_triton_tma_template",
+      "type": "function",
+      "name": "use_triton_tma_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2230,
+        2251
+      ],
+      "summary": "use_triton_tma_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_triton_blackwell_tma_template",
+      "type": "function",
+      "name": "use_triton_blackwell_tma_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2254,
+        2267
+      ],
+      "summary": "use_triton_blackwell_tma_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:ensure_nv_universal_gemm_available",
+      "type": "function",
+      "name": "ensure_nv_universal_gemm_available",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2292,
+        2304
+      ],
+      "summary": "ensure_nv_universal_gemm_available — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:ensure_nvmatmul_heuristics_available",
+      "type": "function",
+      "name": "ensure_nvmatmul_heuristics_available",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2332,
+        2344
+      ],
+      "summary": "ensure_nvmatmul_heuristics_available — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_blackwell_cutedsl_grouped_mm",
+      "type": "function",
+      "name": "use_blackwell_cutedsl_grouped_mm",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2347,
+        2409
+      ],
+      "summary": "use_blackwell_cutedsl_grouped_mm — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_cutlass_template",
+      "type": "function",
+      "name": "use_cutlass_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2412,
+        2457
+      ],
+      "summary": "use_cutlass_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_nv_universal_gemm_template",
+      "type": "function",
+      "name": "use_nv_universal_gemm_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2460,
+        2529
+      ],
+      "summary": "use_nv_universal_gemm_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_decompose_k_choice",
+      "type": "function",
+      "name": "use_decompose_k_choice",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2544,
+        2561
+      ],
+      "summary": "use_decompose_k_choice — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_contiguous",
+      "type": "function",
+      "name": "use_contiguous",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2565,
+        2585
+      ],
+      "summary": "use_contiguous — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_k_splits",
+      "type": "function",
+      "name": "get_k_splits",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2589,
+        2642
+      ],
+      "summary": "get_k_splits — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:try_import_ck_lib",
+      "type": "function",
+      "name": "try_import_ck_lib",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2651,
+        2677
+      ],
+      "summary": "try_import_ck_lib — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_ck_template",
+      "type": "function",
+      "name": "use_ck_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2680,
+        2714
+      ],
+      "summary": "use_ck_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_cpp_bmm_template",
+      "type": "function",
+      "name": "use_cpp_bmm_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2747,
+        2769
+      ],
+      "summary": "use_cpp_bmm_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_cpp_gemm_template",
+      "type": "function",
+      "name": "use_cpp_gemm_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2772,
+        2833
+      ],
+      "summary": "use_cpp_gemm_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:run_and_get_code",
+      "type": "function",
+      "name": "run_and_get_code",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2859,
+        2874
+      ],
+      "summary": "run_and_get_code — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:run_and_get_kernels",
+      "type": "function",
+      "name": "run_and_get_kernels",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2877,
+        2893
+      ],
+      "summary": "run_and_get_kernels — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_code",
+      "type": "function",
+      "name": "get_code",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2905,
+        2945
+      ],
+      "summary": "get_code — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:run_and_get_graph_lowering",
+      "type": "function",
+      "name": "run_and_get_graph_lowering",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2970,
+        2988
+      ],
+      "summary": "run_and_get_graph_lowering — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:override_lowering",
+      "type": "function",
+      "name": "override_lowering",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        2992,
+        3006
+      ],
+      "summary": "override_lowering — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:add_scheduler_init_hook",
+      "type": "function",
+      "name": "add_scheduler_init_hook",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3009,
+        3027
+      ],
+      "summary": "add_scheduler_init_hook — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_benchmark_name",
+      "type": "function",
+      "name": "get_benchmark_name",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3042,
+        3072
+      ],
+      "summary": "get_benchmark_name — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_device_tflops",
+      "type": "function",
+      "name": "get_device_tflops",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3126,
+        3172
+      ],
+      "summary": "get_device_tflops — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:reduction_num_outputs",
+      "type": "function",
+      "name": "reduction_num_outputs",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3204,
+        3214
+      ],
+      "summary": "reduction_num_outputs — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_dynamic",
+      "type": "function",
+      "name": "is_dynamic",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3229,
+        3245
+      ],
+      "summary": "is_dynamic — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:pass_execution_and_save",
+      "type": "function",
+      "name": "pass_execution_and_save",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3259,
+        3291
+      ],
+      "summary": "pass_execution_and_save — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_output_of_multi_outputs_template",
+      "type": "function",
+      "name": "is_output_of_multi_outputs_template",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3306,
+        3318
+      ],
+      "summary": "is_output_of_multi_outputs_template — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_collective",
+      "type": "function",
+      "name": "is_collective",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3321,
+        3356
+      ],
+      "summary": "is_collective — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:find_recursive_deps_of_node",
+      "type": "function",
+      "name": "find_recursive_deps_of_node",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3403,
+        3425
+      ],
+      "summary": "find_recursive_deps_of_node — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:find_recursive_users_of_node",
+      "type": "function",
+      "name": "find_recursive_users_of_node",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3428,
+        3454
+      ],
+      "summary": "find_recursive_users_of_node — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:count_tangents",
+      "type": "function",
+      "name": "count_tangents",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3468,
+        3490
+      ],
+      "summary": "count_tangents — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_static_bw_input_idxs",
+      "type": "function",
+      "name": "get_static_bw_input_idxs",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3493,
+        3506
+      ],
+      "summary": "get_static_bw_input_idxs — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:collect_defined_kernels",
+      "type": "function",
+      "name": "collect_defined_kernels",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3525,
+        3544
+      ],
+      "summary": "collect_defined_kernels — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_triton_fp8_dtype_supported",
+      "type": "function",
+      "name": "is_triton_fp8_dtype_supported",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3583,
+        3632
+      ],
+      "summary": "is_triton_fp8_dtype_supported — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:use_scatter_fallback",
+      "type": "function",
+      "name": "use_scatter_fallback",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3648,
+        3684
+      ],
+      "summary": "use_scatter_fallback — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:dump_node_schedule",
+      "type": "function",
+      "name": "dump_node_schedule",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3687,
+        3717
+      ],
+      "summary": "dump_node_schedule — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:tensor_is_aligned",
+      "type": "function",
+      "name": "tensor_is_aligned",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3720,
+        3731
+      ],
+      "summary": "tensor_is_aligned — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:maybe_get_suppress_shape_guards_ctx",
+      "type": "function",
+      "name": "maybe_get_suppress_shape_guards_ctx",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3743,
+        3756
+      ],
+      "summary": "maybe_get_suppress_shape_guards_ctx — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:run_and_get_cpp_code",
+      "type": "function",
+      "name": "run_and_get_cpp_code",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3759,
+        3781
+      ],
+      "summary": "run_and_get_cpp_code — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:shape_env_from_inputs",
+      "type": "function",
+      "name": "shape_env_from_inputs",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3784,
+        3810
+      ],
+      "summary": "shape_env_from_inputs — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:align_inputs_from_check_idxs",
+      "type": "function",
+      "name": "align_inputs_from_check_idxs",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3813,
+        3834
+      ],
+      "summary": "align_inputs_from_check_idxs — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:copy_misaligned_inputs",
+      "type": "function",
+      "name": "copy_misaligned_inputs",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3849,
+        3876
+      ],
+      "summary": "copy_misaligned_inputs — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:remove_unaligned_input_idxs",
+      "type": "function",
+      "name": "remove_unaligned_input_idxs",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3879,
+        3894
+      ],
+      "summary": "remove_unaligned_input_idxs — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:expr_fits_within_32bit",
+      "type": "function",
+      "name": "expr_fits_within_32bit",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3897,
+        3939
+      ],
+      "summary": "expr_fits_within_32bit — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:set_tracing_context_output_strides",
+      "type": "function",
+      "name": "set_tracing_context_output_strides",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3942,
+        3968
+      ],
+      "summary": "set_tracing_context_output_strides — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:should_use_remote_fx_graph_cache",
+      "type": "function",
+      "name": "should_use_remote_fx_graph_cache",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        3971,
+        3987
+      ],
+      "summary": "should_use_remote_fx_graph_cache — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:boolean_ops",
+      "type": "function",
+      "name": "boolean_ops",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4049,
+        4065
+      ],
+      "summary": "boolean_ops — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_current_backend",
+      "type": "function",
+      "name": "get_current_backend",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4094,
+        4108
+      ],
+      "summary": "get_current_backend — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_triton_attrs_descriptor_version",
+      "type": "function",
+      "name": "get_triton_attrs_descriptor_version",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4209,
+        4231
+      ],
+      "summary": "get_triton_attrs_descriptor_version — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_cudagraph_unsafe_fx_node",
+      "type": "function",
+      "name": "is_cudagraph_unsafe_fx_node",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4284,
+        4318
+      ],
+      "summary": "is_cudagraph_unsafe_fx_node — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_cudagraph_unsafe_op",
+      "type": "function",
+      "name": "is_cudagraph_unsafe_op",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4321,
+        4344
+      ],
+      "summary": "is_cudagraph_unsafe_op — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:get_ld_library_path",
+      "type": "function",
+      "name": "get_ld_library_path",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4347,
+        4357
+      ],
+      "summary": "get_ld_library_path — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:tabulate_2d",
+      "type": "function",
+      "name": "tabulate_2d",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4414,
+        4427
+      ],
+      "summary": "tabulate_2d — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:zip_dicts",
+      "type": "function",
+      "name": "zip_dicts",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4430,
+        4462
+      ],
+      "summary": "zip_dicts — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:maybe_aoti_standalone_config",
+      "type": "function",
+      "name": "maybe_aoti_standalone_config",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4465,
+        4547
+      ],
+      "summary": "maybe_aoti_standalone_config — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:determine_aoti_mmap_flags",
+      "type": "function",
+      "name": "determine_aoti_mmap_flags",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4550,
+        4588
+      ],
+      "summary": "determine_aoti_mmap_flags — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_valid_aoti_model_name",
+      "type": "function",
+      "name": "is_valid_aoti_model_name",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4591,
+        4615
+      ],
+      "summary": "is_valid_aoti_model_name — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:python_subprocess_env",
+      "type": "function",
+      "name": "python_subprocess_env",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4625,
+        4649
+      ],
+      "summary": "python_subprocess_env — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:snode_args_kwargs",
+      "type": "function",
+      "name": "snode_args_kwargs",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4697,
+        4740
+      ],
+      "summary": "snode_args_kwargs — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:is_nonfreeable_buffers",
+      "type": "function",
+      "name": "is_nonfreeable_buffers",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4743,
+        4753
+      ],
+      "summary": "is_nonfreeable_buffers — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:should_fallback_by_default",
+      "type": "function",
+      "name": "should_fallback_by_default",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4763,
+        4797
+      ],
+      "summary": "should_fallback_by_default — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:tlx_only_cuda_options",
+      "type": "function",
+      "name": "tlx_only_cuda_options",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4825,
+        4836
+      ],
+      "summary": "tlx_only_cuda_options — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:infer_scale_swizzle",
+      "type": "function",
+      "name": "infer_scale_swizzle",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4924,
+        4951
+      ],
+      "summary": "infer_scale_swizzle — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_inductor/utils.py:infer_scale_swizzle_ir",
+      "type": "function",
+      "name": "infer_scale_swizzle_ir",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4954,
+        4988
+      ],
+      "summary": "infer_scale_swizzle_ir — torch/_inductor/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_inductor/utils.py:IndentedBuffer",
+      "type": "class",
+      "name": "IndentedBuffer",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1561,
+        1721
+      ],
+      "summary": "IndentedBuffer 类 — torch/_inductor/utils.py 中定义的，方法: set_tabwidth, getvaluewithlinemap, getvalue, getrawvalue, get_lines_ref",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/_inductor/utils.py:DualIndentedBuffer",
+      "type": "class",
+      "name": "DualIndentedBuffer",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1724,
+        1800
+      ],
+      "summary": "DualIndentedBuffer 类 — torch/_inductor/utils.py 中定义的，方法: jit, writeline, writeline_jit, writeline_aot, writelines",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/_inductor/utils.py:AotOnlyBuffer",
+      "type": "class",
+      "name": "AotOnlyBuffer",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1803,
+        1822
+      ],
+      "summary": "AotOnlyBuffer 类 — torch/_inductor/utils.py 中定义的，方法: writeline_jit, writeline_aot, splice_jit, splice_aot",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_inductor/utils.py:DeferredLineBase",
+      "type": "class",
+      "name": "DeferredLineBase",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        1862,
+        1891
+      ],
+      "summary": "DeferredLineBase 类 — torch/_inductor/utils.py 中定义的，方法: with_prefix, lstrip",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/utils.py:ScopedDict",
+      "type": "class",
+      "name": "ScopedDict",
+      "filePath": "torch/_inductor/utils.py",
+      "lineRange": [
+        4133,
+        4178
+      ],
+      "summary": "ScopedDict 类 — torch/_inductor/utils.py 中定义的，方法: get",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_inductor/virtualized.py",
+      "type": "file",
+      "name": "virtualized.py",
+      "filePath": "torch/_inductor/virtualized.py",
+      "summary": "Inductor 内核编译器 — virtualized。 定义类: NullHandler, Virtualized, NullKernelHandler, OpsValue, OpsWrapper",
+      "tags": [
+        "python",
+        "gpu-codegen",
+        "inductor",
+        "compiler",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/_inductor/virtualized.py:Virtualized",
+      "type": "class",
+      "name": "Virtualized",
+      "filePath": "torch/_inductor/virtualized.py",
+      "lineRange": [
+        112,
+        158
+      ],
+      "summary": "Virtualized 类 — torch/_inductor/virtualized.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/virtualized.py:NullKernelHandler",
+      "type": "class",
+      "name": "NullKernelHandler",
+      "filePath": "torch/_inductor/virtualized.py",
+      "lineRange": [
+        161,
+        184
+      ],
+      "summary": "NullKernelHandler 类 — torch/_inductor/virtualized.py 中定义的，方法: get_index_dtype_as_torch_dtype",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/virtualized.py:OpsValue",
+      "type": "class",
+      "name": "OpsValue",
+      "filePath": "torch/_inductor/virtualized.py",
+      "lineRange": [
+        243,
+        326
+      ],
+      "summary": "OpsValue 类 — torch/_inductor/virtualized.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/virtualized.py:OpsWrapper",
+      "type": "class",
+      "name": "OpsWrapper",
+      "filePath": "torch/_inductor/virtualized.py",
+      "lineRange": [
+        329,
+        358
+      ],
+      "summary": "OpsWrapper 类 — torch/_inductor/virtualized.py 中定义的，方法: indirect_indexing",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_inductor/virtualized.py:_V",
+      "type": "class",
+      "name": "_V",
+      "filePath": "torch/_inductor/virtualized.py",
+      "lineRange": [
+        364,
+        469
+      ],
+      "summary": "_V 类 — torch/_inductor/virtualized.py 中定义的，方法: ops, graph, extern_kernel_nodes, real_inputs, fake_mode",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/_jit_internal.py",
+      "type": "file",
+      "name": "_jit_internal.py",
+      "filePath": "torch/_jit_internal.py",
+      "summary": "_jit_internal.py — PyTorch torch模块。1593行python代码。 定义类: HasGetattr, BroadcastingListCls, SourceLoader, FunctionModifiers, _IgnoreContextManager 定义函数: is_final, is_scripting, createResolutionCallbackFromEnv, createResolutionCallbackFromFrame, get_closure",
+      "tags": [
+        "python",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:is_scripting",
+      "type": "function",
+      "name": "is_scripting",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        104,
+        123
+      ],
+      "summary": "is_scripting — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:createResolutionCallbackFromEnv",
+      "type": "function",
+      "name": "createResolutionCallbackFromEnv",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        211,
+        276
+      ],
+      "summary": "createResolutionCallbackFromEnv — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:createResolutionCallbackFromFrame",
+      "type": "function",
+      "name": "createResolutionCallbackFromFrame",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        279,
+        330
+      ],
+      "summary": "createResolutionCallbackFromFrame — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:get_closure",
+      "type": "function",
+      "name": "get_closure",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        333,
+        343
+      ],
+      "summary": "get_closure — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:createResolutionCallbackFromClosure",
+      "type": "function",
+      "name": "createResolutionCallbackFromClosure",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        390,
+        409
+      ],
+      "summary": "createResolutionCallbackFromClosure — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:can_compile_class",
+      "type": "function",
+      "name": "can_compile_class",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        413,
+        431
+      ],
+      "summary": "can_compile_class — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:get_callable_argument_names",
+      "type": "function",
+      "name": "get_callable_argument_names",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        434,
+        462
+      ],
+      "summary": "get_callable_argument_names — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:get_annotation_str",
+      "type": "function",
+      "name": "get_annotation_str",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        465,
+        484
+      ],
+      "summary": "get_annotation_str — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:get_type_hint_captures",
+      "type": "function",
+      "name": "get_type_hint_captures",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        487,
+        571
+      ],
+      "summary": "get_type_hint_captures — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:createResolutionCallbackForClassMethods",
+      "type": "function",
+      "name": "createResolutionCallbackForClassMethods",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        574,
+        609
+      ],
+      "summary": "createResolutionCallbackForClassMethods — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:boolean_dispatch",
+      "type": "function",
+      "name": "boolean_dispatch",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        612,
+        664
+      ],
+      "summary": "boolean_dispatch — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:export",
+      "type": "function",
+      "name": "export",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        683,
+        729
+      ],
+      "summary": "export — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:unused",
+      "type": "function",
+      "name": "unused",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        732,
+        786
+      ],
+      "summary": "unused — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:ignore",
+      "type": "function",
+      "name": "ignore",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        798,
+        906
+      ],
+      "summary": "ignore — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:get_class_name_lineno",
+      "type": "function",
+      "name": "get_class_name_lineno",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        1067,
+        1080
+      ],
+      "summary": "get_class_name_lineno — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:is_tuple",
+      "type": "function",
+      "name": "is_tuple",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        1167,
+        1177
+      ],
+      "summary": "is_tuple — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:is_optional",
+      "type": "function",
+      "name": "is_optional",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        1215,
+        1230
+      ],
+      "summary": "is_optional — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:raise_error_container_parameter_missing",
+      "type": "function",
+      "name": "raise_error_container_parameter_missing",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        1397,
+        1408
+      ],
+      "summary": "raise_error_container_parameter_missing — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_jit_internal.py:container_checker",
+      "type": "function",
+      "name": "container_checker",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        1441,
+        1505
+      ],
+      "summary": "container_checker — torch/_jit_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_jit_internal.py:SourceLoader",
+      "type": "class",
+      "name": "SourceLoader",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        197,
+        205
+      ],
+      "summary": "SourceLoader 类 — torch/_jit_internal.py 中定义的，方法: cache, get_source",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_jit_internal.py:_TensorExtractor",
+      "type": "class",
+      "name": "_TensorExtractor",
+      "filePath": "torch/_jit_internal.py",
+      "lineRange": [
+        1533,
+        1560
+      ],
+      "summary": "_TensorExtractor 类 — torch/_jit_internal.py 中定义的，方法: persistent_id",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_library/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/_library/__init__.py",
+      "summary": "__init__.py — PyTorch torch/_library模块。7行python代码。",
+      "tags": [
+        "python",
+        "package",
+        "minimal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_library/fake_class_registry.py",
+      "type": "file",
+      "name": "fake_class_registry.py",
+      "filePath": "torch/_library/fake_class_registry.py",
+      "summary": "fake_class_registry.py — PyTorch torch/_library模块。511行python代码。 定义类: FakeScriptObject, FakeScriptMethod, HasStaticMethodFromReal, FakeClassRegistry 定义函数: maybe_unwrap_fake_script_object, tracing_with_real, maybe_to_fake_obj, register_fake_class, deregister_fake_class",
+      "tags": [
+        "python",
+        "library",
+        "custom-ops",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_library/fake_class_registry.py:maybe_to_fake_obj",
+      "type": "function",
+      "name": "maybe_to_fake_obj",
+      "filePath": "torch/_library/fake_class_registry.py",
+      "lineRange": [
+        231,
+        346
+      ],
+      "summary": "maybe_to_fake_obj — torch/_library/fake_class_registry.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_library/fake_class_registry.py:register_fake_class",
+      "type": "function",
+      "name": "register_fake_class",
+      "filePath": "torch/_library/fake_class_registry.py",
+      "lineRange": [
+        349,
+        438
+      ],
+      "summary": "register_fake_class — torch/_library/fake_class_registry.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_library/fake_class_registry.py:FakeScriptObject",
+      "type": "class",
+      "name": "FakeScriptObject",
+      "filePath": "torch/_library/fake_class_registry.py",
+      "lineRange": [
+        14,
+        129
+      ],
+      "summary": "FakeScriptObject 类 — torch/_library/fake_class_registry.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_library/fake_class_registry.py:FakeClassRegistry",
+      "type": "class",
+      "name": "FakeClassRegistry",
+      "filePath": "torch/_library/fake_class_registry.py",
+      "lineRange": [
+        162,
+        199
+      ],
+      "summary": "FakeClassRegistry 类 — torch/_library/fake_class_registry.py 中定义的，方法: has_impl, get_impl, register, deregister, clear",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/_library/triton.py",
+      "type": "file",
+      "name": "triton.py",
+      "filePath": "torch/_library/triton.py",
+      "summary": "triton.py — PyTorch torch/_library模块。578行python代码。 定义函数: get_triton_kernels_for_op, get_inner_triton_kernels, triton_op, set_wrap_triton_enabled, is_wrap_triton_enabled",
+      "tags": [
+        "python",
+        "library",
+        "custom-ops",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_library/triton.py:get_inner_triton_kernels",
+      "type": "function",
+      "name": "get_inner_triton_kernels",
+      "filePath": "torch/_library/triton.py",
+      "lineRange": [
+        24,
+        293
+      ],
+      "summary": "get_inner_triton_kernels — torch/_library/triton.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_library/triton.py:triton_op",
+      "type": "function",
+      "name": "triton_op",
+      "filePath": "torch/_library/triton.py",
+      "lineRange": [
+        297,
+        470
+      ],
+      "summary": "triton_op — torch/_library/triton.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_library/triton.py:set_wrap_triton_enabled",
+      "type": "function",
+      "name": "set_wrap_triton_enabled",
+      "filePath": "torch/_library/triton.py",
+      "lineRange": [
+        478,
+        491
+      ],
+      "summary": "set_wrap_triton_enabled — torch/_library/triton.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/triton.py:wrap_triton",
+      "type": "function",
+      "name": "wrap_triton",
+      "filePath": "torch/_library/triton.py",
+      "lineRange": [
+        504,
+        577
+      ],
+      "summary": "wrap_triton — torch/_library/triton.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/_library/utils.py",
+      "type": "file",
+      "name": "utils.py",
+      "filePath": "torch/_library/utils.py",
+      "summary": "utils.py — PyTorch torch/_library模块。709行python代码。 定义类: Kernel, RegistrationHandle, MutationChecker 定义函数: get_source, parse_namespace, lookup_op, is_builtin, is_out",
+      "tags": [
+        "python",
+        "library",
+        "custom-ops",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_library/utils.py:get_source",
+      "type": "function",
+      "name": "get_source",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        36,
+        47
+      ],
+      "summary": "get_source — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:is_functional_schema",
+      "type": "function",
+      "name": "is_functional_schema",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        91,
+        149
+      ],
+      "summary": "is_functional_schema — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_library/utils.py:mutates_and_returns_first_arg",
+      "type": "function",
+      "name": "mutates_and_returns_first_arg",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        167,
+        202
+      ],
+      "summary": "mutates_and_returns_first_arg — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_library/utils.py:fill_defaults",
+      "type": "function",
+      "name": "fill_defaults",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        205,
+        220
+      ],
+      "summary": "fill_defaults — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:zip_schema",
+      "type": "function",
+      "name": "zip_schema",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        223,
+        249
+      ],
+      "summary": "zip_schema — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:hop_schema_from_fx_node",
+      "type": "function",
+      "name": "hop_schema_from_fx_node",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        252,
+        290
+      ],
+      "summary": "hop_schema_from_fx_node — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_library/utils.py:can_generate_trivial_fake_impl",
+      "type": "function",
+      "name": "can_generate_trivial_fake_impl",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        293,
+        313
+      ],
+      "summary": "can_generate_trivial_fake_impl — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:generate_trivial_fake_impl",
+      "type": "function",
+      "name": "generate_trivial_fake_impl",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        316,
+        332
+      ],
+      "summary": "generate_trivial_fake_impl — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:handle_dispatch_mode",
+      "type": "function",
+      "name": "handle_dispatch_mode",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        344,
+        362
+      ],
+      "summary": "handle_dispatch_mode — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:iter_tensors",
+      "type": "function",
+      "name": "iter_tensors",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        401,
+        413
+      ],
+      "summary": "iter_tensors — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:check_aliasing_constraint",
+      "type": "function",
+      "name": "check_aliasing_constraint",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        416,
+        439
+      ],
+      "summary": "check_aliasing_constraint — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:has_fake_kernel",
+      "type": "function",
+      "name": "has_fake_kernel",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        530,
+        557
+      ],
+      "summary": "has_fake_kernel — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:get_layout_constraint_tag",
+      "type": "function",
+      "name": "get_layout_constraint_tag",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        594,
+        605
+      ],
+      "summary": "get_layout_constraint_tag — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/utils.py:is_impure",
+      "type": "function",
+      "name": "is_impure",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        624,
+        708
+      ],
+      "summary": "is_impure — torch/_library/utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_library/utils.py:MutationChecker",
+      "type": "class",
+      "name": "MutationChecker",
+      "filePath": "torch/_library/utils.py",
+      "lineRange": [
+        467,
+        522
+      ],
+      "summary": "MutationChecker 类 — torch/_library/utils.py 中定义的，方法: check",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_library/opaque_object.py",
+      "type": "file",
+      "name": "opaque_object.py",
+      "filePath": "torch/_library/opaque_object.py",
+      "summary": "opaque_object.py — PyTorch torch/_library模块。429行python代码。 定义类: MemberType, FakeOpaqueObject, _OpaqueTypeInfo 定义函数: get_opaque_type_name, register_opaque_type, is_opaque_value, should_hoist, get_reconstruct_fn",
+      "tags": [
+        "python",
+        "library",
+        "custom-ops",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_library/opaque_object.py:get_opaque_type_name",
+      "type": "function",
+      "name": "get_opaque_type_name",
+      "filePath": "torch/_library/opaque_object.py",
+      "lineRange": [
+        130,
+        149
+      ],
+      "summary": "get_opaque_type_name — torch/_library/opaque_object.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/opaque_object.py:register_opaque_type",
+      "type": "function",
+      "name": "register_opaque_type",
+      "filePath": "torch/_library/opaque_object.py",
+      "lineRange": [
+        152,
+        268
+      ],
+      "summary": "register_opaque_type — torch/_library/opaque_object.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_library/opaque_object.py:is_opaque_type",
+      "type": "function",
+      "name": "is_opaque_type",
+      "filePath": "torch/_library/opaque_object.py",
+      "lineRange": [
+        306,
+        322
+      ],
+      "summary": "is_opaque_type — torch/_library/opaque_object.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/opaque_object.py:is_opaque_value_type",
+      "type": "function",
+      "name": "is_opaque_value_type",
+      "filePath": "torch/_library/opaque_object.py",
+      "lineRange": [
+        325,
+        339
+      ],
+      "summary": "is_opaque_value_type — torch/_library/opaque_object.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/opaque_object.py:is_opaque_reference_type",
+      "type": "function",
+      "name": "is_opaque_reference_type",
+      "filePath": "torch/_library/opaque_object.py",
+      "lineRange": [
+        342,
+        356
+      ],
+      "summary": "is_opaque_reference_type — torch/_library/opaque_object.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_library/opaque_object.py:get_opaque_obj_repr",
+      "type": "function",
+      "name": "get_opaque_obj_repr",
+      "filePath": "torch/_library/opaque_object.py",
+      "lineRange": [
+        359,
+        401
+      ],
+      "summary": "get_opaque_obj_repr — torch/_library/opaque_object.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_library/opaque_object.py:get_member_type",
+      "type": "function",
+      "name": "get_member_type",
+      "filePath": "torch/_library/opaque_object.py",
+      "lineRange": [
+        414,
+        428
+      ],
+      "summary": "get_member_type — torch/_library/opaque_object.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_namedtensor_internals.py",
+      "type": "file",
+      "name": "_namedtensor_internals.py",
+      "filePath": "torch/_namedtensor_internals.py",
+      "summary": "_namedtensor_internals.py — PyTorch torch模块。160行python代码。 定义函数: check_serializing_named_tensor, build_dim_map, unzip_namedshape, namer_api_name, is_ellipsis",
+      "tags": [
+        "python",
+        "many-functions"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_namedtensor_internals.py:update_names_with_mapping",
+      "type": "function",
+      "name": "update_names_with_mapping",
+      "filePath": "torch/_namedtensor_internals.py",
+      "lineRange": [
+        94,
+        105
+      ],
+      "summary": "update_names_with_mapping — torch/_namedtensor_internals.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_namedtensor_internals.py:update_names",
+      "type": "function",
+      "name": "update_names",
+      "filePath": "torch/_namedtensor_internals.py",
+      "lineRange": [
+        108,
+        159
+      ],
+      "summary": "update_names — torch/_namedtensor_internals.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/_ops.py",
+      "type": "file",
+      "name": "_ops.py",
+      "filePath": "torch/_ops.py",
+      "summary": "算子注册和调度系统。管理所有 PyTorch 算子（操作）的定义、注册和分发。 定义类: OperatorBase, HigherOrderOperator, _ModeStackStateForPreDispatch, OpOverload, TorchBindOpOverload 定义函数: dl_open_guard, resolve_key, key_extractor, unset_mode_pre_dispatch, mode_stack_state_for_pre_dispatch",
+      "tags": [
+        "python",
+        "ops-system",
+        "dispatch",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_ops.py:dl_open_guard",
+      "type": "function",
+      "name": "dl_open_guard",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        41,
+        54
+      ],
+      "summary": "dl_open_guard — torch/_ops.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_ops.py:resolve_key",
+      "type": "function",
+      "name": "resolve_key",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        211,
+        261
+      ],
+      "summary": "resolve_key — torch/_ops.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_ops.py:unset_mode_pre_dispatch",
+      "type": "function",
+      "name": "unset_mode_pre_dispatch",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        639,
+        679
+      ],
+      "summary": "unset_mode_pre_dispatch — torch/_ops.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_ops.py:OperatorBase",
+      "type": "class",
+      "name": "OperatorBase",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        57,
+        207
+      ],
+      "summary": "OperatorBase 类 — torch/_ops.py 中定义的，方法: has_kernel_for_dispatch_key, has_kernel_for_any_dispatch_key, py_impl, py_functionalize_impl, name",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_ops.py:HigherOrderOperator",
+      "type": "class",
+      "name": "HigherOrderOperator",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        277,
+        569
+      ],
+      "summary": "HigherOrderOperator 类 — torch/_ops.py 中定义的，方法: py_impl, py_autograd_impl, namespace, cacheable, fallthrough",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_ops.py:_ModeStackStateForPreDispatch",
+      "type": "class",
+      "name": "_ModeStackStateForPreDispatch",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        611,
+        633
+      ],
+      "summary": "_ModeStackStateForPreDispatch 类 — torch/_ops.py 中定义的，方法: set, get, count",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_ops.py:OpOverload",
+      "type": "class",
+      "name": "OpOverload",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        802,
+        1044
+      ],
+      "summary": "OpOverload 类 — torch/_ops.py 中定义的，方法: redispatch, has_kernel_for_dispatch_key, has_kernel_for_any_dispatch_key, namespace, decompose",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_ops.py:TorchBindOpOverload",
+      "type": "class",
+      "name": "TorchBindOpOverload",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        1051,
+        1133
+      ],
+      "summary": "TorchBindOpOverload 类 — torch/_ops.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_ops.py:OpOverloadPacket",
+      "type": "class",
+      "name": "OpOverloadPacket",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        1162,
+        1279
+      ],
+      "summary": "OpOverloadPacket 类 — torch/_ops.py 中定义的，方法: op, overloads",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_ops.py:_OpNamespace",
+      "type": "class",
+      "name": "_OpNamespace",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        1339,
+        1404
+      ],
+      "summary": "_OpNamespace 类 — torch/_ops.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_ops.py:_Ops",
+      "type": "class",
+      "name": "_Ops",
+      "filePath": "torch/_ops.py",
+      "lineRange": [
+        1447,
+        1512
+      ],
+      "summary": "_Ops 类 — torch/_ops.py 中定义的，方法: import_module, load_library",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_python_dispatcher.py",
+      "type": "file",
+      "name": "_python_dispatcher.py",
+      "filePath": "torch/_python_dispatcher.py",
+      "summary": "_python_dispatcher.py — PyTorch torch模块。183行python代码。 定义类: PythonDispatcher",
+      "tags": [
+        "python"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_python_dispatcher.py:PythonDispatcher",
+      "type": "class",
+      "name": "PythonDispatcher",
+      "filePath": "torch/_python_dispatcher.py",
+      "lineRange": [
+        55,
+        182
+      ],
+      "summary": "PythonDispatcher 类 — torch/_python_dispatcher.py 中定义的，方法: keys, register, rawRegistrations, rawDispatchTable, registrations",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/_streambase.py",
+      "type": "file",
+      "name": "_streambase.py",
+      "filePath": "torch/_streambase.py",
+      "summary": "_streambase.py — PyTorch torch模块。21行python代码。 定义类: _StreamBase, _EventBase",
+      "tags": [
+        "python"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_subclasses/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/_subclasses/__init__.py",
+      "summary": "__init__.py — PyTorch torch/_subclasses模块。18行python代码。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_subclasses/fake_tensor.py",
+      "type": "file",
+      "name": "fake_tensor.py",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "summary": "fake_tensor.py — PyTorch torch/_subclasses模块。3605行python代码。 定义类: IncrementRecursionCount, UnsupportedFakeTensorException, FakeTensorDeviceMismatchError, DynamicOutputShapeException, DataDependentOutputException 定义函数: ordered_set, unset_fake_temporarily, disable_fake_tensor_cache, get_plain_tensors, is_fake",
+      "tags": [
+        "python",
+        "subclass",
+        "tensor",
+        "large-file",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_tensor.py:get_plain_tensors",
+      "type": "function",
+      "name": "get_plain_tensors",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        201,
+        217
+      ],
+      "summary": "get_plain_tensors — torch/_subclasses/fake_tensor.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_tensor.py:is_fake",
+      "type": "function",
+      "name": "is_fake",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        220,
+        252
+      ],
+      "summary": "is_fake — torch/_subclasses/fake_tensor.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_tensor.py:maybe_get_fake_mode",
+      "type": "function",
+      "name": "maybe_get_fake_mode",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        255,
+        287
+      ],
+      "summary": "maybe_get_fake_mode — torch/_subclasses/fake_tensor.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_tensor.py:in_kernel_invocation_manager",
+      "type": "function",
+      "name": "in_kernel_invocation_manager",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        609,
+        628
+      ],
+      "summary": "in_kernel_invocation_manager — torch/_subclasses/fake_tensor.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_tensor.py:extract_tensor_metadata",
+      "type": "function",
+      "name": "extract_tensor_metadata",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        1180,
+        1215
+      ],
+      "summary": "extract_tensor_metadata — torch/_subclasses/fake_tensor.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_tensor.py:run_fallback_kernel",
+      "type": "function",
+      "name": "run_fallback_kernel",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        3297,
+        3359
+      ],
+      "summary": "run_fallback_kernel — torch/_subclasses/fake_tensor.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_tensor.py:inferred_fake_kernel_from_real_out",
+      "type": "function",
+      "name": "inferred_fake_kernel_from_real_out",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        3587,
+        3604
+      ],
+      "summary": "inferred_fake_kernel_from_real_out — torch/_subclasses/fake_tensor.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_subclasses/fake_tensor.py:FakeTensorConverter",
+      "type": "class",
+      "name": "FakeTensorConverter",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        336,
+        594
+      ],
+      "summary": "FakeTensorConverter 类 — torch/_subclasses/fake_tensor.py 中定义的，方法: tensor_memo, add_constant_storage_mapping, invalidate_constant_aliases, set_tensor_memo, from_real_tensor",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_subclasses/fake_tensor.py:SymNumberMemoDescriptor",
+      "type": "class",
+      "name": "SymNumberMemoDescriptor",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        653,
+        717
+      ],
+      "summary": "SymNumberMemoDescriptor 类 — torch/_subclasses/fake_tensor.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_subclasses/fake_tensor.py:FakeTensor",
+      "type": "class",
+      "name": "FakeTensor",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        720,
+        1128
+      ],
+      "summary": "FakeTensor 类 — torch/_subclasses/fake_tensor.py 中定义的，方法: device, device, fake_device, fake_device, names",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_subclasses/fake_tensor.py:TensorMetadata",
+      "type": "class",
+      "name": "TensorMetadata",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        1135,
+        1177
+      ],
+      "summary": "TensorMetadata 类 — torch/_subclasses/fake_tensor.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_subclasses/fake_tensor.py:_DispatchCacheKey",
+      "type": "class",
+      "name": "_DispatchCacheKey",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        1219,
+        1242
+      ],
+      "summary": "_DispatchCacheKey 类 — torch/_subclasses/fake_tensor.py 中定义的，方法: strip_shape_env",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_subclasses/fake_tensor.py:FakeTensorMode",
+      "type": "class",
+      "name": "FakeTensorMode",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        1327,
+        3229
+      ],
+      "summary": "FakeTensorMode 类 — torch/_subclasses/fake_tensor.py 中定义的，方法: reset_nt_tensor_id_counter, is_our_fake, avoid_device_init, stack, is_infra_mode",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/_subclasses/fake_tensor.py:FakeCopyMode",
+      "type": "class",
+      "name": "FakeCopyMode",
+      "filePath": "torch/_subclasses/fake_tensor.py",
+      "lineRange": [
+        3381,
+        3417
+      ],
+      "summary": "FakeCopyMode 类 — torch/_subclasses/fake_tensor.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_subclasses/fake_utils.py",
+      "type": "file",
+      "name": "fake_utils.py",
+      "filePath": "torch/_subclasses/fake_utils.py",
+      "summary": "fake_utils.py — PyTorch torch/_subclasses模块。327行python代码。 定义类: CrossRefFakeMode 定义函数: outputs_alias_inputs, outputs_are_inputs, output_alias_each_other, is_sdpa_error, try_convert_fake_to_real",
+      "tags": [
+        "python",
+        "subclass",
+        "tensor"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_utils.py:is_sdpa_error",
+      "type": "function",
+      "name": "is_sdpa_error",
+      "filePath": "torch/_subclasses/fake_utils.py",
+      "lineRange": [
+        88,
+        113
+      ],
+      "summary": "is_sdpa_error — torch/_subclasses/fake_utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_subclasses/fake_utils.py:try_convert_fake_to_real",
+      "type": "function",
+      "name": "try_convert_fake_to_real",
+      "filePath": "torch/_subclasses/fake_utils.py",
+      "lineRange": [
+        116,
+        181
+      ],
+      "summary": "try_convert_fake_to_real — torch/_subclasses/fake_utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_subclasses/fake_utils.py:CrossRefFakeMode",
+      "type": "class",
+      "name": "CrossRefFakeMode",
+      "filePath": "torch/_subclasses/fake_utils.py",
+      "lineRange": [
+        217,
+        326
+      ],
+      "summary": "CrossRefFakeMode 类 — torch/_subclasses/fake_utils.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_subclasses/functional_tensor.py",
+      "type": "file",
+      "name": "functional_tensor.py",
+      "filePath": "torch/_subclasses/functional_tensor.py",
+      "summary": "functional_tensor.py — PyTorch torch/_subclasses模块。926行python代码。 定义类: FunctionalTensor, FunctionalTensorMode, BaseFunctionalizeAPI, PythonFunctionalizeAPI, CppFunctionalizeAPI 定义函数: disable_functional_mode, dispatch_functionalize, mb_unwrap_functional_tensor",
+      "tags": [
+        "python",
+        "subclass",
+        "tensor",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_subclasses/functional_tensor.py:dispatch_functionalize",
+      "type": "function",
+      "name": "dispatch_functionalize",
+      "filePath": "torch/_subclasses/functional_tensor.py",
+      "lineRange": [
+        737,
+        770
+      ],
+      "summary": "dispatch_functionalize — torch/_subclasses/functional_tensor.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_subclasses/functional_tensor.py:FunctionalTensor",
+      "type": "class",
+      "name": "FunctionalTensor",
+      "filePath": "torch/_subclasses/functional_tensor.py",
+      "lineRange": [
+        120,
+        393
+      ],
+      "summary": "FunctionalTensor 类 — torch/_subclasses/functional_tensor.py 中定义的，方法: to_functional, from_functional, is_base_tensor, replace_, commit_update",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/_subclasses/functional_tensor.py:FunctionalTensorMode",
+      "type": "class",
+      "name": "FunctionalTensorMode",
+      "filePath": "torch/_subclasses/functional_tensor.py",
+      "lineRange": [
+        396,
+        721
+      ],
+      "summary": "FunctionalTensorMode 类 — torch/_subclasses/functional_tensor.py 中定义的，方法: is_infra_mode",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_subclasses/functional_tensor.py:BaseFunctionalizeAPI",
+      "type": "class",
+      "name": "BaseFunctionalizeAPI",
+      "filePath": "torch/_subclasses/functional_tensor.py",
+      "lineRange": [
+        773,
+        800
+      ],
+      "summary": "BaseFunctionalizeAPI 类 — torch/_subclasses/functional_tensor.py 中定义的，方法: wrap_tensors, unwrap_tensors, functionalize, redispatch_to_next, replace",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_subclasses/functional_tensor.py:PythonFunctionalizeAPI",
+      "type": "class",
+      "name": "PythonFunctionalizeAPI",
+      "filePath": "torch/_subclasses/functional_tensor.py",
+      "lineRange": [
+        803,
+        859
+      ],
+      "summary": "PythonFunctionalizeAPI 类 — torch/_subclasses/functional_tensor.py 中定义的，方法: wrap_tensors, unwrap_tensors, functionalize, redispatch_to_next, replace",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_subclasses/functional_tensor.py:CppFunctionalizeAPI",
+      "type": "class",
+      "name": "CppFunctionalizeAPI",
+      "filePath": "torch/_subclasses/functional_tensor.py",
+      "lineRange": [
+        862,
+        884
+      ],
+      "summary": "CppFunctionalizeAPI 类 — torch/_subclasses/functional_tensor.py 中定义的，方法: wrap_tensors, unwrap_tensors, functionalize, redispatch_to_next",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/_subclasses/functional_tensor.py:FunctorchFunctionalizeAPI",
+      "type": "class",
+      "name": "FunctorchFunctionalizeAPI",
+      "filePath": "torch/_subclasses/functional_tensor.py",
+      "lineRange": [
+        887,
+        919
+      ],
+      "summary": "FunctorchFunctionalizeAPI 类 — torch/_subclasses/functional_tensor.py 中定义的，方法: wrap_tensors, unwrap_tensors, functionalize, redispatch_to_next",
+      "tags": [
+        "class"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "file:torch/_tensor.py",
+      "type": "file",
+      "name": "_tensor.py",
+      "filePath": "torch/_tensor.py",
+      "summary": "张量核心类实现。定义 Tensor 的所有基本操作，包括数学运算、索引、类型转换和设备管理。 定义类: Tensor",
+      "tags": [
+        "python",
+        "tensor",
+        "core",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/_tensor.py:Tensor",
+      "type": "class",
+      "name": "Tensor",
+      "filePath": "torch/_tensor.py",
+      "lineRange": [
+        110,
+        1877
+      ],
+      "summary": "Tensor 类 — torch/_tensor.py 中定义的，方法: storage, backward, index, register_hook, register_post_accumulate_grad_hook",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/_utils.py",
+      "type": "file",
+      "name": "_utils.py",
+      "filePath": "torch/_utils.py",
+      "summary": "_utils.py — PyTorch torch模块。1416行python代码。 定义类: KeyErrorMessage, ExceptionWrapper, _ClassPropertyDescriptor, _LazySeedTracker, CallbackRegistry 定义函数: get_tensor_metadata, set_tensor_metadata, render_call, cpu_count, get_current_device_index",
+      "tags": [
+        "python",
+        "substantial",
+        "many-functions",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_utils.py:render_call",
+      "type": "function",
+      "name": "render_call",
+      "filePath": "torch/_utils.py",
+      "lineRange": [
+        724,
+        734
+      ],
+      "summary": "render_call — torch/_utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_utils.py:cpu_count",
+      "type": "function",
+      "name": "cpu_count",
+      "filePath": "torch/_utils.py",
+      "lineRange": [
+        795,
+        805
+      ],
+      "summary": "cpu_count — torch/_utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_utils.py:try_import",
+      "type": "function",
+      "name": "try_import",
+      "filePath": "torch/_utils.py",
+      "lineRange": [
+        1087,
+        1104
+      ],
+      "summary": "try_import — torch/_utils.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_utils.py:ExceptionWrapper",
+      "type": "class",
+      "name": "ExceptionWrapper",
+      "filePath": "torch/_utils.py",
+      "lineRange": [
+        755,
+        792
+      ],
+      "summary": "ExceptionWrapper 类 — torch/_utils.py 中定义的，方法: reraise",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_utils.py:_LazySeedTracker",
+      "type": "class",
+      "name": "_LazySeedTracker",
+      "filePath": "torch/_utils.py",
+      "lineRange": [
+        1041,
+        1062
+      ],
+      "summary": "_LazySeedTracker 类 — torch/_utils.py 中定义的，方法: queue_seed_all, queue_seed, get_calls",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/_utils.py:CallbackRegistry",
+      "type": "class",
+      "name": "CallbackRegistry",
+      "filePath": "torch/_utils.py",
+      "lineRange": [
+        1069,
+        1084
+      ],
+      "summary": "CallbackRegistry 类 — torch/_utils.py 中定义的，方法: add_callback, fire_callbacks",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/_utils_internal.py",
+      "type": "file",
+      "name": "_utils_internal.py",
+      "filePath": "torch/_utils_internal.py",
+      "summary": "_utils_internal.py — PyTorch torch模块。385行python代码。 定义函数: get_file_path, get_file_path_2, get_writable_path, prepare_multiprocessing_environment, resolve_library_path",
+      "tags": [
+        "python",
+        "many-functions"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/_utils_internal.py:throw_abstract_impl_not_imported_error",
+      "type": "function",
+      "name": "throw_abstract_impl_not_imported_error",
+      "filePath": "torch/_utils_internal.py",
+      "lineRange": [
+        65,
+        75
+      ],
+      "summary": "throw_abstract_impl_not_imported_error — torch/_utils_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_utils_internal.py:compile_time_strobelight_meta",
+      "type": "function",
+      "name": "compile_time_strobelight_meta",
+      "filePath": "torch/_utils_internal.py",
+      "lineRange": [
+        79,
+        104
+      ],
+      "summary": "compile_time_strobelight_meta — torch/_utils_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_utils_internal.py:justknobs_check",
+      "type": "function",
+      "name": "justknobs_check",
+      "filePath": "torch/_utils_internal.py",
+      "lineRange": [
+        186,
+        209
+      ],
+      "summary": "justknobs_check — torch/_utils_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_utils_internal.py:max_clock_rate",
+      "type": "function",
+      "name": "max_clock_rate",
+      "filePath": "torch/_utils_internal.py",
+      "lineRange": [
+        224,
+        254
+      ],
+      "summary": "max_clock_rate — torch/_utils_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/_utils_internal.py:deprecated",
+      "type": "function",
+      "name": "deprecated",
+      "filePath": "torch/_utils_internal.py",
+      "lineRange": [
+        300,
+        351
+      ],
+      "summary": "deprecated — torch/_utils_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/_utils_internal.py:get_default_numa_options",
+      "type": "function",
+      "name": "get_default_numa_options",
+      "filePath": "torch/_utils_internal.py",
+      "lineRange": [
+        354,
+        366
+      ],
+      "summary": "get_default_numa_options — torch/_utils_internal.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/amp/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/amp/__init__.py",
+      "summary": "__init__.py — PyTorch torch/amp模块。19行python代码。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/amp/autocast_mode.py",
+      "type": "file",
+      "name": "autocast_mode.py",
+      "filePath": "torch/amp/autocast_mode.py",
+      "summary": "autocast_mode.py — PyTorch torch/amp模块。530行python代码。 定义类: autocast, _UnmanagedAutocast 定义函数: is_autocast_available, autocast_decorator, custom_fwd, custom_bwd",
+      "tags": [
+        "python",
+        "amp",
+        "mixed-precision",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/amp/autocast_mode.py:custom_fwd",
+      "type": "function",
+      "name": "custom_fwd",
+      "filePath": "torch/amp/autocast_mode.py",
+      "lineRange": [
+        441,
+        494
+      ],
+      "summary": "custom_fwd — torch/amp/autocast_mode.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/amp/autocast_mode.py:custom_bwd",
+      "type": "function",
+      "name": "custom_bwd",
+      "filePath": "torch/amp/autocast_mode.py",
+      "lineRange": [
+        500,
+        529
+      ],
+      "summary": "custom_bwd — torch/amp/autocast_mode.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "class:torch/amp/autocast_mode.py:autocast",
+      "type": "class",
+      "name": "autocast",
+      "filePath": "torch/amp/autocast_mode.py",
+      "lineRange": [
+        52,
+        380
+      ],
+      "summary": "autocast 类 — torch/amp/autocast_mode.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/amp/grad_scaler.py",
+      "type": "file",
+      "name": "grad_scaler.py",
+      "filePath": "torch/amp/grad_scaler.py",
+      "summary": "grad_scaler.py — PyTorch torch/amp模块。715行python代码。 定义类: _MultiDeviceReplicator, OptState, GradScaler",
+      "tags": [
+        "python",
+        "amp",
+        "mixed-precision",
+        "substantial",
+        "multiple-classes"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "class:torch/amp/grad_scaler.py:GradScaler",
+      "type": "class",
+      "name": "GradScaler",
+      "filePath": "torch/amp/grad_scaler.py",
+      "lineRange": [
+        53,
+        714
+      ],
+      "summary": "GradScaler 类 — torch/amp/grad_scaler.py 中定义的，方法: scale, scale, scale, scale, scale",
+      "tags": [
+        "class"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/ao/pruning/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/ao/pruning/__init__.py",
+      "summary": "__init__.py — PyTorch torch/ao/pruning模块。24行python代码。",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/ao/ns/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/ao/ns/__init__.py",
+      "summary": "__init__.py — PyTorch torch/ao/ns模块。1行python代码。",
+      "tags": [
+        "python",
+        "package",
+        "minimal"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/ao/quantization/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/ao/quantization/__init__.py",
+      "summary": "__init__.py — PyTorch torch/ao/quantization模块。214行python代码。 定义类: _DerivedObserverOrFakeQuantize 定义函数: default_eval_fn",
+      "tags": [
+        "python",
+        "package"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/ao/quantization/__init__.py:_DerivedObserverOrFakeQuantize",
+      "type": "class",
+      "name": "_DerivedObserverOrFakeQuantize",
+      "filePath": "torch/ao/quantization/__init__.py",
+      "lineRange": [
+        176,
+        213
+      ],
+      "summary": "_DerivedObserverOrFakeQuantize 类 — torch/ao/quantization/__init__.py 中定义的，方法: forward, calculate_qparams",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "file:torch/autograd/__init__.py",
+      "type": "file",
+      "name": "__init__.py",
+      "filePath": "torch/autograd/__init__.py",
+      "summary": "自动微分模块 — __init__。 定义函数: backward, grad, grad, grad, variable",
+      "tags": [
+        "python",
+        "package",
+        "substantial"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/autograd/__init__.py:backward",
+      "type": "function",
+      "name": "backward",
+      "filePath": "torch/autograd/__init__.py",
+      "lineRange": [
+        255,
+        403
+      ],
+      "summary": "backward — torch/autograd/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "function:torch/autograd/__init__.py:grad",
+      "type": "function",
+      "name": "grad",
+      "filePath": "torch/autograd/__init__.py",
+      "lineRange": [
+        407,
+        417
+      ],
+      "summary": "grad — torch/autograd/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/autograd/__init__.py:grad",
+      "type": "function",
+      "name": "grad",
+      "filePath": "torch/autograd/__init__.py",
+      "lineRange": [
+        421,
+        431
+      ],
+      "summary": "grad — torch/autograd/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/autograd/__init__.py:grad",
+      "type": "function",
+      "name": "grad",
+      "filePath": "torch/autograd/__init__.py",
+      "lineRange": [
+        434,
+        621
+      ],
+      "summary": "grad — torch/autograd/__init__.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "complex"
+    },
+    {
+      "id": "file:torch/autograd/forward_ad.py",
+      "type": "file",
+      "name": "forward_ad.py",
+      "filePath": "torch/autograd/forward_ad.py",
+      "summary": "自动微分模块 — forward_ad。 定义类: UnpackedDualTensor, dual_level, _set_fwd_grad_enabled 定义函数: enter_dual_level, exit_dual_level, make_dual, unpack_dual",
+      "tags": [
+        "python",
+        "autograd",
+        "differentiation",
+        "multiple-classes"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/autograd/forward_ad.py:enter_dual_level",
+      "type": "function",
+      "name": "enter_dual_level",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [
+        23,
+        44
+      ],
+      "summary": "enter_dual_level — torch/autograd/forward_ad.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/autograd/forward_ad.py:exit_dual_level",
+      "type": "function",
+      "name": "exit_dual_level",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [
+        47,
+        69
+      ],
+      "summary": "exit_dual_level — torch/autograd/forward_ad.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "simple"
+    },
+    {
+      "id": "function:torch/autograd/forward_ad.py:make_dual",
+      "type": "function",
+      "name": "make_dual",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [
+        77,
+        138
+      ],
+      "summary": "make_dual — torch/autograd/forward_ad.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "function:torch/autograd/forward_ad.py:unpack_dual",
+      "type": "function",
+      "name": "unpack_dual",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [
+        151,
+        182
+      ],
+      "summary": "unpack_dual — torch/autograd/forward_ad.py 中的函数。",
+      "tags": [
+        "function"
+      ],
+      "complexity": "moderate"
+    },
+    {
+      "id": "class:torch/autograd/forward_ad.py:dual_level",
+      "type": "class",
+      "name": "dual_level",
+      "filePath": "torch/autograd/forward_ad.py",
+      "lineRange": [
+        185,
+        223
+      ],
+      "summary": "dual_level 类 — torch/autograd/forward_ad.py 中定义的",
+      "tags": [
+        "class"
+      ],
+      "complexity": "simple"
+    }
+  ],
+  "edges": [
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "function:torch/_inductor/select_algorithm.py:append_to_log",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "function:torch/_inductor/select_algorithm.py:get_num_workers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "function:torch/_inductor/select_algorithm.py:create_precompile_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "function:torch/_inductor/select_algorithm.py:filter_choices_by_name_regex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "function:torch/_inductor/select_algorithm.py:filter_choices_by_desc_regex",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "function:torch/_inductor/select_algorithm.py:autotune_select_algorithm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "function:torch/_inductor/select_algorithm.py:add_preprocessing_fn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:AutotuneArgs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:PartialRender",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:SubgraphInfo",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:ModificationWrapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:TritonTemplateKernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:ExternalTritonTemplateKernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:GeneratedCodeCache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:TritonTemplate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:ExternKernelChoice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:TritonTemplateCaller",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:ExternKernelCaller",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:DataProcessorChoiceCallerWrapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:DataProcessorTemplateWrapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:AlgorithmSelectorCache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "class:torch/_inductor/select_algorithm.py:SymbolicGridFn",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/_dynamo/device_interface.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/_dynamo/testing.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/_dynamo/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/_inductor/await_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/_inductor/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/utils/_filelock.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/utils/_ordered_set.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/select_algorithm.py",
+      "target": "file:torch/_inductor/async_compile.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:fp8_bench",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:do_bench_using_profiling",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:has_torchvision_roi_align",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:convert_to_symint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_pointwise_use",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:gen_gm_and_inputs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:timed",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:print_performance",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:tuple_sorted",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:cache_on_self",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:cache_on_self_and_args",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:aggregate_origins",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_fused_kernel_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_kernel_metadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:dominated_nodes",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:gather_origins",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:sympy_str",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_bounds_index_expr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_first_incompatible_cudagraph_node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_all_devices",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:unload_xpu_triton_pyds",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:fresh_cache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:argsort",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:argsort_sym",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:make_codegen_buffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_big_gpu",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_tma_workspace_arg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_triton_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:can_use_tma",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_triton_tma_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_triton_blackwell_tma_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:ensure_nv_universal_gemm_available",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:ensure_nvmatmul_heuristics_available",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_blackwell_cutedsl_grouped_mm",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_cutlass_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_nv_universal_gemm_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_decompose_k_choice",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_contiguous",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_k_splits",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:try_import_ck_lib",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_ck_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_cpp_bmm_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_cpp_gemm_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:run_and_get_code",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:run_and_get_kernels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_code",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:run_and_get_graph_lowering",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:override_lowering",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:add_scheduler_init_hook",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_benchmark_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_device_tflops",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:reduction_num_outputs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_dynamic",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:pass_execution_and_save",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_output_of_multi_outputs_template",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_collective",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:find_recursive_deps_of_node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:find_recursive_users_of_node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:count_tangents",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_static_bw_input_idxs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:collect_defined_kernels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_triton_fp8_dtype_supported",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:use_scatter_fallback",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:dump_node_schedule",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:tensor_is_aligned",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:maybe_get_suppress_shape_guards_ctx",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:run_and_get_cpp_code",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:shape_env_from_inputs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:align_inputs_from_check_idxs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:copy_misaligned_inputs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:remove_unaligned_input_idxs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:expr_fits_within_32bit",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:set_tracing_context_output_strides",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:should_use_remote_fx_graph_cache",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:boolean_ops",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_current_backend",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_triton_attrs_descriptor_version",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_cudagraph_unsafe_fx_node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_cudagraph_unsafe_op",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:get_ld_library_path",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:tabulate_2d",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:zip_dicts",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:maybe_aoti_standalone_config",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:determine_aoti_mmap_flags",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_valid_aoti_model_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:python_subprocess_env",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:snode_args_kwargs",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:is_nonfreeable_buffers",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:should_fallback_by_default",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:tlx_only_cuda_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:infer_scale_swizzle",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "function:torch/_inductor/utils.py:infer_scale_swizzle_ir",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "class:torch/_inductor/utils.py:IndentedBuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "class:torch/_inductor/utils.py:DualIndentedBuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "class:torch/_inductor/utils.py:AotOnlyBuffer",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "class:torch/_inductor/utils.py:DeferredLineBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "class:torch/_inductor/utils.py:ScopedDict",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/_inductor/analysis/device_info.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/_inductor/runtime/hints.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/fx/passes/regional_inductor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/utils/_dtype_abbrs.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/utils/_ordered_set.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/utils/_triton.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/fx/experimental/_size_hinting.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/fx/experimental/symbolic_shapes.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/_dynamo/device_interface.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/_dynamo/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/autograd/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/autograd/profiler_util.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/fx/passes/graph_transform_observer.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/fx/passes/shape_prop.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/utils/_sympy/functions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/utils/_sympy/symbol.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/utils/_sympy/value_ranges.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/utils.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_inductor/virtualized.py",
+      "target": "class:torch/_inductor/virtualized.py:Virtualized",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/virtualized.py",
+      "target": "class:torch/_inductor/virtualized.py:NullKernelHandler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/virtualized.py",
+      "target": "class:torch/_inductor/virtualized.py:OpsValue",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/virtualized.py",
+      "target": "class:torch/_inductor/virtualized.py:OpsWrapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/virtualized.py",
+      "target": "class:torch/_inductor/virtualized.py:_V",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_inductor/virtualized.py",
+      "target": "file:torch/utils/_ordered_set.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:is_scripting",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:createResolutionCallbackFromEnv",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:createResolutionCallbackFromFrame",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:get_closure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:createResolutionCallbackFromClosure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:can_compile_class",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:get_callable_argument_names",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:get_annotation_str",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:get_type_hint_captures",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:createResolutionCallbackForClassMethods",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:boolean_dispatch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:export",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:unused",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:ignore",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:get_class_name_lineno",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:is_tuple",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:is_optional",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:raise_error_container_parameter_missing",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "function:torch/_jit_internal.py:container_checker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "class:torch/_jit_internal.py:SourceLoader",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "class:torch/_jit_internal.py:_TensorExtractor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "file:torch/_awaits/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "file:torch/_sources.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "file:torch/futures/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "file:torch/distributed/rpc/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_jit_internal.py",
+      "target": "file:torch/package/_mangling.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/__init__.py",
+      "target": "file:torch/_library/fake_class_registry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/__init__.py",
+      "target": "file:torch/_library/triton.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/__init__.py",
+      "target": "file:torch/_library/autograd.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/__init__.py",
+      "target": "file:torch/_library/fake_impl.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/__init__.py",
+      "target": "file:torch/_library/simple_registry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/__init__.py",
+      "target": "file:torch/_library/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/fake_class_registry.py",
+      "target": "function:torch/_library/fake_class_registry.py:maybe_to_fake_obj",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/fake_class_registry.py",
+      "target": "function:torch/_library/fake_class_registry.py:register_fake_class",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/fake_class_registry.py",
+      "target": "class:torch/_library/fake_class_registry.py:FakeScriptObject",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/fake_class_registry.py",
+      "target": "class:torch/_library/fake_class_registry.py:FakeClassRegistry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/triton.py",
+      "target": "function:torch/_library/triton.py:get_inner_triton_kernels",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/triton.py",
+      "target": "function:torch/_library/triton.py:triton_op",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/triton.py",
+      "target": "function:torch/_library/triton.py:set_wrap_triton_enabled",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/triton.py",
+      "target": "function:torch/_library/triton.py:wrap_triton",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/triton.py",
+      "target": "file:torch/utils/_exposed_in.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:get_source",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:is_functional_schema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:mutates_and_returns_first_arg",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:fill_defaults",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:zip_schema",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:hop_schema_from_fx_node",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:can_generate_trivial_fake_impl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:generate_trivial_fake_impl",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:handle_dispatch_mode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:iter_tensors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:check_aliasing_constraint",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:has_fake_kernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:get_layout_constraint_tag",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "function:torch/_library/utils.py:is_impure",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "class:torch/_library/utils.py:MutationChecker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "file:torch/_ops.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/utils.py",
+      "target": "file:torchgen/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_library/opaque_object.py",
+      "target": "function:torch/_library/opaque_object.py:get_opaque_type_name",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/opaque_object.py",
+      "target": "function:torch/_library/opaque_object.py:register_opaque_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/opaque_object.py",
+      "target": "function:torch/_library/opaque_object.py:is_opaque_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/opaque_object.py",
+      "target": "function:torch/_library/opaque_object.py:is_opaque_value_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/opaque_object.py",
+      "target": "function:torch/_library/opaque_object.py:is_opaque_reference_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/opaque_object.py",
+      "target": "function:torch/_library/opaque_object.py:get_opaque_obj_repr",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_library/opaque_object.py",
+      "target": "function:torch/_library/opaque_object.py:get_member_type",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_namedtensor_internals.py",
+      "target": "function:torch/_namedtensor_internals.py:update_names_with_mapping",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_namedtensor_internals.py",
+      "target": "function:torch/_namedtensor_internals.py:update_names",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "function:torch/_ops.py:dl_open_guard",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "function:torch/_ops.py:resolve_key",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "function:torch/_ops.py:unset_mode_pre_dispatch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "class:torch/_ops.py:OperatorBase",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "class:torch/_ops.py:HigherOrderOperator",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "class:torch/_ops.py:_ModeStackStateForPreDispatch",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "class:torch/_ops.py:OpOverload",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "class:torch/_ops.py:TorchBindOpOverload",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "class:torch/_ops.py:OpOverloadPacket",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "class:torch/_ops.py:_OpNamespace",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "class:torch/_ops.py:_Ops",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "file:torch/_functorch/pyfunctorch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "file:torch/utils/_python_dispatch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_ops.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_python_dispatcher.py",
+      "target": "class:torch/_python_dispatcher.py:PythonDispatcher",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_streambase.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/__init__.py",
+      "target": "file:torch/_subclasses/fake_tensor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/__init__.py",
+      "target": "file:torch/_subclasses/fake_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "function:torch/_subclasses/fake_tensor.py:get_plain_tensors",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "function:torch/_subclasses/fake_tensor.py:is_fake",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "function:torch/_subclasses/fake_tensor.py:maybe_get_fake_mode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "function:torch/_subclasses/fake_tensor.py:in_kernel_invocation_manager",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "function:torch/_subclasses/fake_tensor.py:extract_tensor_metadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "function:torch/_subclasses/fake_tensor.py:run_fallback_kernel",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "function:torch/_subclasses/fake_tensor.py:inferred_fake_kernel_from_real_out",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "class:torch/_subclasses/fake_tensor.py:FakeTensorConverter",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "class:torch/_subclasses/fake_tensor.py:SymNumberMemoDescriptor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "class:torch/_subclasses/fake_tensor.py:FakeTensor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "class:torch/_subclasses/fake_tensor.py:TensorMetadata",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "class:torch/_subclasses/fake_tensor.py:_DispatchCacheKey",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "class:torch/_subclasses/fake_tensor.py:FakeTensorMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "class:torch/_subclasses/fake_tensor.py:FakeCopyMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_library/fake_class_registry.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_library/fake_profile.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_logging/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_opaque_base.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_prims_common/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_subclasses/meta_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/fx/immutable_collections.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/fx/operator_schemas.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/multiprocessing/reductions.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/overrides.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/utils/_mode_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/utils/_python_dispatch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/utils/_stats.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/utils/_traceback.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_subclasses/fake_impls.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_tensor.py",
+      "target": "file:torch/_library/utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_utils.py",
+      "target": "function:torch/_subclasses/fake_utils.py:is_sdpa_error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_utils.py",
+      "target": "function:torch/_subclasses/fake_utils.py:try_convert_fake_to_real",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_utils.py",
+      "target": "class:torch/_subclasses/fake_utils.py:CrossRefFakeMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/fake_utils.py",
+      "target": "file:torch/_subclasses/fake_tensor.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_utils.py",
+      "target": "file:torch/utils/_python_dispatch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_utils.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/fake_utils.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "function:torch/_subclasses/functional_tensor.py:dispatch_functionalize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "class:torch/_subclasses/functional_tensor.py:FunctionalTensor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "class:torch/_subclasses/functional_tensor.py:FunctionalTensorMode",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "class:torch/_subclasses/functional_tensor.py:BaseFunctionalizeAPI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "class:torch/_subclasses/functional_tensor.py:PythonFunctionalizeAPI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "class:torch/_subclasses/functional_tensor.py:CppFunctionalizeAPI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "class:torch/_subclasses/functional_tensor.py:FunctorchFunctionalizeAPI",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "file:torch/_ops.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "file:torch/_subclasses/meta_utils.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "file:torch/utils/_python_dispatch.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "file:torch/fx/traceback.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_subclasses/functional_tensor.py",
+      "target": "file:torch/utils/_pytree.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_tensor.py",
+      "target": "class:torch/_tensor.py:Tensor",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_tensor.py",
+      "target": "file:torch/_namedtensor_internals.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_tensor.py",
+      "target": "file:torch/overrides.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_tensor.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_utils.py",
+      "target": "function:torch/_utils.py:render_call",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils.py",
+      "target": "function:torch/_utils.py:cpu_count",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils.py",
+      "target": "function:torch/_utils.py:try_import",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils.py",
+      "target": "class:torch/_utils.py:ExceptionWrapper",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils.py",
+      "target": "class:torch/_utils.py:_LazySeedTracker",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils.py",
+      "target": "class:torch/_utils.py:CallbackRegistry",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_utils_internal.py",
+      "target": "function:torch/_utils_internal.py:throw_abstract_impl_not_imported_error",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils_internal.py",
+      "target": "function:torch/_utils_internal.py:compile_time_strobelight_meta",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils_internal.py",
+      "target": "function:torch/_utils_internal.py:justknobs_check",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils_internal.py",
+      "target": "function:torch/_utils_internal.py:max_clock_rate",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils_internal.py",
+      "target": "function:torch/_utils_internal.py:deprecated",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils_internal.py",
+      "target": "function:torch/_utils_internal.py:get_default_numa_options",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/_utils_internal.py",
+      "target": "file:torch/_strobelight/compile_time_profiler.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/_utils_internal.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/amp/autocast_mode.py",
+      "target": "function:torch/amp/autocast_mode.py:custom_fwd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/amp/autocast_mode.py",
+      "target": "function:torch/amp/autocast_mode.py:custom_bwd",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/amp/autocast_mode.py",
+      "target": "class:torch/amp/autocast_mode.py:autocast",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/amp/autocast_mode.py",
+      "target": "file:torch/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/amp/autocast_mode.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/amp/grad_scaler.py",
+      "target": "class:torch/amp/grad_scaler.py:GradScaler",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/amp/grad_scaler.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/ao/quantization/__init__.py",
+      "target": "class:torch/ao/quantization/__init__.py:_DerivedObserverOrFakeQuantize",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/ao/quantization/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/ao/quantization/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/__init__.py",
+      "target": "function:torch/autograd/__init__.py:backward",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/autograd/__init__.py",
+      "target": "function:torch/autograd/__init__.py:grad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/autograd/__init__.py",
+      "target": "function:torch/autograd/__init__.py:grad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/autograd/__init__.py",
+      "target": "function:torch/autograd/__init__.py:grad",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/autograd/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/__init__.py",
+      "target": "file:torch/overrides.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/__init__.py",
+      "target": "file:torch/types.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/__init__.py",
+      "target": "file:torch/__init__.py",
+      "type": "imports",
+      "direction": "forward",
+      "weight": 0.7
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:enter_dual_level",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:exit_dual_level",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:make_dual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "function:torch/autograd/forward_ad.py:unpack_dual",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    },
+    {
+      "source": "file:torch/autograd/forward_ad.py",
+      "target": "class:torch/autograd/forward_ad.py:dual_level",
+      "type": "contains",
+      "direction": "forward",
+      "weight": 1
+    }
+  ]
+}
